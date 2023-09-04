@@ -15,8 +15,8 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet weak var videoTitle: UILabel!
     
+    @IBOutlet weak var videoTitle: UILabel!
     
     @IBOutlet weak var readCount: UILabel!
     
@@ -67,7 +67,27 @@ class DetailController: UIViewController {
     @IBAction func sendButtonTapped(_ sender: UIButton) {
     }
     
-    
+    //date format 함수
+    func timeAgoString(from date: Date) -> String {
+        let calendar = Calendar.current
+        let now = Date()
+        let components = calendar.dateComponents([.second, .minute, .hour, .day], from: date, to: now)
+        
+        if let day = components.day, day > 0 {
+            return "\(day)일 전"
+        }
+        if let hour = components.hour, hour > 0 {
+            return "\(hour)시간 전"
+        }
+        if let minute = components.minute, minute > 0 {
+            return "\(minute)분 전"
+        }
+        if let second = components.second, second >= 0 {
+            return "지금"
+        }
+        
+        return ""
+    }
     
 }
 
