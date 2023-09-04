@@ -18,7 +18,7 @@ class DetailPageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var comment: UILabel!
     
-    var isTextExpanded = false
+    private var isTextExpanded = false
     
     @IBOutlet weak var toSeeMoreButton: UIButton!
     

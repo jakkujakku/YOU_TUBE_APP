@@ -168,7 +168,11 @@ extension DetailController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
-        
+        let data = commentArray[indexPath.row]
+        cell.commentUserName.text = data.userId
+        cell.commentUserImage.image = data.userImage
+        cell.postedCommentDate.text = timeAgoString(from: data.date)
+        cell.comment.text = data.comment
         
         return cell
     }
