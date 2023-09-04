@@ -15,18 +15,41 @@ class ThumbnailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        addSearchBar()
+        topViewUp()
     }
 
     func setupUI() {
         view.backgroundColor = .systemBackground
         collectionView.dataSource = self
         collectionView.delegate = self
+
+        if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            flowlayout.estimatedItemSize = .zero
+        }
+    }
+
+    func addSearchBar() {
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        searchController.navigationItem.hidesSearchBarWhenScrolling = true
+        navigationItem.searchController = searchController
+    }
+
+    func topViewUp() {
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
+            // 상단에 서치바 올리기
+            self.view.transform = CGAffineTransform(translationX: 0, y: 0)
+            self.addSearchBar()
+            self.view.layoutIfNeeded()
+        })
     }
 }
 
 extension ThumbnailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 30
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
