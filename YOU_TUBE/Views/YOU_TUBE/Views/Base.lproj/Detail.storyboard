@@ -159,21 +159,31 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="k4Q-Bb-QMU">
-                                <rect key="frame" x="5" y="381" width="149.66666666666666" height="30"/>
+                                <rect key="frame" x="5" y="381" width="173" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbt-ov-Jw3">
-                                        <rect key="frame" x="0.0" y="0.0" width="68.333333333333329" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="01t-jG-cbK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="인기순"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="내용순"/>
                                         <connections>
                                             <action selector="sortingPopularity:" destination="80D-5I-a8I" eventType="touchUpInside" id="Qnb-Qb-YEN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHZ-MN-8z4">
-                                        <rect key="frame" x="81.333333333333343" y="0.0" width="68.333333333333343" height="30"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="최신순"/>
+                                        <rect key="frame" x="93" y="0.0" width="80" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Q60-44-Dy5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="최신순"/>
                                         <connections>
                                             <action selector="latestOrderTapped:" destination="80D-5I-a8I" eventType="touchUpInside" id="mwr-5a-Qpr"/>
                                         </connections>

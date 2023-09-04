@@ -31,7 +31,7 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var downButton: UIButton!
     
-    @IBOutlet weak var popularOrder: UIButton!
+    @IBOutlet weak var contentsOrder: UIButton!
     
     @IBOutlet weak var latestOrder: UIButton!
     
@@ -46,6 +46,8 @@ class DetailController: UIViewController {
     var upCount = 0
     var downCount = 0
     
+    
+    
     //임시 데이터
     var commentArray: [Comment] = [
         Comment(userId: "test", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 0"),
@@ -55,9 +57,20 @@ class DetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        configuration()
+    }
+    
+    private func configuration() {
         tableView.dataSource = self
         tableView.delegate = self
         laodVideo()
+        contentsOrder.isSelected = true
+        latestOrder.isSelected = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
     }
     
     
@@ -99,13 +112,34 @@ class DetailController: UIViewController {
         //share()
     }
     
-    @IBAction func popularOrderTapped(_ sender: UIButton) {
+    @IBAction func contentsOrderTapped(_ sender: UIButton) {
+        if contentsOrder.isSelected {
+            //내용으로 순서 변경
+            commentArray.sort { $0.comment.count > $1.comment.count }
+            
+            contentsOrder.backgroundColor = .systemGray2
+            latestOrder.backgroundColor = .systemGray6
+            contentsOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+            latestOrder.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+            contentsOrder.isSelected = false
+            latestOrder.isSelected = true
+        }
         
     }
     
     
     @IBAction func latestOrderTapped(_ sender: UIButton) {
-        
+        if latestOrder.isSelected {
+            //최신순으로 순서 변경
+            commentArray.sort { $0.date > $1.date }
+            
+            contentsOrder.titleLabel?.font = UIFont.systemFont(ofSize: 17)
+            latestOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+            contentsOrder.backgroundColor = .systemGray6
+            latestOrder.backgroundColor = .systemGray2
+            contentsOrder.isSelected = true
+            latestOrder.isSelected = false
+        }
     }
     
     //댓글 추가
