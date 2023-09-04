@@ -95,7 +95,8 @@ class DetailController: UIViewController {
     }
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
-        
+        //변경예정
+        //share()
     }
     
     @IBAction func popularOrderTapped(_ sender: UIButton) {
@@ -115,7 +116,7 @@ class DetailController: UIViewController {
     }
     
     //date format 함수
-    func timeAgoString(from date: Date) -> String {
+    private func timeAgoString(from date: Date) -> String {
         let calendar = Calendar.current
         let now = Date()
         let components = calendar.dateComponents([.second, .minute, .hour, .day], from: date, to: now)
@@ -145,6 +146,16 @@ class DetailController: UIViewController {
         }
     }
     
+    // 게시물 공유 함수 (index 변경 예정)
+    private func share(index: IndexPath) {
+        //영상 url로 변경하기 추후에 네트워킹 데이터 받은 다음
+        let objectsToShare = commentArray[index.row]
+        let activityVC = UIActivityViewController(activityItems: [objectsToShare.comment], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = view
+        present(activityVC, animated: true)
+    }
+    
+    
     
 }
 
@@ -152,11 +163,12 @@ class DetailController: UIViewController {
 
 extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        return commentArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
+        
         
         return cell
     }
