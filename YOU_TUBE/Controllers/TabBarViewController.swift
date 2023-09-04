@@ -12,32 +12,18 @@ final class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTabbarController()
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        tabBar.tintColor = .label
+        tabBar.backgroundColor = .systemBackground
+
         tabBar.frame = .init(
             x: tabBar.frame.origin.x,
             y: tabBar.frame.origin.y - paddingTop,
             width: tabBar.frame.width,
             height: tabBar.frame.height + paddingTop
         )
-    }
-
-    func configureTabbarController() {
-        let thumbnailVC = ThumbnailController()
-        let profileVC = ProfileController()
-
-        thumbnailVC.title = "Main"
-        profileVC.title = "Profile"
-
-        thumbnailVC.tabBarItem.image = UIImage(systemName: "house")
-        profileVC.tabBarItem.image = UIImage(systemName: "person")
-
-        tabBar.tintColor = .label
-        tabBar.backgroundColor = .systemBackground
-
-        setViewControllers([thumbnailVC, profileVC], animated: false)
     }
 }

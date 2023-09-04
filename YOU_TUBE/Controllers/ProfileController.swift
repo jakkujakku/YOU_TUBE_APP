@@ -8,6 +8,7 @@
 import UIKit
 
 class ProfileController: UIViewController {
+    @IBOutlet weak var ProfileImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
