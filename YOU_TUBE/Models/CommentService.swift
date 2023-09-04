@@ -5,4 +5,22 @@
 //  Created by (^ㅗ^)7 iMac on 2023/09/04.
 //
 
-import Foundation
+import UIKit
+
+struct Comment {
+    
+    static var postNumber = 0
+    let userId: String
+    let userImage: UIImage
+    let date = Date()
+    let comment: String
+    
+    init(userId: String, userImage: UIImage, comment: String) {
+        self.userId = userId
+        self.userImage = userImage
+        self.comment = comment
+        Comment.postNumber += 1
+    }
+    
+    
+}
