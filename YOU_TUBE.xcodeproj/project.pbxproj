@@ -34,6 +34,7 @@
 		4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */; };
 		E70287982AA6B28200BC2E5B /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70287972AA6B28200BC2E5B /* ProfileEditViewController.swift */; };
 		FFEC440A2AA8103D00D76A00 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */; };
+		4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		E70287972AA6B28200BC2E5B /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
