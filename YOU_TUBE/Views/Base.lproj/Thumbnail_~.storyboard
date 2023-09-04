@@ -12,54 +12,34 @@
         <!--Tab Bar View Controller-->
         <scene sceneID="ahJ-IV-N4j">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewController" id="wnn-bB-4dk" customClass="TabBarViewController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="wnn-bB-4dk" customClass="TabBarViewController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ayS-Ig-wsH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <color key="tintColor" systemColor="labelColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="N45-sV-j1c" kind="relationship" relationship="viewControllers" id="nLp-kn-4eX"/>
-                        <segue destination="t2a-sT-ksX" kind="relationship" relationship="viewControllers" id="Nre-vN-AdH"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkW-F0-Mgr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2932" y="-834"/>
         </scene>
-        <!--Profile-->
-        <scene sceneID="r0S-Sw-hoC">
+        <!--View Controller-->
+        <scene sceneID="P81-SK-niR">
             <objects>
-                <viewController id="t2a-sT-ksX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ot0-Dp-37G">
+                <viewController id="XRq-iT-K89" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJo-Yw-3Ye">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qrL-B6-oKi"/>
+                        <viewLayoutGuide key="safeArea" id="ITp-f8-jxn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="k9M-fv-pk0"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UrE-af-B1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zS-YC-sD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2074" y="-445"/>
-        </scene>
-        <!--Thumbnail-->
-        <scene sceneID="rp3-Ae-F3b">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Thumbnail" id="N45-sV-j1c" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="IQ4-Up-dfw"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b47-jF-OVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2073" y="-1167"/>
+            <point key="canvasLocation" x="-1915" y="-1078"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person" catalog="system" width="128" height="121"/>
-        <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
