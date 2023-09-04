@@ -26,6 +26,7 @@
 		4EED5B202AA586B9006370E6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B1F2AA586B9006370E6 /* TabBarViewController.swift */; };
 		4EED5B2B2AA5BD53006370E6 /* Thumbnail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5B292AA5BD53006370E6 /* Thumbnail.storyboard */; };
 		4EED5B2E2AA5BD67006370E6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5B2C2AA5BD67006370E6 /* Profile.storyboard */; };
+		4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		4EED5B1F2AA586B9006370E6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4EED5B2A2AA5BD53006370E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YOU_TUBE/Views/Base.lproj/Thumbnail.storyboard; sourceTree = "<group>"; };
 		4EED5B2D2AA5BD67006370E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YOU_TUBE/Views/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				4EED5B122AA583A2006370E6 /* Detail.storyboard */,
 				4EED5B2C2AA5BD67006370E6 /* Profile.storyboard */,
 				4EED5AF32AA581B8006370E6 /* LaunchScreen.storyboard */,
+				4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				4EED5B1C2AA58405006370E6 /* SignUpController.swift in Sources */,
 				4EED5B1E2AA5845B006370E6 /* CommentService.swift in Sources */,
 				4EED5B022AA58212006370E6 /* MediaService.swift in Sources */,
+				4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */,
 				4EED5AE92AA581B5006370E6 /* AppDelegate.swift in Sources */,
 				4EED5B0B2AA582A3006370E6 /* ProfileController.swift in Sources */,
 				4EED5B072AA5827D006370E6 /* ThumbnailController.swift in Sources */,
