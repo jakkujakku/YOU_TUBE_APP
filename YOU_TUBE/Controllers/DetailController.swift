@@ -15,6 +15,11 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    //Networking Data
+    //var videoData: ?
+    
+    
+    //유저디폴트
     
     @IBOutlet weak var videoTitle: UILabel!
     
@@ -38,33 +43,75 @@ class DetailController: UIViewController {
     @IBOutlet weak var commentTextField: UITextField!
     
     
+    var upCount = 0
+    var downCount = 0
+    
+    //임시 데이터
+    var commentArray: [Comment] = [
+        Comment(userId: "test", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 0"),
+        Comment(userId: "test", userImage: (UIImage(systemName: "pencil") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 1")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         tableView.dataSource = self
         tableView.delegate = self
+        laodVideo()
     }
     
     
     @IBAction func upButtonTapped(_ sender: UIButton) {
+        if upButton.imageView?.image == UIImage(systemName: "hand.thumbsup") {
+            upCount += 1
+            //영상 데이터에 upcount 넣어주기
+            
+            self.upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+        } else {
+            upCount -= 1
+            
+            //영상 데이터에 upcount 넣어주기
+            self.upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+        }
+        //데이터 변화 - 유저디폴트 저장
+        
     }
     
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
+        if upButton.imageView?.image == UIImage(systemName: "hand.thumbsdown") {
+            upCount -= 1
+            //영상 데이터에 upcount 넣어주기
+            
+            self.upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+        } else {
+            upCount += 1
+            
+            //영상 데이터에 upcount 넣어주기
+            self.upButton.setImage(UIImage(systemName: "hand.thumbsdown.fill"), for: .normal)
+        }
+        //데이터 변화 - 유저디폴트 저장
+        
     }
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
+        
     }
     
     @IBAction func popularOrderTapped(_ sender: UIButton) {
+        
     }
     
     
     @IBAction func latestOrderTapped(_ sender: UIButton) {
+        
     }
     
+    //댓글 추가
     @IBAction func sendButtonTapped(_ sender: UIButton) {
+        let newData = Comment(userId: "test - \(Comment.postNumber)", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: commentTextField.text ?? "")
+        commentArray.append(newData)
+        
     }
     
     //date format 함수
@@ -88,6 +135,16 @@ class DetailController: UIViewController {
         
         return ""
     }
+    
+    //동영상 재생 요청
+    private func laodVideo() {
+        video.navigationDelegate = self
+        if let videoURL = URL(string: "") {
+            let request = URLRequest(url: videoURL)
+            video.load(request)
+        }
+    }
+    
     
 }
 

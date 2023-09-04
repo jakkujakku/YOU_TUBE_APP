@@ -18,6 +18,7 @@ class DetailPageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var comment: UILabel!
     
+    var isTextExpanded = false
     
     @IBOutlet weak var toSeeMoreButton: UIButton!
     
@@ -31,6 +32,16 @@ class DetailPageTableViewCell: UITableViewCell {
 
     
     @IBAction func toSeeMoreButtonTapped(_ sender: UIButton) {
+        isTextExpanded.toggle()
+        
+        if isTextExpanded {
+            comment.numberOfLines = 0
+            toSeeMoreButton.setTitle("접기", for: .normal)
+        } else {
+            comment.numberOfLines = 3
+            toSeeMoreButton.setTitle("...더보기", for: .normal)
+        }
+        
     }
     
     
