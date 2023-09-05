@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AX4-ni-Pi0">
-                                <rect key="frame" x="58" y="153" width="320" height="34"/>
+                                <rect key="frame" x="78" y="153" width="300" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="RH8-ZU-cAH"/>
+                                    <constraint firstAttribute="width" constant="300" id="RH8-ZU-cAH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -38,17 +38,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkr-93-Jxx">
-                                <rect key="frame" x="58" y="194" width="320" height="34"/>
+                                <rect key="frame" x="78" y="194" width="300" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="9fF-DW-xVg"/>
+                                    <constraint firstAttribute="width" constant="300" id="9fF-DW-xVg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="lAf-5M-AiE">
-                                <rect key="frame" x="31.666666666666657" y="261" width="330" height="330"/>
+                                <rect key="frame" x="71.666666666666686" y="301" width="250" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="DTX-bo-Rmj"/>
+                                    <constraint firstAttribute="width" constant="250" id="DTX-bo-Rmj"/>
                                     <constraint firstAttribute="width" secondItem="lAf-5M-AiE" secondAttribute="height" multiplier="1:1" id="OvD-I4-6Hy"/>
                                 </constraints>
                             </imageView>
@@ -162,7 +162,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BOA-DU-6z1">
-                                <rect key="frame" x="88.666666666666657" y="492" width="294.33333333333337" height="34"/>
+                                <rect key="frame" x="83" y="492" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1Ec-th-Zyn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -195,7 +198,6 @@
                             <constraint firstItem="9Ca-EU-x49" firstAttribute="leading" secondItem="uJ1-sY-D0t" secondAttribute="leading" constant="170" id="Py6-uV-7tf"/>
                             <constraint firstItem="uJ1-sY-D0t" firstAttribute="trailing" secondItem="m4A-Wt-CcF" secondAttribute="trailing" constant="156.33000000000001" id="SS4-YX-vne"/>
                             <constraint firstItem="6xc-KC-5gf" firstAttribute="top" secondItem="m4A-Wt-CcF" secondAttribute="bottom" constant="25" id="XVo-GJ-eqa"/>
-                            <constraint firstItem="BOA-DU-6z1" firstAttribute="leading" secondItem="94D-V7-jhp" secondAttribute="trailing" constant="28.670000000000002" id="Y4p-hg-rlI"/>
                             <constraint firstItem="uJ1-sY-D0t" firstAttribute="bottom" secondItem="9Ca-EU-x49" secondAttribute="bottom" constant="75" id="c66-Wv-INV"/>
                             <constraint firstItem="94D-V7-jhp" firstAttribute="leading" secondItem="uJ1-sY-D0t" secondAttribute="leading" constant="10" id="dG6-aX-cvs"/>
                             <constraint firstItem="94D-V7-jhp" firstAttribute="top" secondItem="4cu-Wl-MDj" secondAttribute="bottom" constant="47" id="ehk-rk-pG2"/>
