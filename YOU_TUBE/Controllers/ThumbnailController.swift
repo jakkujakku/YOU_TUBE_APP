@@ -49,7 +49,7 @@ class ThumbnailController: UIViewController {
 
 extension ThumbnailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return 15
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -68,18 +68,18 @@ extension ThumbnailController: UICollectionViewDelegate {
 extension ThumbnailController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let interItemSpacing: CGFloat = 10
-        let padding: CGFloat = 15
+        let padding: CGFloat = 10
 
-        let width = (collectionView.bounds.width - interItemSpacing * 2 - padding * 2) / 3
+        let width = (collectionView.bounds.width - interItemSpacing - padding) / 2
         let height = width
         return CGSize(width: width, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 15
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 15
     }
 }
