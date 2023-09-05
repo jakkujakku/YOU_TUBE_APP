@@ -24,6 +24,8 @@ class DetailPageTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        commentUserImage.layer.cornerRadius = commentUserImage.frame.height / 2
+        commentUserImage.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

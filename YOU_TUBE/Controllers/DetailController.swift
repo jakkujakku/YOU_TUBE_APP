@@ -37,6 +37,7 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var latestOrder: UIButton!
     
+    @IBOutlet weak var shareButton: UIButton!
     
     @IBOutlet weak var userImage: UIImageView!
     
@@ -60,16 +61,42 @@ class DetailController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         configuration()
+        configUI()
+        laodVideo()
     }
     
     private func configuration() {
         tableView.dataSource = self
         tableView.delegate = self
-        laodVideo()
         contentsOrder.isSelected = true
         latestOrder.isSelected = false
         indicator.isHidden = false
         video.isHidden = true
+    }
+    
+    
+    private func configUI() {
+        userImage.layer.cornerRadius = userImage.frame.height / 2
+        upButton.layer.cornerRadius = 10
+        downButton.layer.cornerRadius = 10
+        latestOrder.layer.cornerRadius = 10
+        contentsOrder.layer.cornerRadius = 10
+        shareButton.layer.cornerRadius = 10
+        
+        userImage.clipsToBounds = true
+        upButton.clipsToBounds = true
+        downButton.clipsToBounds = true
+        latestOrder.clipsToBounds = true
+        contentsOrder.clipsToBounds = true
+        shareButton.clipsToBounds = true
+//        tableView.rowHeight = 120
+    }
+    
+    private func dataConfigUI() {
+//        videoTitle.text =
+//        readCount.text =
+//        publishedDate.text =
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,6 +105,7 @@ class DetailController: UIViewController {
     }
     
     
+    //API JSON 파일의 구조체 프로퍼티에 영향을 받아 값을 변경 저장, 값 불러오기
     @IBAction func upButtonTapped(_ sender: UIButton) {
         if upButton.imageView?.image == UIImage(systemName: "hand.thumbsup") {
             upCount += 1
@@ -216,6 +244,10 @@ extension DetailController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return UITableView.automaticDimension
+        }
     
 }
 

@@ -29,7 +29,7 @@
                                                     <constraint firstAttribute="width" secondItem="VLc-pL-MUQ" secondAttribute="height" multiplier="1:1" id="aYm-w8-9Nb"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baU-Bm-wGe">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baU-Bm-wGe">
                                                 <rect key="frame" x="0.0" y="46" width="44" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="14" id="qPh-zz-Rcf"/>
@@ -317,6 +317,7 @@
                         <outlet property="latestOrder" destination="NHZ-MN-8z4" id="RJb-hU-dle"/>
                         <outlet property="publishedDate" destination="lhI-K6-qTT" id="3Ds-w5-0DN"/>
                         <outlet property="readCount" destination="grP-FR-olY" id="m3O-L6-bbo"/>
+                        <outlet property="shareButton" destination="Y9h-Sy-VVV" id="HSc-hz-Vjg"/>
                         <outlet property="sortingPopularity" destination="bbt-ov-Jw3" id="XeZ-cq-yA2"/>
                         <outlet property="tableView" destination="5Ar-v4-Gam" id="akJ-UJ-PmP"/>
                         <outlet property="title" destination="Zfo-6d-NCc" id="Mpz-BN-oQf"/>
