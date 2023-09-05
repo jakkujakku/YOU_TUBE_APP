@@ -59,7 +59,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HH5-3C-xCd" kind="show" id="Lsl-s1-46y"/>
+                                    <segue destination="HH5-3C-xCd" kind="show" id="Gnu-xc-hol"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwL-gr-iUZ">
@@ -69,7 +69,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="Membership:" destination="t2a-sT-ksX" eventType="touchUpInside" id="oCA-hk-l8G"/>
+                                    <action selector="memberShip:" destination="t2a-sT-ksX" eventType="touchUpInside" id="4df-NU-773"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="485-WT-Jbf">
@@ -79,7 +79,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="LogoutButton:" destination="t2a-sT-ksX" eventType="touchUpInside" id="feF-zo-yQS"/>
+                                    <action selector="logoutButton:" destination="t2a-sT-ksX" eventType="touchUpInside" id="4Ac-Xe-QDr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,7 +108,9 @@
                     <navigationItem key="navigationItem" id="o2J-c0-pro"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ProfileImageView" destination="lAf-5M-AiE" id="HgG-Cx-axO"/>
+                        <outlet property="emailTextField" destination="dkr-93-Jxx" id="Pg1-8i-hxQ"/>
+                        <outlet property="nameTextField" destination="AX4-ni-Pi0" id="BCG-2R-5VJ"/>
+                        <outlet property="profileImageView" destination="lAf-5M-AiE" id="PDj-ex-WpB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UrE-af-B1T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -139,7 +141,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="EditButton:" destination="HH5-3C-xCd" eventType="touchUpInside" id="xcL-Qy-OiF"/>
+                                    <action selector="editButton:" destination="HH5-3C-xCd" eventType="touchUpInside" id="pZd-Nf-Zep"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-KC-5gf">
@@ -170,6 +172,9 @@
                                 <state key="normal" title="저장">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveButton:" destination="HH5-3C-xCd" eventType="touchUpInside" id="44F-TV-PDH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-Wl-MDj">
                                 <rect key="frame" x="10" y="425" width="30" height="21"/>
@@ -203,8 +208,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="O5O-bv-F5U"/>
                     <connections>
-                        <outlet property="ImageView" destination="3Tx-FI-MLB" id="bfd-KA-aIG"/>
-                        <outlet property="OpenPhotosButton" destination="9X9-WG-ffV" id="CXa-gG-alt"/>
+                        <outlet property="emailTextField" destination="BOA-DU-6z1" id="YfM-5s-2Oh"/>
+                        <outlet property="imageView" destination="3Tx-FI-MLB" id="cAZ-eM-MKL"/>
+                        <outlet property="nameTextField" destination="6xc-KC-5gf" id="epB-Kb-Mi6"/>
+                        <outlet property="openPhotosButton" destination="9X9-WG-ffV" id="ooe-Z8-Fxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dr-mb-p7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
