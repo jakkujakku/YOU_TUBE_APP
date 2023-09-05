@@ -13,4 +13,15 @@ class ProfileController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
     }
+
+    @IBAction func Membership(_ sender: UIButton) {
+        // alert (제목, 메시지, alert종류) 지정
+        let alert = UIAlertController(title: "회원삭제", message: "회원삭제 하시겠습니까?", preferredStyle: .alert)
+        let confirm = UIAlertAction(title: "확인", style: .default, handler: nil)
+        let close = UIAlertAction(title: "취소", style: .destructive, handler: nil)
+
+        alert.addAction(confirm)
+        alert.addAction(close)
+        present(alert, animated: true, completion: nil)
+    }
 }
