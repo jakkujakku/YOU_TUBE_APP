@@ -13,6 +13,8 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var video: WKWebView!
     
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     @IBOutlet weak var tableView: UITableView!
     
     //Networking Data
@@ -66,6 +68,8 @@ class DetailController: UIViewController {
         laodVideo()
         contentsOrder.isSelected = true
         latestOrder.isSelected = false
+        indicator.isHidden = false
+        video.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -123,6 +127,7 @@ class DetailController: UIViewController {
             latestOrder.titleLabel?.font = UIFont.systemFont(ofSize: 17)
             contentsOrder.isSelected = false
             latestOrder.isSelected = true
+            tableView.reloadData()
         }
         
     }
@@ -139,6 +144,7 @@ class DetailController: UIViewController {
             latestOrder.backgroundColor = .systemGray2
             contentsOrder.isSelected = true
             latestOrder.isSelected = false
+            tableView.reloadData()
         }
     }
     
@@ -211,15 +217,33 @@ extension DetailController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
 }
 
 
-
-
 extension DetailController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        //페이지 로드 -> 자동 동영상 재생
-        //동영상 재생 제어 버튼 추가.
+    
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        print("로딩 시작")
+        indicator.startAnimating()
+        indicator.isHidden = false
+        video.isHidden = true
+        
     }
+    
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("로드완료")
+        indicator.stopAnimating()
+        indicator.isHidden = true
+        video.isHidden = false
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        let errorMessage = error.localizedDescription
+        let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
+        let okay = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okay)
+        present(alert, animated: true)
+    }
+    
 }

@@ -74,7 +74,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="9UI-5o-GtY">
                                 <rect key="frame" x="5" y="0.0" width="383" height="270"/>
                                 <subviews>
-                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8e-IE-UEx">
+                                    <wkWebView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8e-IE-UEx">
                                         <rect key="frame" x="0.0" y="0.0" width="383" height="270"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -85,10 +85,15 @@
                                             <wkPreferences key="preferences"/>
                                         </wkWebViewConfiguration>
                                     </wkWebView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4EF-4j-s2q">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="270"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="4EF-4j-s2q" firstAttribute="centerY" secondItem="9UI-5o-GtY" secondAttribute="centerY" id="7CU-dW-mRF"/>
                                     <constraint firstItem="I8e-IE-UEx" firstAttribute="top" secondItem="9UI-5o-GtY" secondAttribute="top" id="Ai3-C5-Seh"/>
                                     <constraint firstAttribute="bottom" secondItem="I8e-IE-UEx" secondAttribute="bottom" id="WRn-72-Awi"/>
+                                    <constraint firstItem="4EF-4j-s2q" firstAttribute="centerX" secondItem="9UI-5o-GtY" secondAttribute="centerX" id="iW2-4i-yfO"/>
                                     <constraint firstItem="I8e-IE-UEx" firstAttribute="leading" secondItem="9UI-5o-GtY" secondAttribute="leading" id="w3L-vE-GIE"/>
                                     <constraint firstAttribute="trailing" secondItem="I8e-IE-UEx" secondAttribute="trailing" id="zhw-CD-sW9"/>
                                 </constraints>
@@ -308,6 +313,7 @@
                     <connections>
                         <outlet property="commentTextField" destination="dGy-Xi-ILG" id="AcL-Qt-y4I"/>
                         <outlet property="downButton" destination="WYR-6N-Ufn" id="Z8E-fS-K4Z"/>
+                        <outlet property="indicator" destination="4EF-4j-s2q" id="p6j-wi-uZk"/>
                         <outlet property="latestOrder" destination="NHZ-MN-8z4" id="RJb-hU-dle"/>
                         <outlet property="publishedDate" destination="lhI-K6-qTT" id="3Ds-w5-0DN"/>
                         <outlet property="readCount" destination="grP-FR-olY" id="m3O-L6-bbo"/>
