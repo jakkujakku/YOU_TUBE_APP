@@ -115,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="-1147.3282442748091" y="-445.07042253521126"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Edit View Controller-->
         <scene sceneID="NCm-QI-2iF">
             <objects>
-                <viewController id="HH5-3C-xCd" sceneMemberID="viewController">
+                <viewController id="HH5-3C-xCd" customClass="ProfileEditViewController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9X9-WG-ffV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,6 +138,9 @@
                                 <state key="normal" title="사진 수정">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="EditButton:" destination="HH5-3C-xCd" eventType="touchUpInside" id="xcL-Qy-OiF"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-KC-5gf">
                                 <rect key="frame" x="83" y="423" width="300" height="34"/>
@@ -199,6 +202,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O5O-bv-F5U"/>
+                    <connections>
+                        <outlet property="ImageView" destination="3Tx-FI-MLB" id="bfd-KA-aIG"/>
+                        <outlet property="OpenPhotosButton" destination="9X9-WG-ffV" id="CXa-gG-alt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dr-mb-p7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
