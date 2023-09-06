@@ -26,6 +26,7 @@
 		4EED5B202AA586B9006370E6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B1F2AA586B9006370E6 /* TabBarViewController.swift */; };
 		4EED5B2B2AA5BD53006370E6 /* Thumbnail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5B292AA5BD53006370E6 /* Thumbnail.storyboard */; };
 		4EED5B2E2AA5BD67006370E6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5B2C2AA5BD67006370E6 /* Profile.storyboard */; };
+		FFEC440A2AA8103D00D76A00 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		4EED5B1F2AA586B9006370E6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4EED5B2A2AA5BD53006370E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YOU_TUBE/Views/Base.lproj/Thumbnail.storyboard; sourceTree = "<group>"; };
 		4EED5B2D2AA5BD67006370E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YOU_TUBE/Views/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				4EED5B1F2AA586B9006370E6 /* TabBarViewController.swift */,
 				4EED5B042AA5825F006370E6 /* LoginController.swift */,
+				FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */,
 				4EED5B1B2AA58405006370E6 /* SignUpController.swift */,
 				4EED5B062AA5827D006370E6 /* ThumbnailController.swift */,
 				4EED5B082AA58291006370E6 /* DetailController.swift */,
@@ -217,6 +220,7 @@
 				4EED5B092AA58291006370E6 /* DetailController.swift in Sources */,
 				4EED5B052AA5825F006370E6 /* LoginController.swift in Sources */,
 				4EED5B202AA586B9006370E6 /* TabBarViewController.swift in Sources */,
+				FFEC440A2AA8103D00D76A00 /* RegisterViewController.swift in Sources */,
 				4EED5B1C2AA58405006370E6 /* SignUpController.swift in Sources */,
 				4EED5B1E2AA5845B006370E6 /* CommentService.swift in Sources */,
 				4EED5B022AA58212006370E6 /* MediaService.swift in Sources */,
