@@ -94,14 +94,10 @@ class ThumbnailController: UIViewController {
 
 extension ThumbnailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-<<<<<<< HEAD
         if let element = thumbnailInfoList.first?.items.count {
             return element
         }
         return 0
-=======
-        return 15
->>>>>>> 5e2adb7 ([FEAT]: MediaService 모델 내용 추가)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
