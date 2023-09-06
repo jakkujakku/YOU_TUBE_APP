@@ -45,7 +45,7 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var commentTextField: UITextField!
     
-    
+    //나중에 유튜브 좋아요 수로 변경
     var upCount = 0
     var downCount = 0
     
@@ -62,7 +62,7 @@ class DetailController: UIViewController {
         view.backgroundColor = .systemBackground
         configuration()
         configUI()
-        laodVideo()
+        laodVideo(videoID: "")
     }
     
     private func configuration() {
@@ -90,6 +90,7 @@ class DetailController: UIViewController {
         contentsOrder.clipsToBounds = true
         shareButton.clipsToBounds = true
 //        tableView.rowHeight = 120
+        commentTextField.placeholder = "댓글을 입력해 주세요."
     }
     
     private func dataConfigUI() {
@@ -181,6 +182,9 @@ class DetailController: UIViewController {
         let newData = Comment(userId: "test - \(Comment.postNumber)", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: commentTextField.text ?? "")
         commentArray.append(newData)
         
+        //값 저장유저디폴트
+    
+        tableView.reloadData()
     }
     
     //date format 함수
@@ -206,9 +210,9 @@ class DetailController: UIViewController {
     }
     
     //동영상 재생 요청
-    private func laodVideo() {
+    private func laodVideo(videoID: String) {
         video.navigationDelegate = self
-        if let videoURL = URL(string: "") {
+        if let videoURL = URL(string: "https://www.youtube.com/embed/\(videoID)") {
             let request = URLRequest(url: videoURL)
             video.load(request)
         }
@@ -228,7 +232,7 @@ class DetailController: UIViewController {
 }
 
 
-
+//유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라
 extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return commentArray.count
