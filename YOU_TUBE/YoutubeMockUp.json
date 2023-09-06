@@ -1,0 +1,1706 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "3ay6MCUKk2msQfbTCSQm1lUoNGA",
+  "nextPageToken": "CDIQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pubwF7lFEht53aYPkMbiThcruY8",
+      "id": {
+        "kind": "youtube#channel",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA"
+      },
+      "snippet": {
+        "publishedAt": "2019-08-14T13:37:40Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "PAKA",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AOPolaQd2I4iQTPCAPBQB3ybH4lhtWPWGbBgJ5fBnLZmjw=s88-c-k-c0xffffffff-no-rj-mo"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AOPolaQd2I4iQTPCAPBQB3ybH4lhtWPWGbBgJ5fBnLZmjw=s240-c-k-c0xffffffff-no-rj-mo"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AOPolaQd2I4iQTPCAPBQB3ybH4lhtWPWGbBgJ5fBnLZmjw=s800-c-k-c0xffffffff-no-rj-mo"
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-08-14T13:37:40Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "kdUmuiXjF1Vdo7xaXJFslyZZWzs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6jkFXxFQxHM"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-28T08:30:02Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "15게임 헌터",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6jkFXxFQxHM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6jkFXxFQxHM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6jkFXxFQxHM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-28T08:30:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "MybNcejWD7p--u4sCB6HxRNkEiI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ePiDYHeF2Zk"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-16T09:15:06Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "자본주의 체스",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ePiDYHeF2Zk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ePiDYHeF2Zk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ePiDYHeF2Zk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-16T09:15:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "amyZUUCoGOq9NPBqma8VQULaSXY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "NuU0fSbUp0c"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-29T06:00:09Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "우리 개는 물어요",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/NuU0fSbUp0c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/NuU0fSbUp0c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/NuU0fSbUp0c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-29T06:00:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "K7lbUc_JfixA9ZIsGJn6pycQuNo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "WXW7CVJcgj8"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-31T08:30:16Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "이니시 전문가",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WXW7CVJcgj8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WXW7CVJcgj8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WXW7CVJcgj8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-31T08:30:16Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "CAQ8ki4pMmtZVqDccvQqziz9aTQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gcZT9voX85M"
+      },
+      "snippet": {
+        "publishedAt": "2023-09-03T08:30:09Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "원딜의 악몽",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gcZT9voX85M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gcZT9voX85M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gcZT9voX85M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-09-03T08:30:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "DJYHEfeHvSazs6r534BF0kCiTgE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QpmF0gSzuLk"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-21T09:02:04Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "톱카츄",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QpmF0gSzuLk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QpmF0gSzuLk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QpmF0gSzuLk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-21T09:02:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Syy4PJlm16LJPKX4rzD39P3_uu0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "h_OjnH5mxBw"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-25T08:00:31Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "프렌드쉴드",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/h_OjnH5mxBw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/h_OjnH5mxBw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/h_OjnH5mxBw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-25T08:00:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "DA1MpgUcmot_p4iXTq8uCWSViRE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0OyzjMiHzEg"
+      },
+      "snippet": {
+        "publishedAt": "2023-09-03T23:00:08Z",
+        "channelId": "UC_E8aoEizrSqkXFJ4zBF95Q",
+        "title": "Dirty Paka - Verdades Ocultas 🤫",
+        "description": "Verdades Ocultas Redes de cantantes https://n9.cl/dmo5d Shot By https://n9.cl/okt0u https://n9.cl/u726g ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0OyzjMiHzEg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0OyzjMiHzEg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0OyzjMiHzEg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Dirty Paka",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-09-03T23:00:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "wwilMku1DZvutZIGeBLtk-aCdGM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "A4gKnq_oRAw"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-22T12:01:32Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "협곡 도전기",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/A4gKnq_oRAw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/A4gKnq_oRAw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/A4gKnq_oRAw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-22T12:01:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Gxuy8HEuKbRtGv1N_LkW0N2IUNA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "cUvuSgij3Qk"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-11T09:00:32Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "FC 라이즈 [롤토체스]",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cUvuSgij3Qk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cUvuSgij3Qk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cUvuSgij3Qk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-11T09:00:32Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Ddyp5HzjojPNPzeZKKbiCArI-1Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "i-t8YpaslB4"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-20T10:23:23Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "드래곤 부스터",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/i-t8YpaslB4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/i-t8YpaslB4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/i-t8YpaslB4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-20T10:23:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "TDNowWg6rkqoKZJJK6VP_G7IFIY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "oXWESTuoKls"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-15T08:00:31Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "초대형거인 [롤토체스]",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oXWESTuoKls/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oXWESTuoKls/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oXWESTuoKls/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-15T08:00:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3p9T_3UjZZs643mrCnpn5MVTu9w",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "HbTTDJFn-k4"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-18T10:32:36Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "협곡의 지휘관",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HbTTDJFn-k4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HbTTDJFn-k4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HbTTDJFn-k4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-18T10:32:36Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IfQDxkrTcAD2Gk-ZjeZA7QQ_DJ0",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kbfJmaj0Xbs"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-26T09:16:08Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "자운 라이즈",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kbfJmaj0Xbs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kbfJmaj0Xbs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kbfJmaj0Xbs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-26T09:16:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "W-8bc_2rxezlL_Q6o-sl8IEU-Jc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sWMSxrzK_CE"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-01T08:30:21Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "스님 듀오",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sWMSxrzK_CE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sWMSxrzK_CE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sWMSxrzK_CE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-01T08:30:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "5v1mOEfR4jSeWjGv9r5HuDWgqtU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "1fnN2TeCHxI"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-20T08:55:11Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "무력의 티모",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/1fnN2TeCHxI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/1fnN2TeCHxI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/1fnN2TeCHxI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-20T08:55:11Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ovUHqDzI5Vcme5EWTlEsO1ovxD4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "EwMJ0-UtQV0"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-24T08:15:00Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "눈도 깜짝 안 한다",
+        "description": "좀 늦었습니다 파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/EwMJ0-UtQV0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/EwMJ0-UtQV0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/EwMJ0-UtQV0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-24T08:15:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "6WpwUTVPt7FwpvNpIn0ZoRFsuXE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "2CB78ZIKdsU"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-09T10:02:00Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "벨트 카시오페아",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2CB78ZIKdsU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2CB78ZIKdsU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2CB78ZIKdsU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-09T10:02:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "iBvFjB2z3sjQVWLEcwJmvZZVkHI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ikhYApFMTyI"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-11T09:08:40Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "막아야 한다",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ikhYApFMTyI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ikhYApFMTyI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ikhYApFMTyI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-11T09:08:40Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "IoKtXaB1Hsp1jIgnrLDfN2KK7EE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "UkI56Hw5r7Y"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-08T08:31:06Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "스태틱 아칼리",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UkI56Hw5r7Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UkI56Hw5r7Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UkI56Hw5r7Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-08T08:31:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "KHwbvrT35yWKZYjpKBoFhM6MorM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "L3mGjhpP9Ew"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-16T09:27:56Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "자연재해 요네",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/L3mGjhpP9Ew/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/L3mGjhpP9Ew/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/L3mGjhpP9Ew/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-16T09:27:56Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "UepgKonusnovON4w5eHpwpw8468",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "bIM-8DHHrOE"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-07T08:00:26Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "타이거",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bIM-8DHHrOE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bIM-8DHHrOE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bIM-8DHHrOE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-07T08:00:26Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8p7BNC3F3p1a1QlI-PTynlxfUPs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "SjfpFvCJaTk"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-23T09:00:17Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "오토 이렐리아",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/SjfpFvCJaTk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/SjfpFvCJaTk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/SjfpFvCJaTk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-23T09:00:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "EehIORQ2O30-HhceXXMYG97i2Tc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "yJ7ddgLwBDs"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-19T10:34:20Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "강아지 감별사",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yJ7ddgLwBDs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yJ7ddgLwBDs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yJ7ddgLwBDs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-19T10:34:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "rwk5qKvjYevYiNzY16ICywWq9q4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "vibtqthH_4Q"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-28T08:50:03Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "쇠만쇠",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vibtqthH_4Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vibtqthH_4Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vibtqthH_4Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-28T08:50:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9N3ehG_oYoGCnqyitqNDPVPzQYE",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-2iewnHLbfE"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-20T08:30:00Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "모든 걸 의심하라",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-2iewnHLbfE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-2iewnHLbfE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-2iewnHLbfE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-20T08:30:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aE_O0tQbakH0ESQKyTL0vXChXfA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6lxpPdMlw2c"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-01T11:30:02Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "날렵경쾌",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6lxpPdMlw2c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6lxpPdMlw2c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6lxpPdMlw2c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-01T11:30:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Ea-NQY93Cu1piWemPiXBJAuX9D8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "P73MmU_fW4o"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-24T10:17:33Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "미드 상륙작전",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/P73MmU_fW4o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/P73MmU_fW4o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/P73MmU_fW4o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-24T10:17:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "0yndKGAN_sxJaSmiCnrJBMSliII",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_MdlrvttfPw"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-27T09:11:12Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "코끼리 사냥꾼",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_MdlrvttfPw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_MdlrvttfPw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_MdlrvttfPw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-27T09:11:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "PaM8oKfkkKIHRBYES_K7O3dlzbY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "c8f0dlD-mBQ"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-16T09:00:31Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "공방일체",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/c8f0dlD-mBQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/c8f0dlD-mBQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/c8f0dlD-mBQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-16T09:00:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "O7FQxZdsU_DUciB6QtjWrOPlAnI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "jRuDF9kWaMw"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-22T12:00:35Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "방밀전사",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jRuDF9kWaMw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jRuDF9kWaMw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jRuDF9kWaMw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-22T12:00:35Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "38pRNrtAZJ_6Sc89Bru9unEyXNA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "F3T9HIyns8Y"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-14T08:45:00Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "케일 하는건 부끄럽지만 팀에 도움이 된다",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/F3T9HIyns8Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/F3T9HIyns8Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/F3T9HIyns8Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-14T08:45:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4T39qba_h0Wz4H1mcSzBmNdAb48",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "oBFKBt-Tjg8"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-29T08:30:21Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "환관 이렐리아",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oBFKBt-Tjg8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oBFKBt-Tjg8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oBFKBt-Tjg8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-29T08:30:21Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "HEaCPP4dCnZ9Bu3B-qPoM41alJk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "eojiSgzA3hU"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-11T08:30:10Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "너 납치된 거야",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eojiSgzA3hU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eojiSgzA3hU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eojiSgzA3hU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-11T08:30:10Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "aFERF47MuReOPlwXADsuGT_QgaI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "3nfCs8Y_aGU"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-22T08:30:02Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "티모 사냥개",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/3nfCs8Y_aGU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/3nfCs8Y_aGU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/3nfCs8Y_aGU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-22T08:30:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pNPSEVwrah_-tBatEpSHegX5bgc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "4B98Yha8mPA"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-24T08:30:03Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "통곡의 벽",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4B98Yha8mPA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4B98Yha8mPA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4B98Yha8mPA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-24T08:30:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-_nqkiUzOP5nyyUb5JzSejGFkmg",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "MQQeSmVs7eo"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-09T10:30:12Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "공포의 그림자",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MQQeSmVs7eo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MQQeSmVs7eo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MQQeSmVs7eo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-09T10:30:12Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "lbY3ZfbHA3HCic2IS9_pFB6uVEM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "hCH_JuqIppc"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-07T09:09:54Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "협곡의 탱크",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hCH_JuqIppc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hCH_JuqIppc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hCH_JuqIppc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-07T09:09:54Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "THvz3HOUd-8_O0SJUIffVHtU9zA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "C4gdk7YweTM"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-14T09:42:37Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "똑똑 목수가 왔어요",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/C4gdk7YweTM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/C4gdk7YweTM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/C4gdk7YweTM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-14T09:42:37Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "e0tBEDIV76Fc-7evA8qmhQ5Y02Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "XyfXXTF6wWY"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-17T10:00:20Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "불도저 그웬2",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XyfXXTF6wWY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XyfXXTF6wWY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XyfXXTF6wWY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-17T10:00:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "sAtpEIWKRdczU8JUhvea9WZhwiY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "beY5w6MyRYg"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-29T09:57:31Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "박수 말파이트",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/beY5w6MyRYg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/beY5w6MyRYg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/beY5w6MyRYg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-29T09:57:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "RwdeRJ0zWM67jWlIvqoaev397AM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "BREACa4DK-4"
+      },
+      "snippet": {
+        "publishedAt": "2023-03-31T10:00:05Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "숟가락 대전",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BREACa4DK-4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BREACa4DK-4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BREACa4DK-4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-03-31T10:00:05Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4j8sUJ8Y1-WG3e0phSo8QM6zNco",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "srI5ly11nng"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-14T09:08:09Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "협곡의 킹콩",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/srI5ly11nng/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/srI5ly11nng/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/srI5ly11nng/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-14T09:08:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "JICGHdXT7KwpC2tdyQpWuRuFEGc",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mxpOvXUFO6M"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-24T12:00:43Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "학트다 학트",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mxpOvXUFO6M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mxpOvXUFO6M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mxpOvXUFO6M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-24T12:00:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-RG0Vd65i7sjg4MhBQ1PYPCAmv4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "rUx3mOsf2_g"
+      },
+      "snippet": {
+        "publishedAt": "2023-04-27T09:40:42Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "바라만 봐도 이기는 챔프",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rUx3mOsf2_g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rUx3mOsf2_g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rUx3mOsf2_g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-04-27T09:40:42Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "a_3bST5g1DETN9sLzzYbz0uND8Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "kXiNrSkYsQg"
+      },
+      "snippet": {
+        "publishedAt": "2023-08-18T09:12:28Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "제리 타임",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kXiNrSkYsQg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kXiNrSkYsQg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kXiNrSkYsQg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-08-18T09:12:28Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "BG5NJSLEvilRY_ItYhefuSTYGAk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "9IlXbp6hSk4"
+      },
+      "snippet": {
+        "publishedAt": "2023-05-18T08:30:03Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "지옥행 열차",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9IlXbp6hSk4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9IlXbp6hSk4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9IlXbp6hSk4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-05-18T08:30:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "O-X569qfV7HfPIPcB5c4pnvERRw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8A98XKDpu-0"
+      },
+      "snippet": {
+        "publishedAt": "2023-07-25T11:00:08Z",
+        "channelId": "UC98g3WEKWi4ud-z7s-E_XXg",
+        "title": "Intruz - Paka na stół (prod. Phono CoZaBit)",
+        "description": "Zamów album: https://preorder.pl/intruz Intruz na FB: https://www.facebook.com/INTruzik/ Intruz na IG: ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8A98XKDpu-0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8A98XKDpu-0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8A98XKDpu-0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Prima Sort",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-07-25T11:00:08Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "nxYkFywqFspfFrylx8msoTrPgXI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "6VspR7HdQ74"
+      },
+      "snippet": {
+        "publishedAt": "2023-06-05T11:25:37Z",
+        "channelId": "UCJpAwvQaZyCI5spAz7tipGA",
+        "title": "데이지와 대이지",
+        "description": "파카 생방송: https://www.twitch.tv/paka9999 파카 이메일 - soninuki@gmail.com.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/6VspR7HdQ74/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/6VspR7HdQ74/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/6VspR7HdQ74/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "PAKA",
+        "liveBroadcastContent": "none",
+        "publishTime": "2023-06-05T11:25:37Z"
+      }
+    }
+  ]
+}
