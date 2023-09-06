@@ -13,7 +13,7 @@ struct ThumbnailInfo: Codable {
     let nextPageToken: String
     let regionCode: String
     let pageInfo: PageInfo
-    let items: [Items]
+    var items: [Items]
 
     enum CodingKeys: String, CodingKey {
         case kind
@@ -56,9 +56,9 @@ struct Thumbnails: Codable {
     let `default`: Default
     let medium: Medium
     let high: High
-    
+
     enum CodingKeys: String, CodingKey {
-        case `default` = "default"
+        case `default`
         case medium
         case high
     }

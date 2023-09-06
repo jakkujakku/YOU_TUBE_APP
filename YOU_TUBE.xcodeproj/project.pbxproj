@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1B1BC42AA82CFC00D34BBF /* YoutubeMockUp.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E1B1BC32AA82CFC00D34BBF /* YoutubeMockUp.json */; };
+		4E1B1BCA2AA8472100D34BBF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4E1B1BC92AA8472100D34BBF /* Kingfisher */; };
 		4EED5AE92AA581B5006370E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5AE82AA581B5006370E6 /* AppDelegate.swift */; };
 		4EED5AEB2AA581B5006370E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5AEA2AA581B5006370E6 /* SceneDelegate.swift */; };
 		4EED5AF02AA581B5006370E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5AEE2AA581B5006370E6 /* Main.storyboard */; };
@@ -30,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E1B1BC32AA82CFC00D34BBF /* YoutubeMockUp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = YoutubeMockUp.json; sourceTree = "<group>"; };
 		4EED5AE52AA581B5006370E6 /* YOU_TUBE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOU_TUBE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EED5AE82AA581B5006370E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EED5AEA2AA581B5006370E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1B1BCA2AA8472100D34BBF /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 				4EED5AFD2AA581CA006370E6 /* Views */,
 				4EED5AFE2AA581D6006370E6 /* Controllers */,
 				4EED5AF62AA581B8006370E6 /* Info.plist */,
+				4E1B1BC32AA82CFC00D34BBF /* YoutubeMockUp.json */,
 			);
 			path = YOU_TUBE;
 			sourceTree = "<group>";
@@ -157,6 +162,9 @@
 			dependencies = (
 			);
 			name = YOU_TUBE;
+			packageProductDependencies = (
+				4E1B1BC92AA8472100D34BBF /* Kingfisher */,
+			);
 			productName = YOU_TUBE;
 			productReference = 4EED5AE52AA581B5006370E6 /* YOU_TUBE.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 4EED5ADC2AA581B5006370E6;
+			packageReferences = (
+				4E1B1BC82AA8472100D34BBF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4EED5AE62AA581B5006370E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1B1BC42AA82CFC00D34BBF /* YoutubeMockUp.json in Resources */,
 				4EED5AF52AA581B8006370E6 /* LaunchScreen.storyboard in Resources */,
 				4EED5AF22AA581B8006370E6 /* Assets.xcassets in Resources */,
 				4EED5B2E2AA5BD67006370E6 /* Profile.storyboard in Resources */,
@@ -488,6 +500,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E1B1BC82AA8472100D34BBF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E1B1BC92AA8472100D34BBF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E1B1BC82AA8472100D34BBF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EED5ADD2AA581B5006370E6 /* Project object */;
 }
