@@ -8,6 +8,9 @@
 import Kingfisher
 import UIKit
 
+// 검색 기능
+// 숫자 100000만 초과시 -> . 찍기 --> 31만 --> 3.1만
+
 class ThumbnailController: UIViewController {
     private let apiKey = "AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo"
     private let searchValue = "paka"
@@ -15,28 +18,30 @@ class ThumbnailController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
-    var thumbnailInfoList = [ThumbnailInfo]()
+    var thumbnailInfoList = DataManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Video List"
+        navigationController?.navigationBar.prefersLargeTitles = true
         setupUI()
         addSearchBar()
         topViewUp()
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        getYoutubeData(searchValue: "paka", apiKey: apiKey)
+        getYoutubeData(apiKey: apiKey)
     }
 
-    func getYoutubeData(searchValue: String, apiKey: String) {
-//        let url = URL(string: "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=100&q=\(searchValue)&key=\(apiKey)")!
+    func getYoutubeData(apiKey: String) {
+//        let url = URL(string: "https://youtube.googleapis.com/youtube/v3/videos?part=statistics&part=snippet&chart=mostPopular&maxResults=100&regionCode=kr&key=\(apiKey)")!
 
         guard let url = jsonMockUp else { return }
         let configuration = URLSessionConfiguration.default
 
         let session = URLSession(configuration: configuration)
 
-        let task = session.dataTask(with: url) { [weak self] data, _, error in
+        let task = session.dataTask(with: url) { [weak self] data, response, error in
 
 //            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
 //                print("--->\(response)")
@@ -49,16 +54,14 @@ class ThumbnailController: UIViewController {
                 let decoder = JSONDecoder()
                 let result = try decoder.decode(ThumbnailInfo.self, from: data)
 
-                if self?.thumbnailInfoList.first?.items.first?.snippet.title != "PAKA" {
-                    self?.thumbnailInfoList = [result]
-                    self?.thumbnailInfoList[0].items.removeFirst()
-                }
-
+                self?.thumbnailInfoList.thumbnailInfo = result
+                print("### \(self?.thumbnailInfoList.thumbnailInfo?.items.count)")
                 DispatchQueue.main.async {
                     self?.collectionView.reloadData()
                 }
+
             } catch let error as NSError {
-                print(error)
+                print("### \(error)")
             }
         }
         task.resume()
@@ -79,6 +82,7 @@ class ThumbnailController: UIViewController {
         searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchBar.placeholder = "Search"
         searchController.navigationItem.hidesSearchBarWhenScrolling = true
+        searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
     }
 
@@ -94,23 +98,32 @@ class ThumbnailController: UIViewController {
 
 extension ThumbnailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let element = thumbnailInfoList.first?.items.count {
-            return element
+        if let count = thumbnailInfoList.thumbnailInfo?.items.count {
+            return count
         }
-        return 0
+        return 1
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThumbnailCell.identifier, for: indexPath) as? ThumbnailCell else { return UICollectionViewCell() }
 
-        var item = thumbnailInfoList[0].items[indexPath.row]
+        var item = thumbnailInfoList.thumbnailInfo?.items[indexPath.row]
 
-        let thumbnailImageUrl = item.snippet.thumbnails.high.url
-        DispatchQueue.main.async {
-            cell.imageView.kf.setImage(with: URL(string: thumbnailImageUrl))
+        if let thumbnailImageUrl = item?.snippet.thumbnails.high.url {
+            DispatchQueue.main.async {
+                cell.imageView.kf.setImage(with: URL(string: thumbnailImageUrl))
+            }
         }
 
+//        print("### \(thumbnailInfoList)")
         cell.imageView.contentMode = .scaleToFill
+
+        cell.viewCountLabel.text = item?.statistics.viewCount
+        cell.likeCountLabel.text = item?.statistics.likeCount
+//        cell.commentCountLabel.text = item?.statistics.commentCount
+//        cell.backgroundColor = .systemOrange
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.cornerRadius = 10
         return cell
     }
@@ -118,10 +131,11 @@ extension ThumbnailController: UICollectionViewDataSource {
 
 extension ThumbnailController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let item = thumbnailInfoList.first?.items[indexPath.row]
-        let vc = DetailController()
-
-        navigationController?.pushViewController(vc, animated: true)
+        let item = thumbnailInfoList.thumbnailInfo?.items[indexPath.row].snippet.title
+        print("### \(item)")
+//        let vc = DetailController()
+//
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -141,5 +155,11 @@ extension ThumbnailController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 15
+    }
+}
+
+extension ThumbnailController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        print("### \(searchController.searchBar.searchTextField.text)")
     }
 }

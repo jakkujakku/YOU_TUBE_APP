@@ -11,4 +11,7 @@ final class ThumbnailCell: UICollectionViewCell {
     static let identifier = "ThumbnailCell"
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var viewCountLabel: UILabel!
+    @IBOutlet weak var likeCountLabel: UILabel!
+    @IBOutlet weak var commentCountLabel: UILabel!
 }
