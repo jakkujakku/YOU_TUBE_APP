@@ -120,7 +120,11 @@ extension ThumbnailController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = thumbnailInfoList.first?.items[indexPath.row]
         let vc = DetailController()
+<<<<<<< HEAD
 //        vc.navigationItem.title = item?.snippet.title
+=======
+        vc.navigationItem.title = item?.snippet.title
+>>>>>>> cf4b1ed567dd24bf1226898055eb01f1ad226f52
         navigationController?.pushViewController(vc, animated: true)
     }
 }
