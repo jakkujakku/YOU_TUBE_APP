@@ -40,8 +40,8 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     @IBOutlet weak var profileTableView: UITableView!
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var deletingUserButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var editButton: UIButton!
@@ -76,13 +76,13 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         if let name =
             UserDefaults.standard.string(forKey: "Name")
         {
-            nameTextField.text = name
+            nameLabel.text = name
         }
         
         if let email =
             UserDefaults.standard.string(forKey: "Email")
         {
-            emailTextField.text = email
+            emailLabel.text = email
         }
     }
     
@@ -96,15 +96,15 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
             if traitCollection.userInterfaceStyle == .dark {
-                nameTextField.textColor = UIColor.white
-                emailTextField.textColor = UIColor.white
+                nameLabel.textColor = UIColor.white
+                emailLabel.textColor = UIColor.white
                 logoutButton.setTitleColor(UIColor.white, for: .normal)
                 deletingUserButton.setTitleColor(UIColor.white, for: .normal)
                 editButton.setTitleColor(UIColor.white, for: .normal)
                 
             } else {
-                nameTextField.textColor = UIColor.black
-                emailTextField.textColor = UIColor.black
+                nameLabel.textColor = UIColor.black
+                emailLabel.textColor = UIColor.black
                 logoutButton.setTitleColor(UIColor.black, for: .normal)
                 deletingUserButton.setTitleColor(UIColor.black, for: .normal)
                 editButton.setTitleColor(UIColor.black, for: .normal)
@@ -121,11 +121,11 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
         
         if let name = UserDefaults.standard.string(forKey: "Name") {
-            nameTextField.text = name
+            nameLabel.text = name
         }
         
         if let email = UserDefaults.standard.string(forKey: "Email") {
-            emailTextField.text = email
+            emailLabel.text = email
         }
     }
 
