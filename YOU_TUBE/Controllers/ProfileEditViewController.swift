@@ -17,6 +17,7 @@ class ProfileEditViewController: UIViewController {
     
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var editPhotoButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
@@ -24,6 +25,7 @@ class ProfileEditViewController: UIViewController {
         imageView.layer.cornerRadius = imageView.frame.size.width / 2
         imageView.clipsToBounds = true
         updateButtonColorsForCurrentInterfaceStyle()
+        // 이미지와 텍스트의 정렬 설정
     }
     
     // 다크모드 버튼 텍스트 즉각 대응

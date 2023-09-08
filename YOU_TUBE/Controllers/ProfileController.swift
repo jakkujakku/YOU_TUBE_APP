@@ -20,6 +20,20 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
 
         return cell
     }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60 // 셀의 높이를 60으로 설정
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10 // 섹션 헤더의 높이를 10으로 설정
+    }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = .clear
+        return headerView // 섹션 헤더에 배경색을 없애기 위해 빈 UIView 반환
+    }
     
     let profile = ["내 채널", "Youtube 스튜디오", "내 Premium 혜택", "위치: 한국", "설정", "고객센터", "의견 보내기"]
     let profileImages = ["person", "studio", "premium", "world", "setup", "helpcenter", "comments"]
