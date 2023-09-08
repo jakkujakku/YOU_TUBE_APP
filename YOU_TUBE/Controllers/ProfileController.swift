@@ -7,34 +7,97 @@
 
 import UIKit
 
-class ProfileController: UIViewController {
-    @IBOutlet weak var profileImageView: UIImageView!
+class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    // 셀 수정
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return profile.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = profileTableView.dequeueReusableCell(withIdentifier: "myTableViewCell", for: indexPath) as! ProfileCell
+        cell.profileLabel.text = profile[indexPath.row]
+        cell.profileImageView.image = UIImage(named: profileImages[indexPath.row])
 
+        return cell
+    }
+    
+    let profile = ["내 채널", "Youtube 스튜디오", "내 Premium 혜택", "위치: 한국", "설정", "고객센터", "의견 보내기"]
+    let profileImages = ["person", "studio", "premium", "world", "setup", "helpcenter", "comments"]
+
+    @IBOutlet weak var profileTableView: UITableView!
+    @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var deletingUserButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var editButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileTableView.dataSource = self
+        profileTableView.delegate = self
         view.backgroundColor = .systemBackground
         // 데이터 전달 받기
-        if let imageData = UserDefaults.standard.data(forKey: "Image") {
-            if let image = UIImage(data: imageData) {
+        updateUIWithStoredData()
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector:
+                                               #selector(updateUIWithStoredData),
+                                               name:
+                                               NSNotification.Name("ProfileDataUpdated"),
+                                               object:
+                                               nil)
+    }
+    
+    @objc private func updateUIWithStoredData() {
+        if let imageData = UserDefaults.standard.data(forKey:
+            "Image")
+        {
+            if let image = UIImage(data:
+                imageData)
+            {
                 profileImageView.image = image
             }
         }
-
-        if let name = UserDefaults.standard.string(forKey: "Name") {
+        
+        if let name =
+            UserDefaults.standard.string(forKey: "Name")
+        {
             nameTextField.text = name
         }
-
-        if let email = UserDefaults.standard.string(forKey: "Email") {
+        
+        if let email =
+            UserDefaults.standard.string(forKey: "Email")
+        {
             emailTextField.text = email
         }
-
-        // NotificationCenter로부터의 데이터 변경 알림 처리
-        NotificationCenter.default.addObserver(self, selector: #selector(handleProfileDataUpdated), name:
-            NSNotification.Name("ProfileDataUpdated"), object: nil)
     }
-
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    // 다크모드 텍스트필드 및 버튼 즉각 대응
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            if traitCollection.userInterfaceStyle == .dark {
+                nameTextField.textColor = UIColor.white
+                emailTextField.textColor = UIColor.white
+                logoutButton.setTitleColor(UIColor.white, for: .normal)
+                deletingUserButton.setTitleColor(UIColor.white, for: .normal)
+                editButton.setTitleColor(UIColor.white, for: .normal)
+                
+            } else {
+                nameTextField.textColor = UIColor.black
+                emailTextField.textColor = UIColor.black
+                logoutButton.setTitleColor(UIColor.black, for: .normal)
+                deletingUserButton.setTitleColor(UIColor.black, for: .normal)
+                editButton.setTitleColor(UIColor.black, for: .normal)
+            }
+        }
+    }
+    
     @objc private func handleProfileDataUpdated() {
         // 프로필 정보 업데이트 로직 (UserDefaults로부터 다시 불러옴)
         if let imageData = UserDefaults.standard.data(forKey: "Image") {
@@ -42,19 +105,14 @@ class ProfileController: UIViewController {
                 profileImageView.image = image
             }
         }
-
+        
         if let name = UserDefaults.standard.string(forKey: "Name") {
             nameTextField.text = name
         }
-
+        
         if let email = UserDefaults.standard.string(forKey: "Email") {
             emailTextField.text = email
         }
-    }
-
-    deinit {
-        // Notification Observer 해제 (메모리 누수 방지)
-        NotificationCenter.default.removeObserver(self)
     }
 
     @IBAction func memberShip(_ sender: UIButton) {

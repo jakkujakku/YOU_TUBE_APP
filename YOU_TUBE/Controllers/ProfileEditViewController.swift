@@ -14,11 +14,38 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var openPhotosButton: UIView!
+    
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var editPhotoButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
+        // ImageView를 원형으로 만들기
+        imageView.layer.cornerRadius = imageView.frame.size.width / 2
+        imageView.clipsToBounds = true
+        updateButtonColorsForCurrentInterfaceStyle()
     }
     
+    // 다크모드 버튼 텍스트 즉각 대응
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+            updateButtonColorsForCurrentInterfaceStyle()
+        }
+    }
+    
+    private func updateButtonColorsForCurrentInterfaceStyle() {
+        if traitCollection.userInterfaceStyle == .dark {
+            editPhotoButton.setTitleColor(UIColor.white, for: [])
+            saveButton.setTitleColor(UIColor.white, for: [])
+        } else {
+            editPhotoButton.setTitleColor(UIColor.black, for: [])
+            saveButton.setTitleColor(UIColor.black, for: [])
+        }
+    }
+
     @IBAction func editButton(_ sender: Any) {
         let alert = UIAlertController(title: "프로필 수정", message: "프로필을 수정하시겠습니까?", preferredStyle: .actionSheet)
         
@@ -55,7 +82,7 @@ class ProfileEditViewController: UIViewController {
         }
         
         else {
-            print("Camera not available")
+            print("카메라를 사용할 수 없습니다.")
         }
     }
     
@@ -64,21 +91,39 @@ class ProfileEditViewController: UIViewController {
         UserDefaults.standard.set(imageView.image?.pngData(), forKey: "Image")
         UserDefaults.standard.set(nameTextField.text, forKey: "Name")
         UserDefaults.standard.set(emailTextField.text, forKey: "Email")
-            
+
         // NotificationCenter를 사용하여 데이터 전달
         NotificationCenter.default.post(name: NSNotification.Name("ProfileDataUpdated"), object: nil)
-            
+
         navigationController?.popViewController(animated: true)
     }
 }
 
 extension ProfileEditViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    // 이미지 선택 및 촬영 완료 후 호출되는 메서드 구현
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         if let image = info[.originalImage] as? UIImage {
-            imageView?.image = image
+            // 이미지 회전 조정
+            let orientedImage = fixOrientation(of: image)
+            imageView.image = orientedImage
         }
-
+        
         dismiss(animated: true, completion: nil)
+    }
+    
+    // 이미지 회전 조정 메서드
+    private func fixOrientation(of image: UIImage) -> UIImage {
+        if image.imageOrientation == .up {
+            return image
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+        let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        
+        image.draw(in: rect)
+        
+        let normalizedImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        return normalizedImage
     }
 }
