@@ -15,18 +15,13 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    //싱글톤 네트워킹
+    // 싱글톤 네트워킹
     var networking = CommentNetworking.shared
-    
-   
     
     // 썸네일 컨트롤러에서 받은 데이터
     var videoData: Items?
     
-    
     var commentService: CommentService2?
-    
-    let regionCode: [RegionCode] = [.kr, .us, .fr, .jp, .br, .hk]
     
     // 유저디폴트
     
@@ -52,7 +47,6 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var commentTextField: UITextField!
     
-   
     var upCount = 0
     var downCount = 8962
     
@@ -111,7 +105,6 @@ class DetailController: UIViewController {
 
         upButton.setTitle(addCommas(to: Int(statistics.likeCount!)!), for: .normal)
         downButton.setTitle(addCommas(to: downCount), for: .normal)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -232,15 +225,14 @@ class DetailController: UIViewController {
         }
     }
     
-    
-    //숫자에 ,
+    // 숫자에 ,
     private func addCommas(to number: Int) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         return numberFormatter.string(from: NSNumber(value: number)) ?? ""
     }
     
-    //날짜 변환
+    // 날짜 변환
     func convertDateString(_ inputDateString: String, from inputFormat: String, to outputFormat: String) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = inputFormat
@@ -252,7 +244,6 @@ class DetailController: UIViewController {
         
         return nil
     }
-    
     
 //
     
@@ -267,8 +258,6 @@ class DetailController: UIViewController {
             }
         }
     }
-    
-    
 }
 
 // 유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라
@@ -276,23 +265,20 @@ extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let commentCount = commentService?.items.count else { return 0 }
         return commentCount
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
-        guard let commentService = commentService?.items[indexPath.row].snippet.topLevelComment else { return cell}
-         let userData = commentService.snippet
+        guard let commentService = commentService?.items[indexPath.row].snippet.topLevelComment else { return cell }
+        let userData = commentService.snippet
         
         cell.commentUserName.text = userData.parentID
         cell.imageData = userData.authorProfileImageURL
-        cell.postedCommentDate.text = timeAgoString(from: (userData.updatedAt))
+        cell.postedCommentDate.text = timeAgoString(from: userData.updatedAt)
         cell.comment.text = userData.textOriginal
         
         return cell
     }
-    
-    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

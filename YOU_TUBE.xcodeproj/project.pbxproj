@@ -16,6 +16,8 @@
 		4E3550952AA89B5600A9A5DE /* DetailPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3550942AA89B5600A9A5DE /* DetailPageTableViewCell.swift */; };
 		4E35509F2AA8B3C900A9A5DE /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E35509D2AA8B3C900A9A5DE /* Profile.storyboard */; };
 		4E3995DC2AA9FA7800CD66E1 /* us.json in Resources */ = {isa = PBXBuildFile; fileRef = 4E3995DB2AA9FA7800CD66E1 /* us.json */; };
+		4E4626B12AAAFB5700E2F205 /* MediaDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4626B02AAAFB5700E2F205 /* MediaDataManager.swift */; };
+		4E4626B82AAB3FAA00E2F205 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4626B72AAB3FA900E2F205 /* SecretKey.swift */; };
 		4EED5AE92AA581B5006370E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5AE82AA581B5006370E6 /* AppDelegate.swift */; };
 		4EED5AEB2AA581B5006370E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5AEA2AA581B5006370E6 /* SceneDelegate.swift */; };
 		4EED5AF02AA581B5006370E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5AEE2AA581B5006370E6 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		4E3550942AA89B5600A9A5DE /* DetailPageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPageTableViewCell.swift; sourceTree = "<group>"; };
 		4E35509E2AA8B3C900A9A5DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		4E3995DB2AA9FA7800CD66E1 /* us.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = us.json; sourceTree = "<group>"; };
+		4E4626B02AAAFB5700E2F205 /* MediaDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDataManager.swift; sourceTree = "<group>"; };
+		4E4626B72AAB3FA900E2F205 /* SecretKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		4EED5AE52AA581B5006370E6 /* YOU_TUBE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOU_TUBE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EED5AE82AA581B5006370E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EED5AEA2AA581B5006370E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E4626B92AAB445800E2F205 /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				4E4626B72AAB3FA900E2F205 /* SecretKey.swift */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
 		4EED5ADC2AA581B5006370E6 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +120,7 @@
 				4EED5AFC2AA581BE006370E6 /* Models */,
 				4EED5AFD2AA581CA006370E6 /* Views */,
 				4EED5AFE2AA581D6006370E6 /* Controllers */,
+				4E4626B92AAB445800E2F205 /* Secret */,
 				4EED5AF62AA581B8006370E6 /* Info.plist */,
 				4E1B1BC32AA82CFC00D34BBF /* kr.json */,
 				4E3995DB2AA9FA7800CD66E1 /* us.json */,
@@ -124,6 +137,7 @@
 			children = (
 				4EED5AFF2AA58207006370E6 /* AuthService.swift */,
 				4EED5B012AA58212006370E6 /* MediaService.swift */,
+				4E4626B02AAAFB5700E2F205 /* MediaDataManager.swift */,
 				4EED5B1D2AA5845B006370E6 /* CommentService.swift */,
 			);
 			path = Models;
@@ -264,7 +278,9 @@
 				FFEC440A2AA8103D00D76A00 /* RegisterViewController.swift in Sources */,
 				4EED5B1C2AA58405006370E6 /* SignUpController.swift in Sources */,
 				E70287982AA6B28200BC2E5B /* ProfileEditViewController.swift in Sources */,
+				4E4626B12AAAFB5700E2F205 /* MediaDataManager.swift in Sources */,
 				4EED5B1E2AA5845B006370E6 /* CommentService.swift in Sources */,
+				4E4626B82AAB3FAA00E2F205 /* SecretKey.swift in Sources */,
 				4EED5B022AA58212006370E6 /* MediaService.swift in Sources */,
 				4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */,
 				4EED5AE92AA581B5006370E6 /* AppDelegate.swift in Sources */,
@@ -476,6 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Junwoo.Momo8282.YOU-TUBE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,6 +522,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Junwoo.Momo8282.YOU-TUBE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

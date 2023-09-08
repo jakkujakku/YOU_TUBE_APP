@@ -8,13 +8,7 @@
 import Kingfisher
 import UIKit
 
-// 검색 기능
-// 위로 스와이프 시, 셀 리로드 --> 스와이프 할 때, 삭제하고 데이터 불러오기 구현해야함.
-// 숫자 100000만 초과시 -> . 찍기 --> 31만 --> 3.1만 ✅
-// let regionCode = [us, kr, jr, en, fr] ✅
-// var randomValue = Int.random(0...regionCode.cout) ✅
-
-enum RegionCode: String, CaseIterable {
+private enum RegionCode: String, CaseIterable {
     case kr
     case us
     case fr
@@ -23,14 +17,35 @@ enum RegionCode: String, CaseIterable {
     case hk
 }
 
-class ThumbnailController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
-    let refreshControll: UIRefreshControl = .init()
+private enum CollectionViewSize: Int {
+    case interItemSpacing, padding = 10
+    case minimumSpacingSection = 15
 
-    var thumbnailInfoList = DataManager.shared
-    let regionCode: [RegionCode] = [.kr, .us, .fr, .jp, .br, .hk]
-    let regionCodeCount = RegionCode(rawValue: RegionCode.kr.rawValue)
-    static var random = Int.random(in: 0 ..< RegionCode.allCases.count)
+    var doubleValue: CGFloat {
+        switch self {
+        case .interItemSpacing: return 10.0
+        case .padding: return 10.0
+        case .minimumSpacingSection: return 15.0
+        }
+    }
+}
+
+final class ThumbnailController: UIViewController {
+    @IBOutlet weak var collectionView: UICollectionView!
+    private let refreshControll = UIRefreshControl()
+
+    private var thumbnailInfoList = DataManager.shared
+
+    private let regionCode: [RegionCode] = [.kr, .us, .fr, .jp, .br, .hk]
+    private let regionCodeCount = RegionCode(rawValue: RegionCode.kr.rawValue)
+
+    private var isEditMode: Bool {
+        let searchController = navigationItem.searchController
+        let isActive = searchController?.isActive ?? false
+        let isSearchBarHasText = searchController?.searchBar.text?.isEmpty == false
+        return isActive && isSearchBarHasText
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Video List"
@@ -39,26 +54,31 @@ class ThumbnailController: UIViewController {
         setupUI()
         addSearchBar()
         topViewUp()
-        getYoutubeData(regionCode: regionCode[ThumbnailController.random].rawValue, apiKey: MediaServiceManager.apiKey)
-
+        getYoutubeData(regionCode: regionCode[randomValue()].rawValue, apiKey: SecretKey.apiKey)
         initRefreshControll()
+        hideKeyboardWhenTappedAround()
     }
 
-    func getYoutubeData(regionCode: String, apiKey: String) {
-//        let url = URL(string: MediaServiceManager.baseURL+regionCode+MediaServiceManager.conditionURL+regionCode+MediaServiceManager.keyURL+apiKey)!
-        let jsonMockUp = Bundle.main.url(forResource: regionCode, withExtension: "json")
-        guard let url = jsonMockUp else { return }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        navigationItem.searchController?.searchBar.resignFirstResponder()
+    }
+
+    private func getYoutubeData(regionCode: String, apiKey: String) {
+        let url = URL(string: MediaServiceManager.baseURL+regionCode+MediaServiceManager.conditionURL+regionCode+MediaServiceManager.keyURL+SecretKey.apiKey)
+//        let url = Bundle.main.url(forResource: regionCode, withExtension: "json")
+
+        guard let url = url else { return }
 
         let configuration = URLSessionConfiguration.default
 
         let session = URLSession(configuration: configuration)
 
-        let task = session.dataTask(with: url) { [weak self] data, _, error in
+        let task = session.dataTask(with: url) { [weak self] data, response, error in
 
-//            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
-//                print("--->\(response)")
-//                return
-//            }
+            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
+                print("### \(response)")
+                return
+            }
 
             guard let data = data else { return }
 
@@ -67,8 +87,10 @@ class ThumbnailController: UIViewController {
                 let result = try decoder.decode(ThumbnailInfo.self, from: data)
 
                 self?.thumbnailInfoList.thumbnailInfo = result
+                DataManager.currentRegionCode = regionCode
 
                 DispatchQueue.main.async {
+                    self?.navigationItem.title = self?.setupNavigationTitle()
                     self?.collectionView.reloadData()
                 }
             } catch let error as NSError {
@@ -78,32 +100,63 @@ class ThumbnailController: UIViewController {
         task.resume()
     }
 
-    func setupUI() {
+    private func setupUI() {
         view.backgroundColor = .systemBackground
+        navigationItem.title = "Video List"
+        navigationController?.navigationBar.prefersLargeTitles = true
+
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.showsVerticalScrollIndicator = false
 
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowlayout.estimatedItemSize = .zero
         }
     }
 
-    func addSearchBar() {
+    private func setupNavigationTitle() -> String {
+        let element = DataManager.currentRegionCode
+
+        switch element {
+        case RegionCode.kr.rawValue:
+            return "🇰🇷 Korea"
+        case RegionCode.us.rawValue:
+            return "🇺🇸 America"
+        case RegionCode.fr.rawValue:
+            return "🇫🇷 France"
+        case RegionCode.jp.rawValue:
+            return "🇯🇵 Japan"
+        case RegionCode.br.rawValue:
+            return "🇧🇷 Brazil"
+        case RegionCode.hk.rawValue:
+            return "🇭🇰 Hong Kong"
+        default:
+            return "n/a"
+        }
+    }
+
+    private func addSearchBar() {
         let searchController = UISearchController(searchResultsController: nil)
-        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = true
         searchController.searchBar.placeholder = "Search"
-        searchController.navigationItem.hidesSearchBarWhenScrolling = true
+        searchController.navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.delegate = self
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
     }
 
-    func topViewUp() {
+    private func topViewUp() {
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             // 상단에 서치바 올리기
             self.view.transform = CGAffineTransform(translationX: 0, y: 0)
             self.addSearchBar()
             self.view.layoutIfNeeded()
         })
+    }
+
+    private func randomValue() -> Int {
+        let element = Int.random(in: 0 ..< regionCode.count)
+        return element
     }
 
     private func initRefreshControll() {
@@ -116,45 +169,28 @@ class ThumbnailController: UIViewController {
     }
 
     @objc private func refreshCollectionView() {
-        print("### \(thumbnailInfoList.thumbnailInfo?.items?.first?.snippet?.channelTitle)")
-        getYoutubeData(regionCode: regionCode[ThumbnailController.random].rawValue, apiKey: MediaServiceManager.apiKey)
-        print("### \(thumbnailInfoList.thumbnailInfo?.items?.first?.snippet?.channelTitle)")
+        getYoutubeData(regionCode: regionCode[randomValue()].rawValue, apiKey: SecretKey.apiKey)
+
         collectionView.reloadData()
         refreshControll.endRefreshing()
-    }
-
-    private func countFormatting(value: String?) -> String {
-        var result = 0.0
-        if let value = value {
-            guard let item = Double(value) else { return "0" }
-
-            if item < 100_000 {
-                result = item / Double(1_000)
-                return "\(String(format: "%.1f", result))K"
-            } else {
-                result = item / Double(100_000)
-
-                return "\(String(format: "%.1f", result))M"
-            }
-        }
-        return "0.9K"
     }
 }
 
 extension ThumbnailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if let count = thumbnailInfoList.thumbnailInfo?.items?.count {
-            return count
+        if isEditMode == true {
+            return DataManager.filteredItemCount()
         }
-        return 1
+        return DataManager.itemCount()
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThumbnailCell.identifier, for: indexPath) as? ThumbnailCell else { return UICollectionViewCell() }
 
-        let item = thumbnailInfoList.thumbnailInfo?.items?[indexPath.row]
+        var item: Items?
+        item = DataManager.returnItem(for: isEditMode, at: indexPath.row)
 
-        if let thumbnailImageUrl = item?.snippet?.thumbnails?.high?.url {
+        if let thumbnailImageUrl = item?.snippet?.thumbnails?.standard?.url {
             DispatchQueue.main.async {
                 cell.imageView.kf.setImage(with: URL(string: thumbnailImageUrl))
             }
@@ -162,9 +198,9 @@ extension ThumbnailController: UICollectionViewDataSource {
 
         cell.imageView.contentMode = .scaleToFill
 
-        cell.viewCountLabel.text = countFormatting(value: item?.statistics?.viewCount)
-        cell.likeCountLabel.text = countFormatting(value: item?.statistics?.likeCount)
-        cell.commentCountLabel.text = countFormatting(value: item?.statistics?.commentCount)
+        cell.viewCountLabel.text = MediaServiceManager.countFormatting(value: item?.statistics?.viewCount)
+        cell.likeCountLabel.text = MediaServiceManager.countFormatting(value: item?.statistics?.likeCount)
+        cell.commentCountLabel.text = MediaServiceManager.countFormatting(value: item?.statistics?.commentCount)
 
         cell.layer.borderWidth = 1
         cell.layer.borderColor = UIColor.black.cgColor
@@ -176,36 +212,66 @@ extension ThumbnailController: UICollectionViewDataSource {
 extension ThumbnailController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = thumbnailInfoList.thumbnailInfo?.items?[indexPath.row]
-        print("### \(item?.snippet?.title)")
-//        let vc = DetailController()
         let storyboadrd = UIStoryboard(name: "Detail", bundle: nil)
         guard let vc = storyboadrd.instantiateViewController(withIdentifier: "DetailController") as? DetailController else { return }
         vc.videoData = item
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
 extension ThumbnailController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let interItemSpacing: CGFloat = 10
-        let padding: CGFloat = 10
+        let interItemSpacing = CollectionViewSize.interItemSpacing.doubleValue
+        let padding = CollectionViewSize.padding.doubleValue
 
-        let width = (collectionView.bounds.width - interItemSpacing - padding) / 2
+        let width = (collectionView.bounds.width - interItemSpacing - padding)
         let height = width
         return CGSize(width: width, height: height)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 15
+        return CollectionViewSize.minimumSpacingSection.doubleValue
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 15
+        return CollectionViewSize.minimumSpacingSection.doubleValue
     }
 }
 
 extension ThumbnailController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        print("### \(searchController.searchBar.searchTextField.text)")
+        guard let text = searchController.searchBar.text else { return }
+        DataManager.filtered = DataManager.searchFilterData(text)
+        collectionView.reloadData()
+    }
+}
+
+// MARK: - UISearchBarDelegate
+
+extension ThumbnailController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        collectionView.reloadData()
+    }
+
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        return true
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+}
+
+// MARK: - hideKeyboardWhenTappedAround
+
+extension ThumbnailController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ThumbnailController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

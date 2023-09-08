@@ -7,17 +7,28 @@
 
 import Foundation
 
-class DataManager {
-    static let shared = DataManager()
-
-    var thumbnailInfo: ThumbnailInfo?
-}
-
 enum MediaServiceManager {
     static let apiKey = "AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo"
     static let baseURL = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=statistics&chart=mostPopular&locale="
     static let conditionURL = "&maxResults=1000000&regionCode="
     static let keyURL = "&key="
+
+    static func countFormatting(value: String?) -> String {
+        var result = 0.0
+        if let value = value {
+            guard let item = Double(value) else { return "0" }
+
+            if item < 100_000 {
+                result = item / Double(1_000)
+                return "\(String(format: "%.1f", result))K"
+            } else {
+                result = item / Double(100_000)
+
+                return "\(String(format: "%.1f", result))M"
+            }
+        }
+        return "0.9K"
+    }
 }
 
 struct ThumbnailInfo: Codable {
