@@ -13,11 +13,18 @@ class DataManager {
     var thumbnailInfo: ThumbnailInfo?
 }
 
+enum MediaServiceManager {
+    static let apiKey = "AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo"
+    static let baseURL = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=statistics&chart=mostPopular&locale="
+    static let conditionURL = "&maxResults=1000000&regionCode="
+    static let keyURL = "&key="
+}
+
 struct ThumbnailInfo: Codable {
-    let kind: String
-    let etag: String
-    let items: [Items]
-    let pageInfo: PageInfo
+    let kind: String?
+    let etag: String?
+    var items: [Items]?
+    let pageInfo: PageInfo?
 
     enum CodingKeys: String, CodingKey {
         case kind
@@ -28,35 +35,35 @@ struct ThumbnailInfo: Codable {
 }
 
 struct PageInfo: Codable {
-    let totalResults: Int
-    let resultsPerPage: Int
+    let totalResults: Int?
+    let resultsPerPage: Int?
 }
 
 struct Items: Codable {
-    let kind: String
-    let etag: String
-    let id: String
-    let snippet: Snippet
-    let statistics: Statistics
+    let kind: String?
+    let etag: String?
+    let id: String?
+    let snippet: Snippet?
+    let statistics: Statistics?
 }
 
 struct Snippet: Codable {
-    let publishedAt: String
-    let channelId: String
-    let title: String
+    let publishedAt: String?
+    let channelId: String?
+    let title: String?
     let descriptions: String?
-    let thumbnails: Thumbnails
-    let channelTitle: String
-    let categoryId: String
-    let liveBroadcastContent: String
-    let localized: Localized
+    let thumbnails: Thumbnails?
+    let channelTitle: String?
+    let categoryId: String?
+    let liveBroadcastContent: String?
+    let localized: Localized?
 }
 
 struct Thumbnails: Codable {
-    let `default`: Default
-    let medium: Medium
-    let high: High
-    let standard: Standard
+    let `default`: Default?
+    let medium: Medium?
+    let high: High?
+    let standard: Standard?
     let maxres: Max?
 }
 
@@ -91,13 +98,13 @@ struct Max: Codable {
 }
 
 struct Localized: Codable {
-    let title: String
-    let description: String
+    let title: String?
+    let description: String?
 }
 
 struct Statistics: Codable {
-    let viewCount: String
-    let likeCount: String
-    let favoriteCount: String
-    let commentCount: String
+    let viewCount: String?
+    let likeCount: String?
+    let favoriteCount: String?
+    let commentCount: String?
 }

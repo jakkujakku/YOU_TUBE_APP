@@ -36,36 +36,50 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NYJ-la-ymY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="351"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="313" height="356"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Enu-Lg-EB3">
-                                                    <rect key="frame" x="10" y="361" width="293" height="20"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Enu-Lg-EB3">
+                                                    <rect key="frame" x="10" y="366" width="293" height="15"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9bH-9h-54b">
-                                                            <rect key="frame" x="0.0" y="1.6666666666666661" width="20" height="17.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="1.6666666666666661" width="15" height="12.333333333333334"/>
                                                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="20" id="Byy-7F-3XD"/>
-                                                                <constraint firstAttribute="height" constant="20" id="fyO-ow-G2v"/>
+                                                                <constraint firstAttribute="width" constant="15" id="Byy-7F-3XD"/>
+                                                                <constraint firstAttribute="height" constant="15" id="fyO-ow-G2v"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조회수" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89B-vq-ojE">
-                                                            <rect key="frame" x="25" y="0.0" width="64.666666666666671" height="20"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="조회수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89B-vq-ojE">
+                                                            <rect key="frame" x="49.666666666666657" y="2.6666666666666856" width="21" height="9.6666666666666661"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jBE-pA-OQ1">
-                                                            <rect key="frame" x="94.666666666666671" y="1.9999999999999982" width="20" height="17"/>
+                                                            <rect key="frame" x="105.33333333333333" y="1.9999999999999982" width="15" height="12.000000000000002"/>
                                                             <color key="tintColor" systemColor="systemPinkColor"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="S5Q-pf-lVM"/>
-                                                                <constraint firstAttribute="width" constant="20" id="Usx-ag-yDW"/>
+                                                                <constraint firstAttribute="height" constant="15" id="S5Q-pf-lVM"/>
+                                                                <constraint firstAttribute="width" constant="15" id="Usx-ag-yDW"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 수" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-uz-v1I">
-                                                            <rect key="frame" x="119.66666666666664" y="0.0" width="173.33333333333337" height="20"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-uz-v1I">
+                                                            <rect key="frame" x="155" y="2.6666666666666856" width="30.333333333333343" height="9.6666666666666661"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-vW-aSh">
+                                                            <rect key="frame" x="220" y="0.33333333333333215" width="15" height="14.333333333333334"/>
+                                                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="vc7-2Z-Hkc"/>
+                                                                <constraint firstAttribute="width" constant="15" id="xR2-oM-Hj7"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="댓글 수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDs-10-yLO">
+                                                            <rect key="frame" x="269.66666666666669" y="2.6666666666666856" width="23.333333333333314" height="9.6666666666666661"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -84,6 +98,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="313" height="391"/>
                                         <connections>
+                                            <outlet property="commentCountLabel" destination="JDs-10-yLO" id="XUS-D9-yBV"/>
                                             <outlet property="imageView" destination="NYJ-la-ymY" id="PxS-qm-zz1"/>
                                             <outlet property="likeCountLabel" destination="AQE-uz-v1I" id="YVu-Q5-hqh"/>
                                             <outlet property="viewCountLabel" destination="89B-vq-ojE" id="9oQ-Hc-C9r"/>
@@ -133,6 +148,7 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="house" catalog="system" width="128" height="104"/>
+        <image name="message" catalog="system" width="128" height="116"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

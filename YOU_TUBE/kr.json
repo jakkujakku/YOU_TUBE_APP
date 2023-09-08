@@ -1,10 +1,10 @@
 {
   "kind": "youtube#videoListResponse",
-  "etag": "1Lx6VLUwac4g7G3gtEtm-Fwixew",
+  "etag": "pdDns8qGk93EFrELdNlo1A7eYfY",
   "items": [
     {
       "kind": "youtube#video",
-      "etag": "ulfa7ElnkQSMo8MxUcyuyCIka2w",
+      "etag": "PpggJvLNmHnjYCbSzUdRXuW4eNs",
       "id": "iuIzniSa1Hs",
       "snippet": {
         "publishedAt": "2023-09-05T15:08:02Z",
@@ -48,15 +48,15 @@
         "defaultAudioLanguage": "en"
       },
       "statistics": {
-        "viewCount": "2239318",
-        "likeCount": "114940",
+        "viewCount": "2447733",
+        "likeCount": "122505",
         "favoriteCount": "0",
-        "commentCount": "5395"
+        "commentCount": "5586"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "tnOtVA5_KHQYmLnBKucnbo8F0tc",
+      "etag": "Y2O179izoRIIxjyfsOuUgm39KJ8",
       "id": "_8LLmWSf9lI",
       "snippet": {
         "publishedAt": "2023-09-05T10:18:47Z",
@@ -204,15 +204,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "1281105",
-        "likeCount": "38606",
+        "viewCount": "1416329",
+        "likeCount": "41220",
         "favoriteCount": "0",
-        "commentCount": "3950"
+        "commentCount": "4122"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "cRNzv7s0fAqz3dLsR0R1Vl0N0ms",
+      "etag": "kI5BC7vj7bOSgB-gxMygnTK4GPc",
       "id": "Crq_fRV0O0E",
       "snippet": {
         "publishedAt": "2023-09-06T09:00:07Z",
@@ -256,70 +256,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "3237151",
-        "likeCount": "252600",
+        "viewCount": "4022880",
+        "likeCount": "292065",
         "favoriteCount": "0",
-        "commentCount": "10161"
+        "commentCount": "10913"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "mNsooY7CEoneZ-qObT8I9QFEbac",
-      "id": "pYmELvc0mVI",
-      "snippet": {
-        "publishedAt": "2023-09-04T09:00:09Z",
-        "channelId": "UCikSO7mSQl-lx3BJOBzqA8w",
-        "title": "첫 번째 짠 이효리, 오빠 그때 나 왜 싫어했어?!  EP.01",
-        "description": "#신동엽 #이효리 #정호철 #짠한형 #짠한형신동엽\n\n1년 365일 중 360일 짠하는(🍻) 신동엽의\n본격 만취 토크쇼!\n[짠한형 신동엽]\n\n고품격 게스트와 즐기는 날 것 그대로의 술방(🥂)\n신동엽과 짠하시렵니까?\n\n매주 월요일 저녁 6시 새로운 짠 공개!\n구독 (🍺) 좋아요 (🍷) 알림설정 꼭이요~\n\n이메일 : zzanbro23@gmail.com\n인스타그램 : www.instagram.com/zzanbro\n\n※본 영상과 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 조롱, 비난 등 악의적인 댓글은 무통보 삭제될 수 있습니다",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "짠한형 신동엽",
-        "tags": [
-          "#이효리 #신동엽 #정호철 #짠한형"
-        ],
-        "categoryId": "24",
-        "liveBroadcastContent": "none",
-        "localized": {
-          "title": "첫 번째 짠 이효리, 오빠 그때 나 왜 싫어했어?!  EP.01",
-          "description": "#신동엽 #이효리 #정호철 #짠한형 #짠한형신동엽\n\n1년 365일 중 360일 짠하는(🍻) 신동엽의\n본격 만취 토크쇼!\n[짠한형 신동엽]\n\n고품격 게스트와 즐기는 날 것 그대로의 술방(🥂)\n신동엽과 짠하시렵니까?\n\n매주 월요일 저녁 6시 새로운 짠 공개!\n구독 (🍺) 좋아요 (🍷) 알림설정 꼭이요~\n\n이메일 : zzanbro23@gmail.com\n인스타그램 : www.instagram.com/zzanbro\n\n※본 영상과 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 조롱, 비난 등 악의적인 댓글은 무통보 삭제될 수 있습니다"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "3427001",
-        "likeCount": "54702",
-        "favoriteCount": "0",
-        "commentCount": "4188"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "6ikStaqIInON52hpzrqE3ApYCew",
+      "etag": "2WSyFwP8VBnodwCPsqkBHgV4KTU",
       "id": "ZwXzaqzRVi4",
       "snippet": {
         "publishedAt": "2023-09-05T09:00:23Z",
@@ -366,15 +311,251 @@
         }
       },
       "statistics": {
-        "viewCount": "416879",
-        "likeCount": "11319",
+        "viewCount": "537512",
+        "likeCount": "12796",
         "favoriteCount": "0",
-        "commentCount": "191"
+        "commentCount": "207"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "YjwucQnTOUT3ZEznRL9nfV5EEoo",
+      "etag": "42e2IXGWg9rydAU4KHq0Eq4YTbk",
+      "id": "pYmELvc0mVI",
+      "snippet": {
+        "publishedAt": "2023-09-04T09:00:09Z",
+        "channelId": "UCikSO7mSQl-lx3BJOBzqA8w",
+        "title": "첫 번째 짠 이효리, 오빠 그때 나 왜 싫어했어?!  EP.01",
+        "description": "#신동엽 #이효리 #정호철 #짠한형 #짠한형신동엽\n\n1년 365일 중 360일 짠하는(🍻) 신동엽의\n본격 만취 토크쇼!\n[짠한형 신동엽]\n\n고품격 게스트와 즐기는 날 것 그대로의 술방(🥂)\n신동엽과 짠하시렵니까?\n\n매주 월요일 저녁 6시 새로운 짠 공개!\n구독 (🍺) 좋아요 (🍷) 알림설정 꼭이요~\n\n이메일 : zzanbro23@gmail.com\n인스타그램 : www.instagram.com/zzanbro\n\n※본 영상과 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 조롱, 비난 등 악의적인 댓글은 무통보 삭제될 수 있습니다",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pYmELvc0mVI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "짠한형 신동엽",
+        "tags": [
+          "#이효리 #신동엽 #정호철 #짠한형"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "첫 번째 짠 이효리, 오빠 그때 나 왜 싫어했어?!  EP.01",
+          "description": "#신동엽 #이효리 #정호철 #짠한형 #짠한형신동엽\n\n1년 365일 중 360일 짠하는(🍻) 신동엽의\n본격 만취 토크쇼!\n[짠한형 신동엽]\n\n고품격 게스트와 즐기는 날 것 그대로의 술방(🥂)\n신동엽과 짠하시렵니까?\n\n매주 월요일 저녁 6시 새로운 짠 공개!\n구독 (🍺) 좋아요 (🍷) 알림설정 꼭이요~\n\n이메일 : zzanbro23@gmail.com\n인스타그램 : www.instagram.com/zzanbro\n\n※본 영상과 무관한 내용의 댓글과 출연자에 대한 무분별한 욕설, 조롱, 비난 등 악의적인 댓글은 무통보 삭제될 수 있습니다"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "3617641",
+        "likeCount": "56913",
+        "favoriteCount": "0",
+        "commentCount": "4338"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "34-I6ENOvDO6DMSEyGl_0hBpCRY",
+      "id": "jIG4AaIy-5k",
+      "snippet": {
+        "publishedAt": "2023-09-06T14:00:17Z",
+        "channelId": "UCEIi7zFR_wE23jFncVtd6-A",
+        "title": "[BE ORIGINAL] RIIZE(라이즈) 'Get A Guitar' (4K)",
+        "description": "[BE ORIGINAL] RIIZE 'Get A Guitar'\n[비 오리지널] 라이즈 '겟 어 기타'\n\n세상에서 가장 멋있는 기타는?\n정답은 라이즈 스춤 겟어기타입니다🎸\n(1:42) 막 날아다니는 쇼타로 장난 아님;\n\n#RIIZE #라이즈 #BEORIGINAL\n\nStream various performance video on #STUDIOCHOOM!\n\n👉SUBSCRIBE👈\nYouTube: https://www.youtube.com/STUDIOCHOOM\nFacebook:  https://www.facebook.com/StudioCHOOM\nInstagram: https://www.instagram.com/studio_choom/\nNaver TV: https://tv.naver.com/cjenm.STUDIOCHOOM",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "STUDIO CHOOM [스튜디오 춤]",
+        "tags": [
+          "M2",
+          "엠투",
+          "스튜디오 춤",
+          "스춤",
+          "Studio choom",
+          "COVERS",
+          "커버스",
+          "DANCE THE X",
+          "댄스 더 엑스",
+          "댄스",
+          "DANCE",
+          "비 오리지널",
+          "BE ORIGINAL",
+          "커버",
+          "COVER",
+          "Artist Of The Month",
+          "AOTM",
+          "Drop the dance",
+          "드롭더댄스",
+          "Mix & Max",
+          "믹스앤맥스",
+          "믹앤맥",
+          "riize",
+          "라이즈",
+          "RIIZE",
+          "get a guitar",
+          "riize get a guitar",
+          "라이즈 겟 어 기타",
+          "라이즈 get a guitar",
+          "앤톤",
+          "성찬",
+          "원빈",
+          "쇼타로",
+          "승한",
+          "은석",
+          "소희",
+          "anton",
+          "sungchan",
+          "wonbin",
+          "shotaro",
+          "seunghan",
+          "eunseok",
+          "sohee",
+          "라이즈 원빈",
+          "라이즈 소희",
+          "라이즈 성찬",
+          "라이즈 앤톤",
+          "riize wonbin"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "[BE ORIGINAL] RIIZE(라이즈) 'Get A Guitar' (4K)",
+          "description": "[BE ORIGINAL] RIIZE 'Get A Guitar'\n[비 오리지널] 라이즈 '겟 어 기타'\n\n세상에서 가장 멋있는 기타는?\n정답은 라이즈 스춤 겟어기타입니다🎸\n(1:42) 막 날아다니는 쇼타로 장난 아님;\n\n#RIIZE #라이즈 #BEORIGINAL\n\nStream various performance video on #STUDIOCHOOM!\n\n👉SUBSCRIBE👈\nYouTube: https://www.youtube.com/STUDIOCHOOM\nFacebook:  https://www.facebook.com/StudioCHOOM\nInstagram: https://www.instagram.com/studio_choom/\nNaver TV: https://tv.naver.com/cjenm.STUDIOCHOOM"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "580122",
+        "likeCount": "63768",
+        "favoriteCount": "0",
+        "commentCount": "2940"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "yqvKYzCo28zo0PznEII6eOKnJvY",
+      "id": "oip3S1hOPxE",
+      "snippet": {
+        "publishedAt": "2023-09-05T06:56:51Z",
+        "channelId": "UCR9gReM5VhQ_8brqQrBaVCA",
+        "title": "[예고] \"어머 세상에~\" 김혜자 등장에 왈칵 눈물쏟아낸 김수미 '뭉클'",
+        "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n9/11 [월] 저녁 8:20 방송\n#회장님네사람들\n\n#티빙에서스트리밍",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "tvN STORY 티비엔 스토리",
+        "tags": [
+          "tvNSTORY",
+          "고두심",
+          "김수미",
+          "김영배",
+          "김용건",
+          "김혜자",
+          "김혜정",
+          "박은수",
+          "백일섭",
+          "백일섭졸혼",
+          "성장하는어른들을위한채널",
+          "심양홍",
+          "아는것을새롭게",
+          "이계인",
+          "이주실",
+          "인교진",
+          "임호",
+          "조하나",
+          "졸혼",
+          "차광수",
+          "최불암",
+          "티비엔스토리",
+          "티빙에서스트리밍",
+          "회장님네사람들"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "[예고] \"어머 세상에~\" 김혜자 등장에 왈칵 눈물쏟아낸 김수미 '뭉클'",
+          "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n9/11 [월] 저녁 8:20 방송\n#회장님네사람들\n\n#티빙에서스트리밍"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "436497",
+        "likeCount": "1432",
+        "favoriteCount": "0",
+        "commentCount": "126"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "8VOPw5TfYdrEloRDR34kWOoZCq8",
       "id": "9o8kDyre4NE",
       "snippet": {
         "publishedAt": "2023-09-05T12:12:23Z",
@@ -508,152 +689,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "853819",
-        "likeCount": "11408",
+        "viewCount": "893439",
+        "likeCount": "11657",
         "favoriteCount": "0",
-        "commentCount": "2748"
+        "commentCount": "2828"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "qp59MV8EGx2u2UhvDXcWEq217Gs",
-      "id": "oip3S1hOPxE",
-      "snippet": {
-        "publishedAt": "2023-09-05T06:56:51Z",
-        "channelId": "UCR9gReM5VhQ_8brqQrBaVCA",
-        "title": "[예고] \"어머 세상에~\" 김혜자 등장에 왈칵 눈물쏟아낸 김수미 '뭉클'",
-        "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n9/11 [월] 저녁 8:20 방송\n#회장님네사람들\n\n#티빙에서스트리밍",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/oip3S1hOPxE/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "tvN STORY 티비엔 스토리",
-        "tags": [
-          "tvNSTORY",
-          "고두심",
-          "김수미",
-          "김영배",
-          "김용건",
-          "김혜자",
-          "김혜정",
-          "박은수",
-          "백일섭",
-          "백일섭졸혼",
-          "성장하는어른들을위한채널",
-          "심양홍",
-          "아는것을새롭게",
-          "이계인",
-          "이주실",
-          "인교진",
-          "임호",
-          "조하나",
-          "졸혼",
-          "차광수",
-          "최불암",
-          "티비엔스토리",
-          "티빙에서스트리밍",
-          "회장님네사람들"
-        ],
-        "categoryId": "24",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ko",
-        "localized": {
-          "title": "[예고] \"어머 세상에~\" 김혜자 등장에 왈칵 눈물쏟아낸 김수미 '뭉클'",
-          "description": "티빙에서 스트리밍 : https://tving.onelink.me/xHqC/30a78d6f\n\n9/11 [월] 저녁 8:20 방송\n#회장님네사람들\n\n#티빙에서스트리밍"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "382276",
-        "likeCount": "1341",
-        "favoriteCount": "0",
-        "commentCount": "113"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "7Vxj5my1j-ynF-Jeu8jqJnb3njc",
-      "id": "43FZXOo6oRM",
-      "snippet": {
-        "publishedAt": "2023-09-02T22:45:26Z",
-        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
-        "title": "(PL 4R) 번리 2-5 토트넘 홋스퍼 // 2분 하이라이트 (현지해설)",
-        "description": "*2분 하이라이트* 토트넘 홋스퍼가 23-24 시즌 4라운드 번리전 원정 경기에서 2-5 승리를 거두었습니다.\n\n#토트넘 #COYS #EPL\n\n스퍼스플레이에서 다양한 컨텐츠를 확인해보세요! ► https://bit.ly/3a9klBi \n\n토트넘 홋스퍼 공식 계정을 팔로우하세요!\nInstagram: https://www.instagram.com/spursofficial/\nTwitch: https://www.twitch.tv/tottenhamhotspur/\nTikTok: https://www.tiktok.com/@spursofficial\nTwitter: https://twitter.com/Spurs_KR\nFacebook: https://www.facebook.com/TottenhamHotspur/\n\n스퍼스 공식 앱 주소: https://www.tottenhamhotspur.com/spurs-official-app/",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Tottenham Hotspur",
-        "tags": [
-          "Spurs",
-          "Tottenham Hotspur",
-          "토트넘",
-          "손흥민"
-        ],
-        "categoryId": "17",
-        "liveBroadcastContent": "none",
-        "localized": {
-          "title": "(PL 4R) 번리 2-5 토트넘 홋스퍼 // 2분 하이라이트 (현지해설)",
-          "description": "*2분 하이라이트* 토트넘 홋스퍼가 23-24 시즌 4라운드 번리전 원정 경기에서 2-5 승리를 거두었습니다.\n\n#토트넘 #COYS #EPL\n\n스퍼스플레이에서 다양한 컨텐츠를 확인해보세요! ► https://bit.ly/3a9klBi \n\n토트넘 홋스퍼 공식 계정을 팔로우하세요!\nInstagram: https://www.instagram.com/spursofficial/\nTwitch: https://www.twitch.tv/tottenhamhotspur/\nTikTok: https://www.tiktok.com/@spursofficial\nTwitter: https://twitter.com/Spurs_KR\nFacebook: https://www.facebook.com/TottenhamHotspur/\n\n스퍼스 공식 앱 주소: https://www.tottenhamhotspur.com/spurs-official-app/"
-        },
-        "defaultAudioLanguage": "en"
-      },
-      "statistics": {
-        "viewCount": "1982748",
-        "likeCount": "13682",
-        "favoriteCount": "0",
-        "commentCount": "1493"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "yG0e31d0OnKUFOnXU7Ztj-od9N4",
+      "etag": "FrfNiw11s6K2Miz2axVkZUXWIL0",
       "id": "5t0IwokCKlY",
       "snippet": {
         "publishedAt": "2023-09-04T04:00:04Z",
@@ -749,117 +793,73 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "2230662",
-        "likeCount": "18001",
+        "viewCount": "2339479",
+        "likeCount": "18720",
         "favoriteCount": "0",
-        "commentCount": "1300"
+        "commentCount": "1342"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "7r31v6BZrYXSoGyG6lmr279n-WY",
-      "id": "jIG4AaIy-5k",
+      "etag": "YmUqSplGcdAS_VuhfmzeacS9Xo4",
+      "id": "43FZXOo6oRM",
       "snippet": {
-        "publishedAt": "2023-09-06T14:00:17Z",
-        "channelId": "UCEIi7zFR_wE23jFncVtd6-A",
-        "title": "[BE ORIGINAL] RIIZE(라이즈) 'Get A Guitar' (4K)",
-        "description": "[BE ORIGINAL] RIIZE 'Get A Guitar'\n[비 오리지널] 라이즈 '겟 어 기타'\n\n세상에서 가장 멋있는 기타는?\n정답은 라이즈 스춤 겟어기타입니다🎸\n(1:42) 막 날아다니는 쇼타로 장난 아님;\n\n#RIIZE #라이즈 #BEORIGINAL\n\nStream various performance video on #STUDIOCHOOM!\n\n👉SUBSCRIBE👈\nYouTube: https://www.youtube.com/STUDIOCHOOM\nFacebook:  https://www.facebook.com/StudioCHOOM\nInstagram: https://www.instagram.com/studio_choom/\nNaver TV: https://tv.naver.com/cjenm.STUDIOCHOOM",
+        "publishedAt": "2023-09-02T22:45:26Z",
+        "channelId": "UCEg25rdRZXg32iwai6N6l0w",
+        "title": "(PL 4R) 번리 2-5 토트넘 홋스퍼 // 2분 하이라이트 (현지해설)",
+        "description": "*2분 하이라이트* 토트넘 홋스퍼가 23-24 시즌 4라운드 번리전 원정 경기에서 2-5 승리를 거두었습니다.\n\n#토트넘 #COYS #EPL\n\n스퍼스플레이에서 다양한 컨텐츠를 확인해보세요! ► https://bit.ly/3a9klBi \n\n토트넘 홋스퍼 공식 계정을 팔로우하세요!\nInstagram: https://www.instagram.com/spursofficial/\nTwitch: https://www.twitch.tv/tottenhamhotspur/\nTikTok: https://www.tiktok.com/@spursofficial\nTwitter: https://twitter.com/Spurs_KR\nFacebook: https://www.facebook.com/TottenhamHotspur/\n\n스퍼스 공식 앱 주소: https://www.tottenhamhotspur.com/spurs-official-app/",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/default.jpg",
+            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/jIG4AaIy-5k/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/43FZXOo6oRM/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "STUDIO CHOOM [스튜디오 춤]",
+        "channelTitle": "Tottenham Hotspur",
         "tags": [
-          "M2",
-          "엠투",
-          "스튜디오 춤",
-          "스춤",
-          "Studio choom",
-          "COVERS",
-          "커버스",
-          "DANCE THE X",
-          "댄스 더 엑스",
-          "댄스",
-          "DANCE",
-          "비 오리지널",
-          "BE ORIGINAL",
-          "커버",
-          "COVER",
-          "Artist Of The Month",
-          "AOTM",
-          "Drop the dance",
-          "드롭더댄스",
-          "Mix & Max",
-          "믹스앤맥스",
-          "믹앤맥",
-          "riize",
-          "라이즈",
-          "RIIZE",
-          "get a guitar",
-          "riize get a guitar",
-          "라이즈 겟 어 기타",
-          "라이즈 get a guitar",
-          "앤톤",
-          "성찬",
-          "원빈",
-          "쇼타로",
-          "승한",
-          "은석",
-          "소희",
-          "anton",
-          "sungchan",
-          "wonbin",
-          "shotaro",
-          "seunghan",
-          "eunseok",
-          "sohee",
-          "라이즈 원빈",
-          "라이즈 소희",
-          "라이즈 성찬",
-          "라이즈 앤톤",
-          "riize wonbin"
+          "Spurs",
+          "Tottenham Hotspur",
+          "토트넘",
+          "손흥민"
         ],
-        "categoryId": "24",
+        "categoryId": "17",
         "liveBroadcastContent": "none",
         "localized": {
-          "title": "[BE ORIGINAL] RIIZE(라이즈) 'Get A Guitar' (4K)",
-          "description": "[BE ORIGINAL] RIIZE 'Get A Guitar'\n[비 오리지널] 라이즈 '겟 어 기타'\n\n세상에서 가장 멋있는 기타는?\n정답은 라이즈 스춤 겟어기타입니다🎸\n(1:42) 막 날아다니는 쇼타로 장난 아님;\n\n#RIIZE #라이즈 #BEORIGINAL\n\nStream various performance video on #STUDIOCHOOM!\n\n👉SUBSCRIBE👈\nYouTube: https://www.youtube.com/STUDIOCHOOM\nFacebook:  https://www.facebook.com/StudioCHOOM\nInstagram: https://www.instagram.com/studio_choom/\nNaver TV: https://tv.naver.com/cjenm.STUDIOCHOOM"
+          "title": "(PL 4R) 번리 2-5 토트넘 홋스퍼 // 2분 하이라이트 (현지해설)",
+          "description": "*2분 하이라이트* 토트넘 홋스퍼가 23-24 시즌 4라운드 번리전 원정 경기에서 2-5 승리를 거두었습니다.\n\n#토트넘 #COYS #EPL\n\n스퍼스플레이에서 다양한 컨텐츠를 확인해보세요! ► https://bit.ly/3a9klBi \n\n토트넘 홋스퍼 공식 계정을 팔로우하세요!\nInstagram: https://www.instagram.com/spursofficial/\nTwitch: https://www.twitch.tv/tottenhamhotspur/\nTikTok: https://www.tiktok.com/@spursofficial\nTwitter: https://twitter.com/Spurs_KR\nFacebook: https://www.facebook.com/TottenhamHotspur/\n\n스퍼스 공식 앱 주소: https://www.tottenhamhotspur.com/spurs-official-app/"
         },
-        "defaultAudioLanguage": "ko"
+        "defaultAudioLanguage": "en"
       },
       "statistics": {
-        "viewCount": "460673",
-        "likeCount": "57331",
+        "viewCount": "1996844",
+        "likeCount": "13752",
         "favoriteCount": "0",
-        "commentCount": "2710"
+        "commentCount": "1499"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "13h1NTnLqDfHHkbvj5JVDHk_JJc",
+      "etag": "zP1esx9CzIXiox51-rCWz9_vgJY",
       "id": "uPsm5dErJ4M",
       "snippet": {
         "publishedAt": "2023-09-06T09:00:41Z",
@@ -998,15 +998,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "384492",
-        "likeCount": "5746",
+        "viewCount": "435848",
+        "likeCount": "6093",
         "favoriteCount": "0",
-        "commentCount": "247"
+        "commentCount": "263"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "gnUqiMl01hLtE95xVgGqKEUPoQk",
+      "etag": "2rNcI37mqiagJuFPRHSz3lMWY4M",
       "id": "_xi5MpddIHs",
       "snippet": {
         "publishedAt": "2023-09-05T14:00:19Z",
@@ -1049,15 +1049,15 @@
         }
       },
       "statistics": {
-        "viewCount": "922282",
-        "likeCount": "3668",
+        "viewCount": "999279",
+        "likeCount": "3845",
         "favoriteCount": "0",
-        "commentCount": "1139"
+        "commentCount": "1204"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "yHNoxDAME0eRF1mlp87yYqOuf7w",
+      "etag": "NA4Y5XWQNEkjV5KKapeJnE9noao",
       "id": "ybybVGIIRTg",
       "snippet": {
         "publishedAt": "2023-09-06T11:30:16Z",
@@ -1140,15 +1140,15 @@
         "defaultAudioLanguage": "en"
       },
       "statistics": {
-        "viewCount": "547085",
-        "likeCount": "32860",
+        "viewCount": "624165",
+        "likeCount": "35875",
         "favoriteCount": "0",
-        "commentCount": "1474"
+        "commentCount": "1553"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "Bu_arXmksqr5ok6q9pUrPMIuYPA",
+      "etag": "fdEqCZOTtFP2TlYTWzABVpHq52o",
       "id": "E91SzeRHsus",
       "snippet": {
         "publishedAt": "2023-09-06T12:00:09Z",
@@ -1282,68 +1282,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "266471",
-        "likeCount": "4516",
+        "viewCount": "287456",
+        "likeCount": "4643",
         "favoriteCount": "0",
-        "commentCount": "693"
+        "commentCount": "706"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "BmKgxW7KTnnPR43bbGAV3lu_vcU",
-      "id": "4xij_3JKs_c",
-      "snippet": {
-        "publishedAt": "2023-09-05T09:00:06Z",
-        "channelId": "UCb_gdTMC2xeuO1p8lKkZHHQ",
-        "title": "포레스텔라(Forestella) 'KOOL' M/V",
-        "description": "#포레스텔라 #Forestella #KOOL \n\n[Credits]\n\nTITLE: KOOL\n\nForestella  BAE DOOHOON, KANG HYUNGHO, CHO MINGYU, KO WOORIM\n\n[BEAT INTERACTIVE]\nExecutive Producer  HYEIM KIM\nSupervisor  HYEJIN KIM\nProducer  KYUNGROK OH, DANNY JY LEE \nProduction/Plan  AEJI PARK\nLeader of Marketing  UNI KIM\nMarketing  HYERIN LEE\nArt work & Design  UNI KIM, MINJAE JUNG\n\nLeader of Management  DAESIK CHOI, HYUNGJIN KIM\nManagement  JUNHEE HAN\n\nMV Director  JUNGKOOK LIM\nMV D.O.P  JANGJAE WOOK \nMV Producer  YOUNGMIN LEE\nMV 2D CG  JEONMYEOUNG JIN\n\nChoreographer  YOONGYUM OH, JUNHEE PARK of A.C.E\nDancer  HUIYEOB JEONG, SEYEON KIM, YEWON LE, RIHA KIM, \n              HAESEUL LEE, HYEOKSEONG KWON, JUHYEON KIM,\n              SEONGMIN JEON, SEUNGMIN JO, YUNSU CHOI,\n              MINSEOK PARK, SIHOON CHOI\n\nPhotographer  HEEHYUN OH, BOMI JUNG @ 52 STUDIO\nPhotographer Assistant  KIWOONG KIM, DONGKYU KIM, SEMIN CHEON\n\nStylist  REGINA SUH\nStylist Assistant  HYEBIN JEONG, YEJIN JEONG, YUJI JO\n\nHair  SOPHIA, SUBEEN KIM\nMake-up  HEEYEOUN YANG, YUJI YU\n\nPromotion  HNS HQ\n\nSpecial thanks to  SOOPBYEOL\n\nLylics by  Andreas Öhrn, Didrik Thott\nComposed by  KZ, TAEYEONG KIM, Andreas Öhrn, Didrik Thott\nArranged by  KZ, TAEYEONG KIM\n\nMidi Programming by  KZ, 태봉이\nDrum by  KZ,태봉이\nPiano by  KZ,태봉이\nE.Piano by  KZ\nBass by  KZ,태봉이\nGuitar by  태봉이\nSynthesizer by  KZ\nChorus by  DINT\nDigital Editing by  DINT @ DINT Studio\nEngineered for Mix by  NAMJOON PARK at GLAB Studios\nMixed by  BONGWON SHIN at GLAB Studios\nMastered by  NAMWOO KWON @ 821 Sound Mastering\n\n▶ OFFICIAL SITE \nHomepage : http://www.beatkor.com\nTwitter : https://twitter.com/official_fore\nInstagram : https://www.instagram.com/official.forestella/\nfacebook : https://www.facebook.com/official.forestella/\nFan Cafe : https://cafe.daum.net/official.forestella",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "포레스텔라 Forestella  ",
-        "categoryId": "24",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ko",
-        "localized": {
-          "title": "포레스텔라(Forestella) 'KOOL' M/V",
-          "description": "#포레스텔라 #Forestella #KOOL \n\n[Credits]\n\nTITLE: KOOL\n\nForestella  BAE DOOHOON, KANG HYUNGHO, CHO MINGYU, KO WOORIM\n\n[BEAT INTERACTIVE]\nExecutive Producer  HYEIM KIM\nSupervisor  HYEJIN KIM\nProducer  KYUNGROK OH, DANNY JY LEE \nProduction/Plan  AEJI PARK\nLeader of Marketing  UNI KIM\nMarketing  HYERIN LEE\nArt work & Design  UNI KIM, MINJAE JUNG\n\nLeader of Management  DAESIK CHOI, HYUNGJIN KIM\nManagement  JUNHEE HAN\n\nMV Director  JUNGKOOK LIM\nMV D.O.P  JANGJAE WOOK \nMV Producer  YOUNGMIN LEE\nMV 2D CG  JEONMYEOUNG JIN\n\nChoreographer  YOONGYUM OH, JUNHEE PARK of A.C.E\nDancer  HUIYEOB JEONG, SEYEON KIM, YEWON LE, RIHA KIM, \n              HAESEUL LEE, HYEOKSEONG KWON, JUHYEON KIM,\n              SEONGMIN JEON, SEUNGMIN JO, YUNSU CHOI,\n              MINSEOK PARK, SIHOON CHOI\n\nPhotographer  HEEHYUN OH, BOMI JUNG @ 52 STUDIO\nPhotographer Assistant  KIWOONG KIM, DONGKYU KIM, SEMIN CHEON\n\nStylist  REGINA SUH\nStylist Assistant  HYEBIN JEONG, YEJIN JEONG, YUJI JO\n\nHair  SOPHIA, SUBEEN KIM\nMake-up  HEEYEOUN YANG, YUJI YU\n\nPromotion  HNS HQ\n\nSpecial thanks to  SOOPBYEOL\n\nLylics by  Andreas Öhrn, Didrik Thott\nComposed by  KZ, TAEYEONG KIM, Andreas Öhrn, Didrik Thott\nArranged by  KZ, TAEYEONG KIM\n\nMidi Programming by  KZ, 태봉이\nDrum by  KZ,태봉이\nPiano by  KZ,태봉이\nE.Piano by  KZ\nBass by  KZ,태봉이\nGuitar by  태봉이\nSynthesizer by  KZ\nChorus by  DINT\nDigital Editing by  DINT @ DINT Studio\nEngineered for Mix by  NAMJOON PARK at GLAB Studios\nMixed by  BONGWON SHIN at GLAB Studios\nMastered by  NAMWOO KWON @ 821 Sound Mastering\n\n▶ OFFICIAL SITE \nHomepage : http://www.beatkor.com\nTwitter : https://twitter.com/official_fore\nInstagram : https://www.instagram.com/official.forestella/\nfacebook : https://www.facebook.com/official.forestella/\nFan Cafe : https://cafe.daum.net/official.forestella"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "199210",
-        "likeCount": "18322",
-        "favoriteCount": "0",
-        "commentCount": "3619"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "m8LqODsiAeeJsThEc8D7lc_r2nE",
+      "etag": "DHrjNexfCkA_6-2tfkuI0q0GIB8",
       "id": "lE2dDnIL6QM",
       "snippet": {
         "publishedAt": "2023-09-05T09:00:35Z",
@@ -1392,15 +1339,15 @@
         }
       },
       "statistics": {
-        "viewCount": "164986",
-        "likeCount": "4041",
+        "viewCount": "221510",
+        "likeCount": "4679",
         "favoriteCount": "0",
-        "commentCount": "35"
+        "commentCount": "45"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "5XBrPbp3pwpL21Fwfgt5Ok71S_U",
+      "etag": "IgruvWYOZ4bkbxflHJQLU3txcAY",
       "id": "rbqmHhgkkK0",
       "snippet": {
         "publishedAt": "2023-09-06T08:45:31Z",
@@ -1457,15 +1404,68 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "157356",
-        "likeCount": "6764",
+        "viewCount": "194801",
+        "likeCount": "7493",
         "favoriteCount": "0",
-        "commentCount": "496"
+        "commentCount": "533"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "AwDJtzRvh0LTTYNJhD1HAaBCosk",
+      "etag": "-lcVR8nfPQge9PXnpLVBVCmrSo4",
+      "id": "4xij_3JKs_c",
+      "snippet": {
+        "publishedAt": "2023-09-05T09:00:06Z",
+        "channelId": "UCb_gdTMC2xeuO1p8lKkZHHQ",
+        "title": "포레스텔라(Forestella) 'KOOL' M/V",
+        "description": "#포레스텔라 #Forestella #KOOL \n\n[Credits]\n\nTITLE: KOOL\n\nForestella  BAE DOOHOON, KANG HYUNGHO, CHO MINGYU, KO WOORIM\n\n[BEAT INTERACTIVE]\nExecutive Producer  HYEIM KIM\nSupervisor  HYEJIN KIM\nProducer  KYUNGROK OH, DANNY JY LEE \nProduction/Plan  AEJI PARK\nLeader of Marketing  UNI KIM\nMarketing  HYERIN LEE\nArt work & Design  UNI KIM, MINJAE JUNG\n\nLeader of Management  DAESIK CHOI, HYUNGJIN KIM\nManagement  JUNHEE HAN\n\nMV Director  JUNGKOOK LIM\nMV D.O.P  JANGJAE WOOK \nMV Producer  YOUNGMIN LEE\nMV 2D CG  JEONMYEOUNG JIN\n\nChoreographer  YOONGYUM OH, JUNHEE PARK of A.C.E\nDancer  HUIYEOB JEONG, SEYEON KIM, YEWON LE, RIHA KIM, \n              HAESEUL LEE, HYEOKSEONG KWON, JUHYEON KIM,\n              SEONGMIN JEON, SEUNGMIN JO, YUNSU CHOI,\n              MINSEOK PARK, SIHOON CHOI\n\nPhotographer  HEEHYUN OH, BOMI JUNG @ 52 STUDIO\nPhotographer Assistant  KIWOONG KIM, DONGKYU KIM, SEMIN CHEON\n\nStylist  REGINA SUH\nStylist Assistant  HYEBIN JEONG, YEJIN JEONG, YUJI JO\n\nHair  SOPHIA, SUBEEN KIM\nMake-up  HEEYEOUN YANG, YUJI YU\n\nPromotion  HNS HQ\n\nSpecial thanks to  SOOPBYEOL\n\nLylics by  Andreas Öhrn, Didrik Thott\nComposed by  KZ, TAEYEONG KIM, Andreas Öhrn, Didrik Thott\nArranged by  KZ, TAEYEONG KIM\n\nMidi Programming by  KZ, 태봉이\nDrum by  KZ,태봉이\nPiano by  KZ,태봉이\nE.Piano by  KZ\nBass by  KZ,태봉이\nGuitar by  태봉이\nSynthesizer by  KZ\nChorus by  DINT\nDigital Editing by  DINT @ DINT Studio\nEngineered for Mix by  NAMJOON PARK at GLAB Studios\nMixed by  BONGWON SHIN at GLAB Studios\nMastered by  NAMWOO KWON @ 821 Sound Mastering\n\n▶ OFFICIAL SITE \nHomepage : http://www.beatkor.com\nTwitter : https://twitter.com/official_fore\nInstagram : https://www.instagram.com/official.forestella/\nfacebook : https://www.facebook.com/official.forestella/\nFan Cafe : https://cafe.daum.net/official.forestella",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/4xij_3JKs_c/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "포레스텔라 Forestella  ",
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "포레스텔라(Forestella) 'KOOL' M/V",
+          "description": "#포레스텔라 #Forestella #KOOL \n\n[Credits]\n\nTITLE: KOOL\n\nForestella  BAE DOOHOON, KANG HYUNGHO, CHO MINGYU, KO WOORIM\n\n[BEAT INTERACTIVE]\nExecutive Producer  HYEIM KIM\nSupervisor  HYEJIN KIM\nProducer  KYUNGROK OH, DANNY JY LEE \nProduction/Plan  AEJI PARK\nLeader of Marketing  UNI KIM\nMarketing  HYERIN LEE\nArt work & Design  UNI KIM, MINJAE JUNG\n\nLeader of Management  DAESIK CHOI, HYUNGJIN KIM\nManagement  JUNHEE HAN\n\nMV Director  JUNGKOOK LIM\nMV D.O.P  JANGJAE WOOK \nMV Producer  YOUNGMIN LEE\nMV 2D CG  JEONMYEOUNG JIN\n\nChoreographer  YOONGYUM OH, JUNHEE PARK of A.C.E\nDancer  HUIYEOB JEONG, SEYEON KIM, YEWON LE, RIHA KIM, \n              HAESEUL LEE, HYEOKSEONG KWON, JUHYEON KIM,\n              SEONGMIN JEON, SEUNGMIN JO, YUNSU CHOI,\n              MINSEOK PARK, SIHOON CHOI\n\nPhotographer  HEEHYUN OH, BOMI JUNG @ 52 STUDIO\nPhotographer Assistant  KIWOONG KIM, DONGKYU KIM, SEMIN CHEON\n\nStylist  REGINA SUH\nStylist Assistant  HYEBIN JEONG, YEJIN JEONG, YUJI JO\n\nHair  SOPHIA, SUBEEN KIM\nMake-up  HEEYEOUN YANG, YUJI YU\n\nPromotion  HNS HQ\n\nSpecial thanks to  SOOPBYEOL\n\nLylics by  Andreas Öhrn, Didrik Thott\nComposed by  KZ, TAEYEONG KIM, Andreas Öhrn, Didrik Thott\nArranged by  KZ, TAEYEONG KIM\n\nMidi Programming by  KZ, 태봉이\nDrum by  KZ,태봉이\nPiano by  KZ,태봉이\nE.Piano by  KZ\nBass by  KZ,태봉이\nGuitar by  태봉이\nSynthesizer by  KZ\nChorus by  DINT\nDigital Editing by  DINT @ DINT Studio\nEngineered for Mix by  NAMJOON PARK at GLAB Studios\nMixed by  BONGWON SHIN at GLAB Studios\nMastered by  NAMWOO KWON @ 821 Sound Mastering\n\n▶ OFFICIAL SITE \nHomepage : http://www.beatkor.com\nTwitter : https://twitter.com/official_fore\nInstagram : https://www.instagram.com/official.forestella/\nfacebook : https://www.facebook.com/official.forestella/\nFan Cafe : https://cafe.daum.net/official.forestella"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "220643",
+        "likeCount": "19538",
+        "favoriteCount": "0",
+        "commentCount": "3850"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "BbrxyLo1oC7qXKN2orgmoHn8HqI",
       "id": "6oQlBLuS3VA",
       "snippet": {
         "publishedAt": "2023-09-06T01:00:02Z",
@@ -1524,15 +1524,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "65927",
-        "likeCount": "459",
+        "viewCount": "81237",
+        "likeCount": "526",
         "favoriteCount": "0",
-        "commentCount": "17"
+        "commentCount": "25"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "aIl_6airLCujJ0-GnupDd-BNV7s",
+      "etag": "WrtirzPjpeg3FckIztDLpDUkDlg",
       "id": "VOugEZp7fA8",
       "snippet": {
         "publishedAt": "2023-09-06T09:00:21Z",
@@ -1626,15 +1626,72 @@
         "defaultAudioLanguage": "en"
       },
       "statistics": {
-        "viewCount": "261608",
-        "likeCount": "14561",
+        "viewCount": "287209",
+        "likeCount": "15317",
         "favoriteCount": "0",
-        "commentCount": "921"
+        "commentCount": "953"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "QgNPgyZuPkumk3qDMrque-G-5RI",
+      "etag": "e1o2ljCcbfNmz56HAvxnCtqeuw0",
+      "id": "8Z_aqJkIlQw",
+      "snippet": {
+        "publishedAt": "2023-09-06T09:00:01Z",
+        "channelId": "UCVVFt4q2WczlzhOr4V2kYxA",
+        "title": "(MV)LEE CHAE YEON(이채연)_LET'S DANCE",
+        "description": "LEE CHAE YEON(이채연) 1st Single Album \"The Move : Street\" has been released.\n:: iTunes & Spotify  : https://bit.ly/3RbeSwK\n                                    https://bit.ly/3sMp2tK\n\n#이채연 #LEECHAEYEON #LETS_DANCE #이채연_LETS_DANCE",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "LEE CHAE YEON",
+        "tags": [
+          "이채연",
+          "LEECHAEYEON",
+          "LETS_DANCE"
+        ],
+        "categoryId": "10",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "(MV)LEE CHAE YEON(이채연)_LET'S DANCE",
+          "description": "LEE CHAE YEON(이채연) 1st Single Album \"The Move : Street\" has been released.\n:: iTunes & Spotify  : https://bit.ly/3RbeSwK\n                                    https://bit.ly/3sMp2tK\n\n#이채연 #LEECHAEYEON #LETS_DANCE #이채연_LETS_DANCE"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "4340185",
+        "likeCount": "76861",
+        "favoriteCount": "0",
+        "commentCount": "3825"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "JQ7KaOD-OKE74-Ac2QNnXkIt4gw",
       "id": "kAStGzV7YZ0",
       "snippet": {
         "publishedAt": "2023-09-05T14:46:03Z",
@@ -1685,72 +1742,192 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "234946",
-        "likeCount": "4385",
+        "viewCount": "257553",
+        "likeCount": "4662",
         "favoriteCount": "0",
-        "commentCount": "396"
+        "commentCount": "411"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "h_Avl0G0e5up0brCLqYcdLLlq_0",
-      "id": "8Z_aqJkIlQw",
+      "etag": "TtafiRfw9ngo2yu1g6eV5RrPZpI",
+      "id": "phig6F8Z6FA",
       "snippet": {
-        "publishedAt": "2023-09-06T09:00:01Z",
-        "channelId": "UCVVFt4q2WczlzhOr4V2kYxA",
-        "title": "(MV)LEE CHAE YEON(이채연)_LET'S DANCE",
-        "description": "LEE CHAE YEON(이채연) 1st Single Album \"The Move : Street\" has been released.\n:: iTunes & Spotify  : https://bit.ly/3RbeSwK\n                                    https://bit.ly/3sMp2tK\n\n#이채연 #LEECHAEYEON #LETS_DANCE #이채연_LETS_DANCE",
+        "publishedAt": "2023-09-06T00:32:27Z",
+        "channelId": "UC3dJKwKxhR1Boz56EsI5PYQ",
+        "title": "엄청 커다란 모기가 나의 발을 물었어",
+        "description": "간지러웠어",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/default.jpg",
+            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/8Z_aqJkIlQw/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "LEE CHAE YEON",
-        "tags": [
-          "이채연",
-          "LEECHAEYEON",
-          "LETS_DANCE"
-        ],
-        "categoryId": "10",
+        "channelTitle": "이영지",
+        "categoryId": "17",
         "liveBroadcastContent": "none",
         "localized": {
-          "title": "(MV)LEE CHAE YEON(이채연)_LET'S DANCE",
-          "description": "LEE CHAE YEON(이채연) 1st Single Album \"The Move : Street\" has been released.\n:: iTunes & Spotify  : https://bit.ly/3RbeSwK\n                                    https://bit.ly/3sMp2tK\n\n#이채연 #LEECHAEYEON #LETS_DANCE #이채연_LETS_DANCE"
+          "title": "엄청 커다란 모기가 나의 발을 물었어",
+          "description": "간지러웠어"
         },
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "3243702",
-        "likeCount": "71468",
+        "viewCount": "411858",
+        "likeCount": "20510",
         "favoriteCount": "0",
-        "commentCount": "3574"
+        "commentCount": "769"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "iVF2JUCF-jXedRWDsc0EJ5eJ55s",
+      "etag": "r81bamOetV2VzrF8sMiQeEtOzn4",
+      "id": "z8gl6HcWqCA",
+      "snippet": {
+        "publishedAt": "2023-09-05T08:30:08Z",
+        "channelId": "UC9idb-NIhZrI6wkPesc3MUg",
+        "title": "[#무한도전] 🙋\u200d♂형돈: 와 군대에서 먹던 라면맛이야❤ 🤦\u200d♂재석: 그럼 군대로 돌아가. | 무한도전⏱오분순삭 MBC080209방송",
+        "description": "#오분순삭 #무한도전\n\n*무한도전 다시 보기 \n\n✔ WAVVE : \nhttps://www.wavve.com/player/vod?programid=M_T72108G&page=1\n✔ iMBC : \nhttp://playvod.imbc.com/Vod/VodPlay?broadcastId=1000786100000100000\n✔ 카카오페이지\n(2006년~2015년) : https://page.kakao.com/home?seriesId=52717733\n(2015년~2018년) : https://page.kakao.com/home?seriesId=51222860\n✔ 네이버시리즈 \n(pc) : https://series.naver.com/broadcasting/detail.nhn?productNo=442717\n(moblie) : https://series.naver.com/broadcasting/detail.nhn?productNo=515199\n✔ 왓챠플레이 : https://play.watcha.net/search?q=%EB%AC%B4%ED%95%9C%EB%8F%84%EC%A0%84 \n✔ 곰TV : http://www.gomtv.com/622537",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "오분순삭",
+        "tags": [
+          "오분순삭",
+          "무한도전",
+          "무도레전드",
+          "유재석",
+          "정준하",
+          "박명수",
+          "정형돈",
+          "하하",
+          "노홍철",
+          "길",
+          "전진",
+          "광희",
+          "조세호",
+          "양세형",
+          "김태호",
+          "라면",
+          "먹방",
+          "군대",
+          "썰"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "[#무한도전] 🙋\u200d♂형돈: 와 군대에서 먹던 라면맛이야❤ 🤦\u200d♂재석: 그럼 군대로 돌아가. | 무한도전⏱오분순삭 MBC080209방송",
+          "description": "#오분순삭 #무한도전\n\n*무한도전 다시 보기 \n\n✔ WAVVE : \nhttps://www.wavve.com/player/vod?programid=M_T72108G&page=1\n✔ iMBC : \nhttp://playvod.imbc.com/Vod/VodPlay?broadcastId=1000786100000100000\n✔ 카카오페이지\n(2006년~2015년) : https://page.kakao.com/home?seriesId=52717733\n(2015년~2018년) : https://page.kakao.com/home?seriesId=51222860\n✔ 네이버시리즈 \n(pc) : https://series.naver.com/broadcasting/detail.nhn?productNo=442717\n(moblie) : https://series.naver.com/broadcasting/detail.nhn?productNo=515199\n✔ 왓챠플레이 : https://play.watcha.net/search?q=%EB%AC%B4%ED%95%9C%EB%8F%84%EC%A0%84 \n✔ 곰TV : http://www.gomtv.com/622537"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "386485",
+        "likeCount": "2420",
+        "favoriteCount": "0",
+        "commentCount": "265"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "WNimRi4EijOSOjaDrMcDx9Pf218",
+      "id": "L4KAYJztXsE",
+      "snippet": {
+        "publishedAt": "2023-09-05T15:57:18Z",
+        "channelId": "UCsxbX6QnOLal_qzzMK9AR9g",
+        "title": "전유진 - 소녀의 기도｜불타는 장미단 21회 MBN 230905 방송",
+        "description": "불타는 장미단 21회 MBN 230905 방송\n\n매주 화요일 밤 10시\n\n \n#전유진#소녀의기도#불타는장미단\n \n☞MBN NEWS 구독하기 : https://www.youtube.com/channel/UCG9aFJTZ-lMCHAiO1KJsirg?sub_confirmation=1\n☞MPLAY 구독하기 : https://www.youtube.com/channel/UC84IlgY5HIzxKBZOt8XM5UA?sub_confirmation=1\n☞MBN Entertainment 구독하기 : https://www.youtube.com/channel/UCYyLIlOJyqkAFKlVjzX5img?sub_confirmation=1\n☞MBN 공식 홈페이지 : https://www.mbn.co.kr",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "MBN MUSIC",
+        "tags": [
+          "전유진",
+          "소녀의기도",
+          "불타는장미단"
+        ],
+        "categoryId": "24",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "전유진 - 소녀의 기도｜불타는 장미단 21회 MBN 230905 방송",
+          "description": "불타는 장미단 21회 MBN 230905 방송\n\n매주 화요일 밤 10시\n\n \n#전유진#소녀의기도#불타는장미단\n \n☞MBN NEWS 구독하기 : https://www.youtube.com/channel/UCG9aFJTZ-lMCHAiO1KJsirg?sub_confirmation=1\n☞MPLAY 구독하기 : https://www.youtube.com/channel/UC84IlgY5HIzxKBZOt8XM5UA?sub_confirmation=1\n☞MBN Entertainment 구독하기 : https://www.youtube.com/channel/UCYyLIlOJyqkAFKlVjzX5img?sub_confirmation=1\n☞MBN 공식 홈페이지 : https://www.mbn.co.kr"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "200245",
+        "likeCount": "5294",
+        "favoriteCount": "0",
+        "commentCount": "2675"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "gRisTA7-cHqCpaaQh0rM6YC4QOo",
       "id": "izYZ__SPUU0",
       "snippet": {
         "publishedAt": "2023-09-04T12:22:12Z",
@@ -1884,15 +2061,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "978070",
-        "likeCount": "12438",
+        "viewCount": "998903",
+        "likeCount": "12570",
         "favoriteCount": "0",
-        "commentCount": "1982"
+        "commentCount": "1984"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "bmmV6DR1u1cZu1-G6auhWzMPzj8",
+      "etag": "cf26oLeVhqkfHi1L6vUr9BTJkVM",
       "id": "ijprQs5X0hE",
       "snippet": {
         "publishedAt": "2023-09-06T10:00:27Z",
@@ -1960,140 +2137,76 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "342912",
-        "likeCount": "33684",
+        "viewCount": "385497",
+        "likeCount": "35294",
         "favoriteCount": "0",
-        "commentCount": "1893"
+        "commentCount": "1949"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "NiB1jqoyM9I4GenQ0yA_I-8KnGc",
-      "id": "z8gl6HcWqCA",
+      "etag": "Leb2L9qk95M1n4teaNH6b_esfzA",
+      "id": "3h4Hz3iVuPA",
       "snippet": {
-        "publishedAt": "2023-09-05T08:30:08Z",
-        "channelId": "UC9idb-NIhZrI6wkPesc3MUg",
-        "title": "[#무한도전] 🙋\u200d♂형돈: 와 군대에서 먹던 라면맛이야❤ 🤦\u200d♂재석: 그럼 군대로 돌아가. | 무한도전⏱오분순삭 MBC080209방송",
-        "description": "#오분순삭 #무한도전\n\n*무한도전 다시 보기 \n\n✔ WAVVE : \nhttps://www.wavve.com/player/vod?programid=M_T72108G&page=1\n✔ iMBC : \nhttp://playvod.imbc.com/Vod/VodPlay?broadcastId=1000786100000100000\n✔ 카카오페이지\n(2006년~2015년) : https://page.kakao.com/home?seriesId=52717733\n(2015년~2018년) : https://page.kakao.com/home?seriesId=51222860\n✔ 네이버시리즈 \n(pc) : https://series.naver.com/broadcasting/detail.nhn?productNo=442717\n(moblie) : https://series.naver.com/broadcasting/detail.nhn?productNo=515199\n✔ 왓챠플레이 : https://play.watcha.net/search?q=%EB%AC%B4%ED%95%9C%EB%8F%84%EC%A0%84 \n✔ 곰TV : http://www.gomtv.com/622537",
+        "publishedAt": "2023-09-05T00:00:01Z",
+        "channelId": "UCKrhyP3raTJQ38m-US2uMjg",
+        "title": "콩나물국 한솥 가득 끓여도 순식간에 동납니다👍 끝내주는 국물 비법 따라만 해도 대성공",
+        "description": "👇 눌러서 레시피 보기\n\n\n🥬 재료\n콩나물 300g, 김치 반포기, 대파 1줄, 다시멸치 20마리, 다시마 1장, 청양고추 4개\n\n🧂 양념\n물 1.3L, 미림 3숟갈, 액젓 3숟갈, 다진마늘 1숟갈, 고춧가루 1숟갈, 김치국물150mL, 소금 반숟갈\n\n\n✔️ 계량은 가정에서 사용하시는 숟가락과 종이컵이면 충분합니다.\n✔️ 모든 식재료는 깨끗하게 손질해서 준비합니다.\n\n\n⭕ 엄마의손맛은 유튜브와 네이버TV 채널에서만 보실 수 있습니다. \n❌ 이 영상을 무단 도용하거나 재편집 및 업로드 하는 것을 금지합니다.\n\n\n📺 네이버TV 채널\n🟰 https://tv.naver.com/momstaste\n\n🛒 엄마가 쓰는 칼 \n🟰 https://smartstore.naver.com/cookmarket/products/5379031797\n🟰 https://smartstore.naver.com/cookmarket/products/6032749296",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/default.jpg",
+            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/z8gl6HcWqCA/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "오분순삭",
+        "channelTitle": "엄마의손맛",
         "tags": [
-          "오분순삭",
-          "무한도전",
-          "무도레전드",
-          "유재석",
-          "정준하",
-          "박명수",
-          "정형돈",
-          "하하",
-          "노홍철",
-          "길",
-          "전진",
-          "광희",
-          "조세호",
-          "양세형",
-          "김태호",
-          "라면",
-          "먹방",
-          "군대",
-          "썰"
+          "콩나물",
+          "콩나물국",
+          "콩나물국 레시피",
+          "콩나물국 끓이는법",
+          "엄마의손맛",
+          "엄마의손맛요리"
         ],
-        "categoryId": "24",
+        "categoryId": "26",
         "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
         "localized": {
-          "title": "[#무한도전] 🙋\u200d♂형돈: 와 군대에서 먹던 라면맛이야❤ 🤦\u200d♂재석: 그럼 군대로 돌아가. | 무한도전⏱오분순삭 MBC080209방송",
-          "description": "#오분순삭 #무한도전\n\n*무한도전 다시 보기 \n\n✔ WAVVE : \nhttps://www.wavve.com/player/vod?programid=M_T72108G&page=1\n✔ iMBC : \nhttp://playvod.imbc.com/Vod/VodPlay?broadcastId=1000786100000100000\n✔ 카카오페이지\n(2006년~2015년) : https://page.kakao.com/home?seriesId=52717733\n(2015년~2018년) : https://page.kakao.com/home?seriesId=51222860\n✔ 네이버시리즈 \n(pc) : https://series.naver.com/broadcasting/detail.nhn?productNo=442717\n(moblie) : https://series.naver.com/broadcasting/detail.nhn?productNo=515199\n✔ 왓챠플레이 : https://play.watcha.net/search?q=%EB%AC%B4%ED%95%9C%EB%8F%84%EC%A0%84 \n✔ 곰TV : http://www.gomtv.com/622537"
+          "title": "콩나물국 한솥 가득 끓여도 순식간에 동납니다👍 끝내주는 국물 비법 따라만 해도 대성공",
+          "description": "👇 눌러서 레시피 보기\n\n\n🥬 재료\n콩나물 300g, 김치 반포기, 대파 1줄, 다시멸치 20마리, 다시마 1장, 청양고추 4개\n\n🧂 양념\n물 1.3L, 미림 3숟갈, 액젓 3숟갈, 다진마늘 1숟갈, 고춧가루 1숟갈, 김치국물150mL, 소금 반숟갈\n\n\n✔️ 계량은 가정에서 사용하시는 숟가락과 종이컵이면 충분합니다.\n✔️ 모든 식재료는 깨끗하게 손질해서 준비합니다.\n\n\n⭕ 엄마의손맛은 유튜브와 네이버TV 채널에서만 보실 수 있습니다. \n❌ 이 영상을 무단 도용하거나 재편집 및 업로드 하는 것을 금지합니다.\n\n\n📺 네이버TV 채널\n🟰 https://tv.naver.com/momstaste\n\n🛒 엄마가 쓰는 칼 \n🟰 https://smartstore.naver.com/cookmarket/products/5379031797\n🟰 https://smartstore.naver.com/cookmarket/products/6032749296"
         },
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "354154",
-        "likeCount": "2305",
+        "viewCount": "101876",
+        "likeCount": "1204",
         "favoriteCount": "0",
-        "commentCount": "254"
+        "commentCount": "26"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "BvObjJZiftEgCa_PLboB_scZaZg",
-      "id": "phig6F8Z6FA",
-      "snippet": {
-        "publishedAt": "2023-09-06T00:32:27Z",
-        "channelId": "UC3dJKwKxhR1Boz56EsI5PYQ",
-        "title": "엄청 커다란 모기가 나의 발을 물었어",
-        "description": "간지러웠어",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/phig6F8Z6FA/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "이영지",
-        "categoryId": "17",
-        "liveBroadcastContent": "none",
-        "localized": {
-          "title": "엄청 커다란 모기가 나의 발을 물었어",
-          "description": "간지러웠어"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "367091",
-        "likeCount": "18674",
-        "favoriteCount": "0",
-        "commentCount": "684"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "OeaRkZPYunm9YpZ5-pA-yFtUeQ4",
+      "etag": "8XZ5agcdsL3iqheAD1uHEKV_l24",
       "id": "XhOg3ZidmVY",
       "snippet": {
         "publishedAt": "2023-09-04T01:44:32Z",
@@ -2139,67 +2252,76 @@
         }
       },
       "statistics": {
-        "viewCount": "271062",
-        "likeCount": "891",
+        "viewCount": "282053",
+        "likeCount": "911",
         "favoriteCount": "0",
-        "commentCount": "56"
+        "commentCount": "57"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "7PpIZMlOcZCxfawBwjetKXwN2yw",
-      "id": "L4KAYJztXsE",
+      "etag": "CHS8dhvUSmB9PbznxH8wigioJDg",
+      "id": "MLKNdekZLmo",
       "snippet": {
-        "publishedAt": "2023-09-05T15:57:18Z",
-        "channelId": "UCsxbX6QnOLal_qzzMK9AR9g",
-        "title": "전유진 - 소녀의 기도｜불타는 장미단 21회 MBN 230905 방송",
-        "description": "불타는 장미단 21회 MBN 230905 방송\n\n매주 화요일 밤 10시\n\n \n#전유진#소녀의기도#불타는장미단\n \n☞MBN NEWS 구독하기 : https://www.youtube.com/channel/UCG9aFJTZ-lMCHAiO1KJsirg?sub_confirmation=1\n☞MPLAY 구독하기 : https://www.youtube.com/channel/UC84IlgY5HIzxKBZOt8XM5UA?sub_confirmation=1\n☞MBN Entertainment 구독하기 : https://www.youtube.com/channel/UCYyLIlOJyqkAFKlVjzX5img?sub_confirmation=1\n☞MBN 공식 홈페이지 : https://www.mbn.co.kr",
+        "publishedAt": "2023-09-05T09:00:25Z",
+        "channelId": "UCWiS4vemV0wcxuxYPx9Z62g",
+        "title": "누구나 나를 아는데 돈이 없어요",
+        "description": "아무도 나를 모르고 돈이 많았으면 좋겠어요\n정반대의 삶\n\n▶ 매주 화 오후 6시 공개\n\n#충주 #공무원 #홍보맨",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/default.jpg",
+            "url": "https://i.ytimg.com/vi/MLKNdekZLmo/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/MLKNdekZLmo/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/MLKNdekZLmo/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/L4KAYJztXsE/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/MLKNdekZLmo/sddefault.jpg",
             "width": 640,
             "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MLKNdekZLmo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
           }
         },
-        "channelTitle": "MBN MUSIC",
+        "channelTitle": "충주시",
         "tags": [
-          "전유진",
-          "소녀의기도",
-          "불타는장미단"
+          "충주",
+          "충주시",
+          "공무원",
+          "홍보맨",
+          "류승수",
+          "박재범",
+          "월클"
         ],
-        "categoryId": "24",
+        "categoryId": "29",
         "liveBroadcastContent": "none",
         "localized": {
-          "title": "전유진 - 소녀의 기도｜불타는 장미단 21회 MBN 230905 방송",
-          "description": "불타는 장미단 21회 MBN 230905 방송\n\n매주 화요일 밤 10시\n\n \n#전유진#소녀의기도#불타는장미단\n \n☞MBN NEWS 구독하기 : https://www.youtube.com/channel/UCG9aFJTZ-lMCHAiO1KJsirg?sub_confirmation=1\n☞MPLAY 구독하기 : https://www.youtube.com/channel/UC84IlgY5HIzxKBZOt8XM5UA?sub_confirmation=1\n☞MBN Entertainment 구독하기 : https://www.youtube.com/channel/UCYyLIlOJyqkAFKlVjzX5img?sub_confirmation=1\n☞MBN 공식 홈페이지 : https://www.mbn.co.kr"
+          "title": "누구나 나를 아는데 돈이 없어요",
+          "description": "아무도 나를 모르고 돈이 많았으면 좋겠어요\n정반대의 삶\n\n▶ 매주 화 오후 6시 공개\n\n#충주 #공무원 #홍보맨"
         },
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "173300",
-        "likeCount": "5019",
+        "viewCount": "462730",
+        "likeCount": "17317",
         "favoriteCount": "0",
-        "commentCount": "2405"
+        "commentCount": "1275"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "Nawbo4Zh5KX8JjmH7BVOYuFMIlI",
+      "etag": "D_YIqLzBFATqAZJl-5qoyvoX5_g",
       "id": "pLiO21Hhb-U",
       "snippet": {
         "publishedAt": "2023-09-04T09:37:12Z",
@@ -2264,76 +2386,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "612656",
-        "likeCount": "10445",
+        "viewCount": "626823",
+        "likeCount": "10641",
         "favoriteCount": "0",
-        "commentCount": "1160"
+        "commentCount": "1179"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "k04_UrLNPx3elSKFVew6nUasfW4",
-      "id": "3h4Hz3iVuPA",
-      "snippet": {
-        "publishedAt": "2023-09-05T00:00:01Z",
-        "channelId": "UCKrhyP3raTJQ38m-US2uMjg",
-        "title": "콩나물국 한솥 가득 끓여도 순식간에 동납니다👍 끝내주는 국물 비법 따라만 해도 대성공",
-        "description": "👇 눌러서 레시피 보기\n\n\n🥬 재료\n콩나물 300g, 김치 반포기, 대파 1줄, 다시멸치 20마리, 다시마 1장, 청양고추 4개\n\n🧂 양념\n물 1.3L, 미림 3숟갈, 액젓 3숟갈, 다진마늘 1숟갈, 고춧가루 1숟갈, 김치국물150mL, 소금 반숟갈\n\n\n✔️ 계량은 가정에서 사용하시는 숟가락과 종이컵이면 충분합니다.\n✔️ 모든 식재료는 깨끗하게 손질해서 준비합니다.\n\n\n⭕ 엄마의손맛은 유튜브와 네이버TV 채널에서만 보실 수 있습니다. \n❌ 이 영상을 무단 도용하거나 재편집 및 업로드 하는 것을 금지합니다.\n\n\n📺 네이버TV 채널\n🟰 https://tv.naver.com/momstaste\n\n🛒 엄마가 쓰는 칼 \n🟰 https://smartstore.naver.com/cookmarket/products/5379031797\n🟰 https://smartstore.naver.com/cookmarket/products/6032749296",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/3h4Hz3iVuPA/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "엄마의손맛",
-        "tags": [
-          "콩나물",
-          "콩나물국",
-          "콩나물국 레시피",
-          "콩나물국 끓이는법",
-          "엄마의손맛",
-          "엄마의손맛요리"
-        ],
-        "categoryId": "26",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ko",
-        "localized": {
-          "title": "콩나물국 한솥 가득 끓여도 순식간에 동납니다👍 끝내주는 국물 비법 따라만 해도 대성공",
-          "description": "👇 눌러서 레시피 보기\n\n\n🥬 재료\n콩나물 300g, 김치 반포기, 대파 1줄, 다시멸치 20마리, 다시마 1장, 청양고추 4개\n\n🧂 양념\n물 1.3L, 미림 3숟갈, 액젓 3숟갈, 다진마늘 1숟갈, 고춧가루 1숟갈, 김치국물150mL, 소금 반숟갈\n\n\n✔️ 계량은 가정에서 사용하시는 숟가락과 종이컵이면 충분합니다.\n✔️ 모든 식재료는 깨끗하게 손질해서 준비합니다.\n\n\n⭕ 엄마의손맛은 유튜브와 네이버TV 채널에서만 보실 수 있습니다. \n❌ 이 영상을 무단 도용하거나 재편집 및 업로드 하는 것을 금지합니다.\n\n\n📺 네이버TV 채널\n🟰 https://tv.naver.com/momstaste\n\n🛒 엄마가 쓰는 칼 \n🟰 https://smartstore.naver.com/cookmarket/products/5379031797\n🟰 https://smartstore.naver.com/cookmarket/products/6032749296"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "92249",
-        "likeCount": "1144",
-        "favoriteCount": "0",
-        "commentCount": "21"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "8RdpUU2V5WcCMQZ3QWNZF-IjZNk",
+      "etag": "Q8uZJQOEK1reg2kDvQP8O8EFWwM",
       "id": "B2cRuv-076k",
       "snippet": {
         "publishedAt": "2023-09-02T00:00:09Z",
@@ -2401,15 +2462,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "2763437",
-        "likeCount": "58934",
+        "viewCount": "2820319",
+        "likeCount": "59769",
         "favoriteCount": "0",
-        "commentCount": "4131"
+        "commentCount": "4187"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "VpALX0cDOfGhZAuTq3W2eRumNAU",
+      "etag": "r-5Lj-yVzqjhmHRyNmMfkshZjh0",
       "id": "r7LzjutoXIo",
       "snippet": {
         "publishedAt": "2023-09-03T08:08:38Z",
@@ -2522,15 +2583,67 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "917292",
-        "likeCount": "20782",
+        "viewCount": "935854",
+        "likeCount": "21021",
         "favoriteCount": "0",
-        "commentCount": "1784"
+        "commentCount": "1795"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "1f8kCFtHZ0gKrNQpg_hcverILF0",
+      "etag": "lZYy2il9IQAxS062PGnC7Y-kT40",
+      "id": "cohrSI8oys0",
+      "snippet": {
+        "publishedAt": "2023-09-05T11:04:52Z",
+        "channelId": "UC8um-BQAa91TNbF5Fy6WVjA",
+        "title": "[평석뿐희지] Q&A | 19/20 | 열아홉스물 | 열아홉스물 현커 | 많관부",
+        "description": "안녕하세요! 평석 희지입니다!\n정말 많이 기다려 주셨던\n저희의 영상을 드디어!\n업로드 했습니다💛\n아직 많은 부분이 부족하지만 \n앞으로 더 노력하며, 성장하는 \n모습 보여드릴게요!\n화질이 안 좋은 점 양해 \n부탁드립니다🙇\u200d♀️💟 \n#열아홉스물 #열아홉스물현커 #평지커플 #평석뿐희지",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/cohrSI8oys0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/cohrSI8oys0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/cohrSI8oys0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/cohrSI8oys0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/cohrSI8oys0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "평석뿐희지",
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "[평석뿐희지] Q&A | 19/20 | 열아홉스물 | 열아홉스물 현커 | 많관부",
+          "description": "안녕하세요! 평석 희지입니다!\n정말 많이 기다려 주셨던\n저희의 영상을 드디어!\n업로드 했습니다💛\n아직 많은 부분이 부족하지만 \n앞으로 더 노력하며, 성장하는 \n모습 보여드릴게요!\n화질이 안 좋은 점 양해 \n부탁드립니다🙇\u200d♀️💟 \n#열아홉스물 #열아홉스물현커 #평지커플 #평석뿐희지"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "271270",
+        "likeCount": "12084",
+        "favoriteCount": "0",
+        "commentCount": "1073"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "5RSzuTMUzJmisXnJ12hk-izjllU",
       "id": "KKnqo9eZrZM",
       "snippet": {
         "publishedAt": "2023-09-06T09:00:12Z",
@@ -2600,126 +2713,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "144808",
-        "likeCount": "2323",
+        "viewCount": "160199",
+        "likeCount": "2475",
         "favoriteCount": "0",
-        "commentCount": "358"
+        "commentCount": "374"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "hgeTWOd97uS3p3tFAnKmWfJb6bQ",
-      "id": "cohrSI8oys0",
-      "snippet": {
-        "publishedAt": "2023-09-05T11:04:52Z",
-        "channelId": "UC8um-BQAa91TNbF5Fy6WVjA",
-        "title": "[평석뿐희지] Q&A | 19/20 | 열아홉스물 | 열아홉스물 현커 | 많관부",
-        "description": "안녕하세요! 평석 희지입니다!\n정말 많이 기다려 주셨던\n저희의 영상을 드디어!\n업로드 했습니다💛\n아직 많은 부분이 부족하지만 \n앞으로 더 노력하며, 성장하는 \n모습 보여드릴게요!\n화질이 안 좋은 점 양해 \n부탁드립니다🙇\u200d♀️💟 \n#열아홉스물 #열아홉스물현커 #평지커플 #평석뿐희지",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/cohrSI8oys0/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/cohrSI8oys0/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/cohrSI8oys0/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/cohrSI8oys0/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/cohrSI8oys0/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "평석뿐희지",
-        "categoryId": "22",
-        "liveBroadcastContent": "none",
-        "localized": {
-          "title": "[평석뿐희지] Q&A | 19/20 | 열아홉스물 | 열아홉스물 현커 | 많관부",
-          "description": "안녕하세요! 평석 희지입니다!\n정말 많이 기다려 주셨던\n저희의 영상을 드디어!\n업로드 했습니다💛\n아직 많은 부분이 부족하지만 \n앞으로 더 노력하며, 성장하는 \n모습 보여드릴게요!\n화질이 안 좋은 점 양해 \n부탁드립니다🙇\u200d♀️💟 \n#열아홉스물 #열아홉스물현커 #평지커플 #평석뿐희지"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "251596",
-        "likeCount": "11215",
-        "favoriteCount": "0",
-        "commentCount": "1031"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "3iCebnSdTKK6_D56za-vzn35lXE",
-      "id": "XJZNEUjgf3g",
-      "snippet": {
-        "publishedAt": "2023-09-04T08:51:25Z",
-        "channelId": "UCTHCOPwqNfZ0uiKOvFyhGwg",
-        "title": "[씬속뉴스] 아파트 주차장에서 롤스로이스 '쿵'…\"괜찮다\"는 피해 차주 알고 보니 / 연합뉴스TV (YonhapnewsTV)",
-        "description": "아파트 주차장에서 롤스로이스 '쿵'…\"괜찮다\"는 피해 차주 알고 보니 김민종?!\n\n지난 1일 밤 자정 가까운 시각 일을 마치고 귀가하던 40대 여성\n\n경차를 몰다 아파트 지하 주차장에서 접촉 사고를 냈는데… \n\n상대 차량 무려 수억 원대 '롤스로이스'... \r\n\r\n[경차 운전자] \"저희 주차장이 많이 좁아요. 여기저기 돌다가 빈 자리가 하나 나서, 주차할 때 보면 보통 뒤에 방지턱 있잖아요. 그게 있을 줄 알고 쓱 밀었는데 쿵 소리가 나는 거예요. 더군다나 제 차가 (후방) 센서가 고장 나서 소리가 안 났어요. 보니까 말로만 듣던 롤스로이스더라고요. 엄청 당황했죠.\"\r\n\r\n사진을 찍어 곧바로 연락 취했지만 답은 오지 않고   \r\n\r\n운전자 속은 타들어갔는데...\r\n\r\n[경차 운전자] \"문짝이라도 갈아달라고 하면 어쩌나 걱정했죠. 렌트비가 몇천만 원씩 나오는 거 아닌가…비용이 이게 얼마나 나오나 싶어서 굉장히 당황했죠.\" \r\n\r\n12시간 만에 받은 차주의 답장  \r\n\"괜찮다. 연락줘서 감사하다\" \r\n\r\n[경차 운전자] \"밝은 데 가서 보시겠다고 하더니 그대로 전화를 끊고 문자가 그렇게 온 거예요.\"\r\n\r\n수소문 도중 연예인 차량이라는 얘기 들었는데 \r\n\r\n알고 보니 상대 차량 주인,  \r\n배우 겸 가수 김민종 씨  \r\n\r\n김민종 씨, 취재진과의 통화에서 \r\n\"오히려 해당 차주분 연락 줘서 감사했다. 알아서 수리할 수 있는 부분\" \r\n\r\n[경차 운전자] \"정말 감사하죠. (요즘) 많이 무서운 세상이잖아요. 굉장히 삭막한 세상에서 참 하여튼 위로가 됐어요.\" \r\n\r\n네티즌들\r\n\"미담으로 널리 퍼져도 될 듯\" \r\n\"마음고생 많으셨을 텐데 좋은 분 만나서 다행이다\" \r\n\r\n#롤스로이스 #주차장 #김민종 #미담 #접촉사고 #더블루 #컬리넌 #블랙배지\r\n\r\n▣ 연합뉴스TV 유튜브 채널 구독\r\nhttps://goo.gl/VuCJMi\r\n▣ 대한민국 뉴스의 시작 연합뉴스TV / Yonhap News TV\r\nhttp://www.yonhapnewstv.co.kr/",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/XJZNEUjgf3g/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/XJZNEUjgf3g/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/XJZNEUjgf3g/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/XJZNEUjgf3g/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/XJZNEUjgf3g/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "연합뉴스TV",
-        "tags": [
-          "Live",
-          "News",
-          "Yonhapnews TV",
-          "뉴스",
-          "생방송",
-          "실시간"
-        ],
-        "categoryId": "25",
-        "liveBroadcastContent": "none",
-        "localized": {
-          "title": "[씬속뉴스] 아파트 주차장에서 롤스로이스 '쿵'…\"괜찮다\"는 피해 차주 알고 보니 / 연합뉴스TV (YonhapnewsTV)",
-          "description": "아파트 주차장에서 롤스로이스 '쿵'…\"괜찮다\"는 피해 차주 알고 보니 김민종?!\n\n지난 1일 밤 자정 가까운 시각 일을 마치고 귀가하던 40대 여성\n\n경차를 몰다 아파트 지하 주차장에서 접촉 사고를 냈는데… \n\n상대 차량 무려 수억 원대 '롤스로이스'... \r\n\r\n[경차 운전자] \"저희 주차장이 많이 좁아요. 여기저기 돌다가 빈 자리가 하나 나서, 주차할 때 보면 보통 뒤에 방지턱 있잖아요. 그게 있을 줄 알고 쓱 밀었는데 쿵 소리가 나는 거예요. 더군다나 제 차가 (후방) 센서가 고장 나서 소리가 안 났어요. 보니까 말로만 듣던 롤스로이스더라고요. 엄청 당황했죠.\"\r\n\r\n사진을 찍어 곧바로 연락 취했지만 답은 오지 않고   \r\n\r\n운전자 속은 타들어갔는데...\r\n\r\n[경차 운전자] \"문짝이라도 갈아달라고 하면 어쩌나 걱정했죠. 렌트비가 몇천만 원씩 나오는 거 아닌가…비용이 이게 얼마나 나오나 싶어서 굉장히 당황했죠.\" \r\n\r\n12시간 만에 받은 차주의 답장  \r\n\"괜찮다. 연락줘서 감사하다\" \r\n\r\n[경차 운전자] \"밝은 데 가서 보시겠다고 하더니 그대로 전화를 끊고 문자가 그렇게 온 거예요.\"\r\n\r\n수소문 도중 연예인 차량이라는 얘기 들었는데 \r\n\r\n알고 보니 상대 차량 주인,  \r\n배우 겸 가수 김민종 씨  \r\n\r\n김민종 씨, 취재진과의 통화에서 \r\n\"오히려 해당 차주분 연락 줘서 감사했다. 알아서 수리할 수 있는 부분\" \r\n\r\n[경차 운전자] \"정말 감사하죠. (요즘) 많이 무서운 세상이잖아요. 굉장히 삭막한 세상에서 참 하여튼 위로가 됐어요.\" \r\n\r\n네티즌들\r\n\"미담으로 널리 퍼져도 될 듯\" \r\n\"마음고생 많으셨을 텐데 좋은 분 만나서 다행이다\" \r\n\r\n#롤스로이스 #주차장 #김민종 #미담 #접촉사고 #더블루 #컬리넌 #블랙배지\r\n\r\n▣ 연합뉴스TV 유튜브 채널 구독\r\nhttps://goo.gl/VuCJMi\r\n▣ 대한민국 뉴스의 시작 연합뉴스TV / Yonhap News TV\r\nhttp://www.yonhapnewstv.co.kr/"
-        }
-      },
-      "statistics": {
-        "viewCount": "926734",
-        "likeCount": "11305",
-        "favoriteCount": "0",
-        "commentCount": "4723"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "qgGM1CK_gZQI5_QWBmN3SEMqMlA",
+      "etag": "QZXCvapOlmw_pOPrKXwYiBavv0o",
       "id": "gzN_fjHaSXM",
       "snippet": {
         "publishedAt": "2023-09-05T09:00:25Z",
@@ -2783,119 +2785,85 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "191214",
-        "likeCount": "1838",
+        "viewCount": "196915",
+        "likeCount": "1892",
         "favoriteCount": "0",
-        "commentCount": "206"
+        "commentCount": "209"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "QSmSzAn6N08Te_8v3PuRDdFkYsU",
-      "id": "H2aBPNFIkOs",
+      "etag": "3SX_5PZcLn8ua2VxiisxIejA-tw",
+      "id": "dZxMy8cjGf0",
       "snippet": {
-        "publishedAt": "2023-09-03T02:36:10Z",
-        "channelId": "UCiwQRG2sCcfjKkgxMEdJGPg",
-        "title": "[#전참시] 저희 진짜로 싸우는 거 맞아요🤗 사이좋은 엔딩 포즈를 위한 악동뮤지션의 눈물 겨운 노력😆ㅣ#악뮤 #이수현 #이찬혁 MBC230902방송",
-        "description": "[전지적 참견 시점] 토요일 밤 11시 10분 방송!\nMBC의 따끈따끈한 영상을 내 맘대로 편하게 즐기는 채널🌀 \n엠뚜루마뚜루 보러가기👉https://www.youtube.com/c/엠뚜루마뚜루\n-\n#전지적참견시점\n#엠뚜루마뚜루\n\n* 전지적 참견 시점 풀영상 보러가기\n✔ WAVVE : https://www.wavve.com/player/vod?programid=M_1003594100000100000\n\n✔ iMBC : http://playvod.imbc.com/templete/VodList?bid=1003594100000100000",
+        "publishedAt": "2023-09-04T09:00:33Z",
+        "channelId": "UCaZS_XwAu1yBMNoQDD1mR7g",
+        "title": "[#강철부대3] 강철!🙋\u200d♂ 도열 경례 폼 미쳤다! 거대한 함선 위 압도적 스케일의 24인의 부대원 출정식 | 채널A",
+        "description": "강철!🙋\u200d♂ 강철부대 24인, 국민 여러분께 출정 보고 합니다!\n대한민국 해군의 주력 상륙함 ‘천자봉함’에서 역대급 스케일의 출정식!\n6개 부대 대원들의 도열 경례 공개.\n한미 특수부대 최강자들의 진검승부!\n\n#강철부대 #navyseal #특전사 #707 #UDT #해병대 #CCT #SSU #SART #HID #UDU #GREENBERET\n\n채널A X ENA 공동제작\n더 강력하게 돌아온 밀리터리 팀 서바이벌 [강철부대3]\n9월 19일 화요일 밤 10시 30분 첫 방송",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/H2aBPNFIkOs/default.jpg",
+            "url": "https://i.ytimg.com/vi/dZxMy8cjGf0/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/H2aBPNFIkOs/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/dZxMy8cjGf0/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/H2aBPNFIkOs/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/dZxMy8cjGf0/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/H2aBPNFIkOs/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/dZxMy8cjGf0/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/H2aBPNFIkOs/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/dZxMy8cjGf0/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+        "channelTitle": "채널A 캔버스",
         "tags": [
-          "전지적참견시점",
-          "전참시",
-          "이수현",
-          "이찬혁",
-          "악동뮤지션",
-          "악뮤",
-          "토요예능",
-          "이영자",
-          "전현무",
-          "송은이",
-          "양세형",
-          "유병재",
-          "홍현희",
-          "참견",
-          "일상",
-          "탐구",
-          "매니저",
-          "연예인",
-          "스타",
-          "생활",
-          "습관",
-          "모습",
-          "행동",
-          "분석",
-          "MBC",
-          "후라이의꿈",
-          "보컬",
-          "가창력",
-          "노래",
-          "듀엣",
-          "남매",
-          "밴드",
-          "합주",
-          "아이유",
-          "작곡",
-          "작사",
-          "라이브",
-          "러브리",
-          "LOVE LEE",
-          "DINOSAUR",
-          "다이노소어",
-          "딩고라이브",
-          "안무",
-          "춤",
-          "엔딩요정",
-          "뮤직뱅크",
-          "뮤뱅",
-          "음악중심",
-          "음중",
-          "인기가요"
+          "채널A",
+          "강철부대 인터뷰",
+          "강철부대3",
+          "특수부대",
+          "특전사",
+          "네이비씰",
+          "그린베레",
+          "navyseal",
+          "SEAL",
+          "군대",
+          "밀리터리",
+          "서바이벌",
+          "rkdcjf",
+          "rkdcjfqneo3",
+          "rkdcjfqneo",
+          "강철부대미군"
         ],
-        "categoryId": "23",
+        "categoryId": "22",
         "liveBroadcastContent": "none",
         "localized": {
-          "title": "[#전참시] 저희 진짜로 싸우는 거 맞아요🤗 사이좋은 엔딩 포즈를 위한 악동뮤지션의 눈물 겨운 노력😆ㅣ#악뮤 #이수현 #이찬혁 MBC230902방송",
-          "description": "[전지적 참견 시점] 토요일 밤 11시 10분 방송!\nMBC의 따끈따끈한 영상을 내 맘대로 편하게 즐기는 채널🌀 \n엠뚜루마뚜루 보러가기👉https://www.youtube.com/c/엠뚜루마뚜루\n-\n#전지적참견시점\n#엠뚜루마뚜루\n\n* 전지적 참견 시점 풀영상 보러가기\n✔ WAVVE : https://www.wavve.com/player/vod?programid=M_1003594100000100000\n\n✔ iMBC : http://playvod.imbc.com/templete/VodList?bid=1003594100000100000"
+          "title": "[#강철부대3] 강철!🙋\u200d♂ 도열 경례 폼 미쳤다! 거대한 함선 위 압도적 스케일의 24인의 부대원 출정식 | 채널A",
+          "description": "강철!🙋\u200d♂ 강철부대 24인, 국민 여러분께 출정 보고 합니다!\n대한민국 해군의 주력 상륙함 ‘천자봉함’에서 역대급 스케일의 출정식!\n6개 부대 대원들의 도열 경례 공개.\n한미 특수부대 최강자들의 진검승부!\n\n#강철부대 #navyseal #특전사 #707 #UDT #해병대 #CCT #SSU #SART #HID #UDU #GREENBERET\n\n채널A X ENA 공동제작\n더 강력하게 돌아온 밀리터리 팀 서바이벌 [강철부대3]\n9월 19일 화요일 밤 10시 30분 첫 방송"
         },
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "1506625",
-        "likeCount": "15301",
+        "viewCount": "893444",
+        "likeCount": "8409",
         "favoriteCount": "0",
-        "commentCount": "798"
+        "commentCount": "4078"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "dOyLaaOe40Z_WUrriX61IpeHN3E",
+      "etag": "ST3LCPWHVTveDMBtcwMldGTLb_4",
       "id": "HRf5mTexk4M",
       "snippet": {
         "publishedAt": "2023-09-03T06:09:39Z",
@@ -2991,73 +2959,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "715148",
-        "likeCount": "20763",
+        "viewCount": "724487",
+        "likeCount": "20919",
         "favoriteCount": "0",
-        "commentCount": "2006"
+        "commentCount": "2009"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "3A8CNBar9J8pfpg23gD4A_PQV8g",
-      "id": "nqfWcR2EBaQ",
-      "snippet": {
-        "publishedAt": "2023-09-04T06:00:15Z",
-        "channelId": "UCcNUpInQt1tI3JC_oTPQ20w",
-        "title": "명절때마다 만드는 고사리나물 이것만 넣어주면 정말 맛있어요~!",
-        "description": "#고사리나물맛있게볶는법\n\n재료 : 불린고사리180g\n\n양념 : 국간장3T, 멸치가루1.5T, 들기름2T \n\n1. 말린고사리는 찬물에 5시간 이상 불려주고/ 불린 고사리는 가볍게 씻어준다.\n\n2. 끓는 물에 고사리를 15분 삶는다 \n\n3. 삶아낸 고사리를 찬물에 담구어 열기를 빼내어 준비한다. \n\n4. 고사리에 국간장3T, 들기름2T 넣고 잘 버무려준 후 상온에 5분정도 재워준다. \n\n5. 멸치가루 만들기 (손질 후 믹서한다)\n\n6. 팬에 양념해놓은 고사리를 넣고 약불로 볶아준다, 수분이 없을 때 물1컵(200ml) , 멸치가루1.5T 넣고 뚜껑을 닫고 수분이 약간 남을 정도까지 졸여준다\n\n⭐️요리왕비룡  멤버십 가입 (응원 감사합니다!)\nhttps://www.youtube.com/channel/UCcNUpInQt1tI3JC_oTPQ20w/join\n\n1컵 = 180ml 기준이에요.\n1T = 성인숟가락 하나에요.\n\n오늘도 영상을 시청하러 와주셔서 감사합니다.\n구독과 좋아요 댓글은 채널에 큰 힘이 됩니다!",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "요리왕비룡 Korean Food Cooking",
-        "tags": [
-          "고사리",
-          "고사리나물맛있게볶는법",
-          "고사리나물볶음"
-        ],
-        "categoryId": "26",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ko",
-        "localized": {
-          "title": "명절때마다 만드는 고사리나물 이것만 넣어주면 정말 맛있어요~!",
-          "description": "#고사리나물맛있게볶는법\n\n재료 : 불린고사리180g\n\n양념 : 국간장3T, 멸치가루1.5T, 들기름2T \n\n1. 말린고사리는 찬물에 5시간 이상 불려주고/ 불린 고사리는 가볍게 씻어준다.\n\n2. 끓는 물에 고사리를 15분 삶는다 \n\n3. 삶아낸 고사리를 찬물에 담구어 열기를 빼내어 준비한다. \n\n4. 고사리에 국간장3T, 들기름2T 넣고 잘 버무려준 후 상온에 5분정도 재워준다. \n\n5. 멸치가루 만들기 (손질 후 믹서한다)\n\n6. 팬에 양념해놓은 고사리를 넣고 약불로 볶아준다, 수분이 없을 때 물1컵(200ml) , 멸치가루1.5T 넣고 뚜껑을 닫고 수분이 약간 남을 정도까지 졸여준다\n\n⭐️요리왕비룡  멤버십 가입 (응원 감사합니다!)\nhttps://www.youtube.com/channel/UCcNUpInQt1tI3JC_oTPQ20w/join\n\n1컵 = 180ml 기준이에요.\n1T = 성인숟가락 하나에요.\n\n오늘도 영상을 시청하러 와주셔서 감사합니다.\n구독과 좋아요 댓글은 채널에 큰 힘이 됩니다!"
-        },
-        "defaultAudioLanguage": "en"
-      },
-      "statistics": {
-        "viewCount": "178433",
-        "likeCount": "3226",
-        "favoriteCount": "0",
-        "commentCount": "59"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "5w1TDvFpZt6sZwh5RYlPl_U62Z0",
+      "etag": "f2tI_5S6GrXoinfTIun0MR4fFak",
       "id": "kVKIVojT8Wc",
       "snippet": {
         "publishedAt": "2023-09-03T10:00:27Z",
@@ -3120,15 +3030,132 @@
         "defaultAudioLanguage": "en"
       },
       "statistics": {
-        "viewCount": "675466",
-        "likeCount": "25653",
+        "viewCount": "683013",
+        "likeCount": "25793",
         "favoriteCount": "0",
-        "commentCount": "1540"
+        "commentCount": "1545"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "XJzQ9r2hyZvpzUvcfwLQDxNZMoM",
+      "etag": "rKEe-tZGyNxtTML-U1e_Zmb9gqY",
+      "id": "nqfWcR2EBaQ",
+      "snippet": {
+        "publishedAt": "2023-09-04T06:00:15Z",
+        "channelId": "UCcNUpInQt1tI3JC_oTPQ20w",
+        "title": "명절때마다 만드는 고사리나물 이것만 넣어주면 정말 맛있어요~!",
+        "description": "#고사리나물맛있게볶는법\n\n재료 : 불린고사리180g\n\n양념 : 국간장3T, 멸치가루1.5T, 들기름2T \n\n1. 말린고사리는 찬물에 5시간 이상 불려주고/ 불린 고사리는 가볍게 씻어준다.\n\n2. 끓는 물에 고사리를 15분 삶는다 \n\n3. 삶아낸 고사리를 찬물에 담구어 열기를 빼내어 준비한다. \n\n4. 고사리에 국간장3T, 들기름2T 넣고 잘 버무려준 후 상온에 5분정도 재워준다. \n\n5. 멸치가루 만들기 (손질 후 믹서한다)\n\n6. 팬에 양념해놓은 고사리를 넣고 약불로 볶아준다, 수분이 없을 때 물1컵(200ml) , 멸치가루1.5T 넣고 뚜껑을 닫고 수분이 약간 남을 정도까지 졸여준다\n\n⭐️요리왕비룡  멤버십 가입 (응원 감사합니다!)\nhttps://www.youtube.com/channel/UCcNUpInQt1tI3JC_oTPQ20w/join\n\n1컵 = 180ml 기준이에요.\n1T = 성인숟가락 하나에요.\n\n오늘도 영상을 시청하러 와주셔서 감사합니다.\n구독과 좋아요 댓글은 채널에 큰 힘이 됩니다!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nqfWcR2EBaQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "요리왕비룡 Korean Food Cooking",
+        "tags": [
+          "고사리",
+          "고사리나물맛있게볶는법",
+          "고사리나물볶음"
+        ],
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "명절때마다 만드는 고사리나물 이것만 넣어주면 정말 맛있어요~!",
+          "description": "#고사리나물맛있게볶는법\n\n재료 : 불린고사리180g\n\n양념 : 국간장3T, 멸치가루1.5T, 들기름2T \n\n1. 말린고사리는 찬물에 5시간 이상 불려주고/ 불린 고사리는 가볍게 씻어준다.\n\n2. 끓는 물에 고사리를 15분 삶는다 \n\n3. 삶아낸 고사리를 찬물에 담구어 열기를 빼내어 준비한다. \n\n4. 고사리에 국간장3T, 들기름2T 넣고 잘 버무려준 후 상온에 5분정도 재워준다. \n\n5. 멸치가루 만들기 (손질 후 믹서한다)\n\n6. 팬에 양념해놓은 고사리를 넣고 약불로 볶아준다, 수분이 없을 때 물1컵(200ml) , 멸치가루1.5T 넣고 뚜껑을 닫고 수분이 약간 남을 정도까지 졸여준다\n\n⭐️요리왕비룡  멤버십 가입 (응원 감사합니다!)\nhttps://www.youtube.com/channel/UCcNUpInQt1tI3JC_oTPQ20w/join\n\n1컵 = 180ml 기준이에요.\n1T = 성인숟가락 하나에요.\n\n오늘도 영상을 시청하러 와주셔서 감사합니다.\n구독과 좋아요 댓글은 채널에 큰 힘이 됩니다!"
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "statistics": {
+        "viewCount": "187285",
+        "likeCount": "3338",
+        "favoriteCount": "0",
+        "commentCount": "59"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "sctFrSHFFfqZ-jb-CMPFoNodIBo",
+      "id": "BWCblWV8_F4",
+      "snippet": {
+        "publishedAt": "2023-09-04T12:00:08Z",
+        "channelId": "UCYDyvqaGX6WxH77N04sj6mg",
+        "title": "[VLOG] 첫 이유식 🥣 과연 유준이 반응은?",
+        "description": "#잔향코팅샤워젤 #딥머스크 향 \n\n🛀 스킨유 이노센트 샤워젤 34% 할인 \n👉🏻 9/6까지 딥머스크 향 뿐 아니라 스킨유 이노센트 샤워젤의 모든 제품을 올영세일 단독가로 만나 보실 수 있어요!\n\n🛀 스킨유 이노센트 딥머스크 샤워젤\nhttps://abit.ly/lijulike\n \n✨쥬디바를 위한 스킨유 이노센트 딥머스크 샤워젤 이벤트✨\n \n- 응모 일정: 9/4(월)~9/8(금)\n- 당첨 선물: 스킨유 #딥머스크 이노센트 샤워젤\n- 당첨 인원 : 30명\n- 당첨자 발표: 9/13(수)\n- 참여 방법 : 잔향코팅샤워젤 딥머스크향을 사용해 보고 싶으시다면 댓글로 힐링이 필요한 이유를 남겨주세요!!\n(대댓글이 아닌 신규 댓글로 작성해주신 분들에 한해 추첨 예정입니다.)\n\ninstagram : @r_yuhyeju\n\nYouTube & Instagram 문의\nlijulike@crbhoney.kr",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "리쥬라이크 LIJULIKE",
+        "tags": [
+          "브이로그",
+          "커플vlog",
+          "부부",
+          "유혜주"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "[VLOG] 첫 이유식 🥣 과연 유준이 반응은?",
+          "description": "#잔향코팅샤워젤 #딥머스크 향 \n\n🛀 스킨유 이노센트 샤워젤 34% 할인 \n👉🏻 9/6까지 딥머스크 향 뿐 아니라 스킨유 이노센트 샤워젤의 모든 제품을 올영세일 단독가로 만나 보실 수 있어요!\n\n🛀 스킨유 이노센트 딥머스크 샤워젤\nhttps://abit.ly/lijulike\n \n✨쥬디바를 위한 스킨유 이노센트 딥머스크 샤워젤 이벤트✨\n \n- 응모 일정: 9/4(월)~9/8(금)\n- 당첨 선물: 스킨유 #딥머스크 이노센트 샤워젤\n- 당첨 인원 : 30명\n- 당첨자 발표: 9/13(수)\n- 참여 방법 : 잔향코팅샤워젤 딥머스크향을 사용해 보고 싶으시다면 댓글로 힐링이 필요한 이유를 남겨주세요!!\n(대댓글이 아닌 신규 댓글로 작성해주신 분들에 한해 추첨 예정입니다.)\n\ninstagram : @r_yuhyeju\n\nYouTube & Instagram 문의\nlijulike@crbhoney.kr"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "604295",
+        "likeCount": "11497",
+        "favoriteCount": "0",
+        "commentCount": "818"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "j3mSOTX-mwx7R5iD9eNh7tg5Enk",
       "id": "RPzx8QwQH78",
       "snippet": {
         "publishedAt": "2023-09-02T08:59:11Z",
@@ -3193,74 +3220,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "4170460",
-        "likeCount": "308675",
+        "viewCount": "4220255",
+        "likeCount": "311113",
         "favoriteCount": "0",
-        "commentCount": "10015"
+        "commentCount": "10056"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "Bbtx42TGzNaiffniS4lGyh0QBnw",
-      "id": "BWCblWV8_F4",
-      "snippet": {
-        "publishedAt": "2023-09-04T12:00:08Z",
-        "channelId": "UCYDyvqaGX6WxH77N04sj6mg",
-        "title": "[VLOG] 첫 이유식 🥣 과연 유준이 반응은?",
-        "description": "#잔향코팅샤워젤 #딥머스크 향 \n\n🛀 스킨유 이노센트 샤워젤 34% 할인 \n👉🏻 9/6까지 딥머스크 향 뿐 아니라 스킨유 이노센트 샤워젤의 모든 제품을 올영세일 단독가로 만나 보실 수 있어요!\n\n🛀 스킨유 이노센트 딥머스크 샤워젤\nhttps://abit.ly/lijulike\n \n✨쥬디바를 위한 스킨유 이노센트 딥머스크 샤워젤 이벤트✨\n \n- 응모 일정: 9/4(월)~9/8(금)\n- 당첨 선물: 스킨유 #딥머스크 이노센트 샤워젤\n- 당첨 인원 : 30명\n- 당첨자 발표: 9/13(수)\n- 참여 방법 : 잔향코팅샤워젤 딥머스크향을 사용해 보고 싶으시다면 댓글로 힐링이 필요한 이유를 남겨주세요!!\n(대댓글이 아닌 신규 댓글로 작성해주신 분들에 한해 추첨 예정입니다.)\n\ninstagram : @r_yuhyeju\n\nYouTube & Instagram 문의\nlijulike@crbhoney.kr",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/BWCblWV8_F4/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "리쥬라이크 LIJULIKE",
-        "tags": [
-          "브이로그",
-          "커플vlog",
-          "부부",
-          "유혜주"
-        ],
-        "categoryId": "22",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ko",
-        "localized": {
-          "title": "[VLOG] 첫 이유식 🥣 과연 유준이 반응은?",
-          "description": "#잔향코팅샤워젤 #딥머스크 향 \n\n🛀 스킨유 이노센트 샤워젤 34% 할인 \n👉🏻 9/6까지 딥머스크 향 뿐 아니라 스킨유 이노센트 샤워젤의 모든 제품을 올영세일 단독가로 만나 보실 수 있어요!\n\n🛀 스킨유 이노센트 딥머스크 샤워젤\nhttps://abit.ly/lijulike\n \n✨쥬디바를 위한 스킨유 이노센트 딥머스크 샤워젤 이벤트✨\n \n- 응모 일정: 9/4(월)~9/8(금)\n- 당첨 선물: 스킨유 #딥머스크 이노센트 샤워젤\n- 당첨 인원 : 30명\n- 당첨자 발표: 9/13(수)\n- 참여 방법 : 잔향코팅샤워젤 딥머스크향을 사용해 보고 싶으시다면 댓글로 힐링이 필요한 이유를 남겨주세요!!\n(대댓글이 아닌 신규 댓글로 작성해주신 분들에 한해 추첨 예정입니다.)\n\ninstagram : @r_yuhyeju\n\nYouTube & Instagram 문의\nlijulike@crbhoney.kr"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "587378",
-        "likeCount": "11364",
-        "favoriteCount": "0",
-        "commentCount": "812"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "Of610EX_zLBDXF0jh6Tpe5J66nI",
+      "etag": "pe9t7A_Z00yZgJGaXWtpU1F96dg",
       "id": "dI-cE73NN3M",
       "snippet": {
         "publishedAt": "2023-09-03T10:46:09Z",
@@ -3335,15 +3303,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "786985",
-        "likeCount": "20929",
+        "viewCount": "802018",
+        "likeCount": "21244",
         "favoriteCount": "0",
-        "commentCount": "1429"
+        "commentCount": "1434"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "_FRgNqDg1BAoKW-0SqBpZ5xLrp0",
+      "etag": "8IedgKmoqAJtGdXTsquOGrLDelc",
       "id": "Bn02OETh2F8",
       "snippet": {
         "publishedAt": "2023-09-03T09:00:07Z",
@@ -3400,15 +3368,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "207188",
-        "likeCount": "2963",
+        "viewCount": "211392",
+        "likeCount": "2995",
         "favoriteCount": "0",
-        "commentCount": "376"
+        "commentCount": "377"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "0wrddAep1N2nn9R5sQ5XoJI-t9o",
+      "etag": "-pCahdt0ZQ8aI4MDBuF4hrnOd1Q",
       "id": "8dJFbOph0iI",
       "snippet": {
         "publishedAt": "2023-09-03T09:59:38Z",
@@ -3504,15 +3472,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "347291",
-        "likeCount": "10540",
+        "viewCount": "366187",
+        "likeCount": "10710",
         "favoriteCount": "0",
-        "commentCount": "318"
+        "commentCount": "322"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "vp-yup91ZxMbUUnUhMtRycl1Eqc",
+      "etag": "gw5E6WMJJI1vpFqR_F0ZjnrwyW8",
       "id": "sxVOY29d404",
       "snippet": {
         "publishedAt": "2023-09-02T09:00:37Z",
@@ -3577,15 +3545,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "511767",
-        "likeCount": "10059",
+        "viewCount": "517440",
+        "likeCount": "10147",
         "favoriteCount": "0",
-        "commentCount": "622"
+        "commentCount": "626"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "63X85tu0Le1oMZPKzF8lPqB61E8",
+      "etag": "sgWYCNj7UZC9QsGjWWZBZMEA6Q0",
       "id": "CE3co0uChHQ",
       "snippet": {
         "publishedAt": "2023-09-03T03:23:06Z",
@@ -3662,68 +3630,15 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "164993",
-        "likeCount": "3093",
+        "viewCount": "165547",
+        "likeCount": "3096",
         "favoriteCount": "0",
-        "commentCount": "221"
+        "commentCount": "215"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "yx0T_sp0QRbsecu7OD-k0zTwvEY",
-      "id": "npe-kBW1azM",
-      "snippet": {
-        "publishedAt": "2023-09-03T00:08:15Z",
-        "channelId": "UCWrh9haWsTEAQF9UEg6AEFQ",
-        "title": "깻잎전 이렇게 부쳤더니 순식간에 사라져요😋 이번 추석엔 무조건 이렇게! 세상 고소하고 맛나요👍",
-        "description": "추석 명절에 만들어먹기좋은 세상고소하고 맛있는 깻잎전 레시피.\n\n양념은 계량 스푼과 계량 컵 기준입니다.\n\n계량스푼 1큰술 = 15ml\n일반숟가락 1스푼 = 10ml\n계량스푼 1작은술 = 5ml\n계량컵 1컵 = 200ml\n종이컵 1컵 = 180ml\n\n\n재료\n\n깻잎(중간크기) 20장\n돼지고기 다짐육 200g\n단단한 두부 150g\n데친당면 150g\n대파 1/2대\n당근 1/4개\n청양고추 3개\n계란 4개\n노른자 1알\n소금 2/3작은술\n밀가루\n\n고기양념:\n양조간장(진간장) 1큰술\n다진마늘 1큰술\n맛술 1큰술\n참기름 1큰술\n후추 약간\n\nIngredient\n\n20 perilla leaves (medium size)\n200g of pork\n150g of hard tofu\n150g of blanched glass noodles\n1/2 green onion\n1/4 of carrot\n3 hot peppers\n4 eggs\n1 yolk\n2/3 teaspoon of salt\nFlour\n\nSeasoning of meat:\n1 tablespoon soy sauce\n1 tablespoon of minced garlic\n1 tablespoon of cooking wine\n1 tablespoon of sesame oil\npepper\n\n\n#깻잎전#추석전요리#전만들기\n\n\n\nTrack: Blue — Declan DP [AL+ Release]\nMusic provided by Audio Library Plus\nWatch: https://youtu.be/Tu63TwPG0RA\nFree Download / Stream: https://alplus.io/Blue",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/npe-kBW1azM/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/npe-kBW1azM/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/npe-kBW1azM/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/npe-kBW1azM/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/npe-kBW1azM/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "소소황 Cook & Eat",
-        "categoryId": "26",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ko",
-        "localized": {
-          "title": "깻잎전 이렇게 부쳤더니 순식간에 사라져요😋 이번 추석엔 무조건 이렇게! 세상 고소하고 맛나요👍",
-          "description": "추석 명절에 만들어먹기좋은 세상고소하고 맛있는 깻잎전 레시피.\n\n양념은 계량 스푼과 계량 컵 기준입니다.\n\n계량스푼 1큰술 = 15ml\n일반숟가락 1스푼 = 10ml\n계량스푼 1작은술 = 5ml\n계량컵 1컵 = 200ml\n종이컵 1컵 = 180ml\n\n\n재료\n\n깻잎(중간크기) 20장\n돼지고기 다짐육 200g\n단단한 두부 150g\n데친당면 150g\n대파 1/2대\n당근 1/4개\n청양고추 3개\n계란 4개\n노른자 1알\n소금 2/3작은술\n밀가루\n\n고기양념:\n양조간장(진간장) 1큰술\n다진마늘 1큰술\n맛술 1큰술\n참기름 1큰술\n후추 약간\n\nIngredient\n\n20 perilla leaves (medium size)\n200g of pork\n150g of hard tofu\n150g of blanched glass noodles\n1/2 green onion\n1/4 of carrot\n3 hot peppers\n4 eggs\n1 yolk\n2/3 teaspoon of salt\nFlour\n\nSeasoning of meat:\n1 tablespoon soy sauce\n1 tablespoon of minced garlic\n1 tablespoon of cooking wine\n1 tablespoon of sesame oil\npepper\n\n\n#깻잎전#추석전요리#전만들기\n\n\n\nTrack: Blue — Declan DP [AL+ Release]\nMusic provided by Audio Library Plus\nWatch: https://youtu.be/Tu63TwPG0RA\nFree Download / Stream: https://alplus.io/Blue"
-        },
-        "defaultAudioLanguage": "ko"
-      },
-      "statistics": {
-        "viewCount": "169342",
-        "likeCount": "1000",
-        "favoriteCount": "0",
-        "commentCount": "40"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "yVKjsxMPVdAXjZjcdoIZig2uPnQ",
+      "etag": "_Oarx0ENQnfi2cVhxgQwwn0TOow",
       "id": "ABN5yzSR-Aw",
       "snippet": {
         "publishedAt": "2023-09-03T09:21:15Z",
@@ -3771,15 +3686,68 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "300091",
-        "likeCount": "4554",
+        "viewCount": "306954",
+        "likeCount": "4616",
         "favoriteCount": "0",
-        "commentCount": "168"
+        "commentCount": "170"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "XZy2dYkaBdBKPoLovjHRNnHDqgU",
+      "etag": "5uSim74_C-j82GU7WStPclDx9g4",
+      "id": "npe-kBW1azM",
+      "snippet": {
+        "publishedAt": "2023-09-03T00:08:15Z",
+        "channelId": "UCWrh9haWsTEAQF9UEg6AEFQ",
+        "title": "깻잎전 이렇게 부쳤더니 순식간에 사라져요😋 이번 추석엔 무조건 이렇게! 세상 고소하고 맛나요👍",
+        "description": "추석 명절에 만들어먹기좋은 세상고소하고 맛있는 깻잎전 레시피.\n\n양념은 계량 스푼과 계량 컵 기준입니다.\n\n계량스푼 1큰술 = 15ml\n일반숟가락 1스푼 = 10ml\n계량스푼 1작은술 = 5ml\n계량컵 1컵 = 200ml\n종이컵 1컵 = 180ml\n\n\n재료\n\n깻잎(중간크기) 20장\n돼지고기 다짐육 200g\n단단한 두부 150g\n데친당면 150g\n대파 1/2대\n당근 1/4개\n청양고추 3개\n계란 4개\n노른자 1알\n소금 2/3작은술\n밀가루\n\n고기양념:\n양조간장(진간장) 1큰술\n다진마늘 1큰술\n맛술 1큰술\n참기름 1큰술\n후추 약간\n\nIngredient\n\n20 perilla leaves (medium size)\n200g of pork\n150g of hard tofu\n150g of blanched glass noodles\n1/2 green onion\n1/4 of carrot\n3 hot peppers\n4 eggs\n1 yolk\n2/3 teaspoon of salt\nFlour\n\nSeasoning of meat:\n1 tablespoon soy sauce\n1 tablespoon of minced garlic\n1 tablespoon of cooking wine\n1 tablespoon of sesame oil\npepper\n\n\n#깻잎전#추석전요리#전만들기\n\n\n\nTrack: Blue — Declan DP [AL+ Release]\nMusic provided by Audio Library Plus\nWatch: https://youtu.be/Tu63TwPG0RA\nFree Download / Stream: https://alplus.io/Blue",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/npe-kBW1azM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/npe-kBW1azM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/npe-kBW1azM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/npe-kBW1azM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/npe-kBW1azM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "소소황 Cook & Eat",
+        "categoryId": "26",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ko",
+        "localized": {
+          "title": "깻잎전 이렇게 부쳤더니 순식간에 사라져요😋 이번 추석엔 무조건 이렇게! 세상 고소하고 맛나요👍",
+          "description": "추석 명절에 만들어먹기좋은 세상고소하고 맛있는 깻잎전 레시피.\n\n양념은 계량 스푼과 계량 컵 기준입니다.\n\n계량스푼 1큰술 = 15ml\n일반숟가락 1스푼 = 10ml\n계량스푼 1작은술 = 5ml\n계량컵 1컵 = 200ml\n종이컵 1컵 = 180ml\n\n\n재료\n\n깻잎(중간크기) 20장\n돼지고기 다짐육 200g\n단단한 두부 150g\n데친당면 150g\n대파 1/2대\n당근 1/4개\n청양고추 3개\n계란 4개\n노른자 1알\n소금 2/3작은술\n밀가루\n\n고기양념:\n양조간장(진간장) 1큰술\n다진마늘 1큰술\n맛술 1큰술\n참기름 1큰술\n후추 약간\n\nIngredient\n\n20 perilla leaves (medium size)\n200g of pork\n150g of hard tofu\n150g of blanched glass noodles\n1/2 green onion\n1/4 of carrot\n3 hot peppers\n4 eggs\n1 yolk\n2/3 teaspoon of salt\nFlour\n\nSeasoning of meat:\n1 tablespoon soy sauce\n1 tablespoon of minced garlic\n1 tablespoon of cooking wine\n1 tablespoon of sesame oil\npepper\n\n\n#깻잎전#추석전요리#전만들기\n\n\n\nTrack: Blue — Declan DP [AL+ Release]\nMusic provided by Audio Library Plus\nWatch: https://youtu.be/Tu63TwPG0RA\nFree Download / Stream: https://alplus.io/Blue"
+        },
+        "defaultAudioLanguage": "ko"
+      },
+      "statistics": {
+        "viewCount": "171311",
+        "likeCount": "1021",
+        "favoriteCount": "0",
+        "commentCount": "37"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nXYc344hFU3FYvtzBi6j6tCLMXE",
       "id": "S49Q20s_xKo",
       "snippet": {
         "publishedAt": "2023-09-02T15:00:07Z",
@@ -3838,15 +3806,15 @@
         "defaultAudioLanguage": "en"
       },
       "statistics": {
-        "viewCount": "4580116",
-        "likeCount": "283209",
+        "viewCount": "4715777",
+        "likeCount": "285637",
         "favoriteCount": "0",
-        "commentCount": "18153"
+        "commentCount": "18258"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "VBXSSoGubpqrL919_NWvGx_g4UY",
+      "etag": "GxG3HJB7r7sedCWaTGKEfhQDxYM",
       "id": "uYTaSNq53kk",
       "snippet": {
         "publishedAt": "2023-09-02T14:05:36Z",
@@ -3901,10 +3869,10 @@
         "defaultAudioLanguage": "ko"
       },
       "statistics": {
-        "viewCount": "266980",
-        "likeCount": "7886",
+        "viewCount": "272997",
+        "likeCount": "8015",
         "favoriteCount": "0",
-        "commentCount": "314"
+        "commentCount": "321"
       }
     }
   ],
