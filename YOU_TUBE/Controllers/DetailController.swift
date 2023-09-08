@@ -144,7 +144,11 @@ class DetailController: UIViewController {
     }
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
-         share()
+        guard let videoData = videoData else { return }
+        guard let objectshared = videoData.snippet?.localized?.description else { return }
+        let activityVC = UIActivityViewController(activityItems: [objectshared], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = view
+        present(activityVC, animated: true)
     }
     
     @IBAction func contentsOrderTapped(_ sender: UIButton) {
@@ -220,11 +224,7 @@ class DetailController: UIViewController {
     
     // 게시물 공유 함수
     private func share() {
-        guard let videoData = videoData else { return }
-        let objectsToShare = videoData.snippet?.descriptions
-        let activityVC = UIActivityViewController(activityItems: [objectsToShare as Any], applicationActivities: nil)
-        activityVC.popoverPresentationController?.sourceView = view
-        present(activityVC, animated: true)
+        
     }
     
     private func addCommas(to number: Int) -> String {
