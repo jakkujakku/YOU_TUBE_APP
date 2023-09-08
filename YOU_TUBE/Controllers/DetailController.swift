@@ -26,7 +26,6 @@ class DetailController: UIViewController {
     
     var commentService: CommentService2?
     
-    let regionCode: [RegionCode] = [.kr, .us, .fr, .jp, .br, .hk]
     
     // 유저디폴트
     
@@ -134,7 +133,8 @@ class DetailController: UIViewController {
             upButton.setTitle(addCommas(to: upCount), for: .normal)
         }
         sender.isSelected = !sender.isSelected
-//         데이터 변화 - 유저디폴트 저장
+        tableView.reloadData()
+
     }
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
@@ -268,27 +268,42 @@ class DetailController: UIViewController {
         }
     }
     
+    private func loadImage(url: String, cell: DetailPageTableViewCell) {
+            guard let url = URL(string: url)  else { return }
+            
+            DispatchQueue.global().async {
+            
+                guard let data = try? Data(contentsOf: url) else { return }
+
+                DispatchQueue.main.async {
+                    cell.commentUserImage.image = UIImage(data: data)
+                    cell.commentUserImage.layer.cornerRadius = cell.commentUserImage.frame.height / 2
+                    cell.commentUserImage.clipsToBounds = true
+                }
+            }
+        }
+    
     
 }
 
 // 유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라
 extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let commentCount = commentService?.items.count else { return 0 }
+        guard let commentCount = Int(((videoData?.statistics?.commentCount)!)) else { return 0 }
         return commentCount
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
-        guard let commentService = commentService?.items[indexPath.row].snippet.topLevelComment else { return cell}
+        guard let videoData = videoData?.snippet else { return cell}
+        guard let commentService = commentService?.items[indexPath.row].snippet?.topLevelComment else { return cell}
          let userData = commentService.snippet
-        
-        cell.commentUserName.text = userData.parentID
-        cell.imageData = userData.authorProfileImageURL
-        cell.postedCommentDate.text = timeAgoString(from: (userData.updatedAt))
+
+        cell.commentUserName.text = userData.authorDisplayName
+        loadImage(url: userData.authorProfileImageURL ?? "", cell: cell)
+        cell.postedCommentDate.text = videoData.publishedAt
         cell.comment.text = userData.textOriginal
-        
         return cell
     }
     

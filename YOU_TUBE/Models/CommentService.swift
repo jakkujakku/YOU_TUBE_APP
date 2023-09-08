@@ -26,87 +26,127 @@ struct CommentStruct {
     
 }
 
+
+// MARK: - Welcome
+//struct CommentService2: Codable {
+//    let kind, etag, nextPageToken: String
+//
+//    let items: [Item]
+//}
+//
+//// MARK: - Item
+//struct Item: Codable {
+//    let kind: ItemKind
+//    let etag, id: String
+//    let snippet: ItemSnippet
+//    let replies: Replies?
+//}
+//
+//enum ItemKind: String, Codable {
+//    case youtubeCommentThread = "youtube#commentThread"
+//}
+//
+//// MARK: - Replies
+//struct Replies: Codable {
+//    let comments: [Comment]
+//}
+//
+//// MARK: - Comment
+//struct Comment: Codable {
+//    let kind: TopLevelCommentKind
+//    let etag, id: String
+//    let snippet: TopLevelCommentSnippet
+//}
+//
+//enum TopLevelCommentKind: String, Codable {
+//    case youtubeComment = "youtube#comment"
+//}
+//
+//// MARK: - TopLevelCommentSnippet
+//struct TopLevelCommentSnippet: Codable {
+//    let channelID: String
+//    let videoID: String
+//    let textDisplay, textOriginal: String
+//    let parentID: String?
+//    let authorDisplayName: String
+//    let authorProfileImageURL: String
+//    let authorChannelURL: String
+//    let authorChannelID: AuthorChannelID
+//    let canRate: Bool
+//    let likeCount: Int
+//    let publishedAt, updatedAt: Date
+//
+//    enum CodingKeys: String, CodingKey {
+//        case channelID = "channelId"
+//        case videoID = "videoId"
+//        case textDisplay, textOriginal
+//        case parentID = "parentId"
+//        case authorDisplayName
+//        case authorProfileImageURL = "authorProfileImageUrl"
+//        case authorChannelURL = "authorChannelUrl"
+//        case authorChannelID = "authorChannelId"
+//        case canRate, likeCount, publishedAt, updatedAt
+//    }
+//}
+//
+//// MARK: - AuthorChannelID
+//struct AuthorChannelID: Codable {
+//    let value: String
+//}
+//
+//
+//// MARK: - ItemSnippet
+//struct ItemSnippet: Codable {
+//    let channelID: String
+//    let videoID: String
+//    let topLevelComment: Comment
+//    let canReply: Bool
+//    let totalReplyCount: Int
+//    let isPublic: Bool
+//
+//    enum CodingKeys: String, CodingKey {
+//        case channelID = "channelId"
+//        case videoID = "videoId"
+//        case topLevelComment, canReply, totalReplyCount, isPublic
+//    }
+//}
+
+
 // MARK: - Welcome
 struct CommentService2: Codable {
-//    let kind, etag, nextPageToken: String
     let items: [Item]
-    
-//    enum CodingKeys: String, CodingKey {
-//        case kind, etag, nextPageToken
-//        case items
-//
-//    }
 }
 
 // MARK: - Item
 struct Item: Codable {
-//    let kind, etag, id: String
-    let snippet: ItemSnippet
-    let replies: Replies?
+    let snippet: ItemSnippet?
 }
 
-// MARK: - Replies
-struct Replies: Codable {
-    let comments: [Comment]
+//// MARK: - ItemSnippet
+struct ItemSnippet: Codable {
+    let topLevelComment: Comment
 }
 
 // MARK: - Comment
 struct Comment: Codable {
-//    let kind, etag, id: String
     let snippet: TopLevelCommentSnippet
 }
 
 // MARK: - TopLevelCommentSnippet
 struct TopLevelCommentSnippet: Codable {
-    let channelID, videoID, textDisplay, textOriginal: String
-    let parentID: String?
+    let textOriginal: String?
     let authorDisplayName: String
-    let authorProfileImageURL: String
-    let authorChannelURL: String
-//    let authorChannelID: AuthorChannelID
-//    let canRate: Bool
-//    let viewerRating: String
-//    let likeCount: Int
-//    let publishedAt: Date
-    let updatedAt: Date
-
+    let authorProfileImageURL: String?
+   
     enum CodingKeys: String, CodingKey {
-        case channelID = "channelId"
-        case videoID = "videoId"
-        case textDisplay, textOriginal
-        case parentID = "parentId"
+        case textOriginal
         case authorDisplayName
         case authorProfileImageURL = "authorProfileImageUrl"
-        case authorChannelURL = "authorChannelUrl"
-//        case authorChannelID = "authorChannelId"
-//        case canRate
-//        case viewerRating
-//        case likeCount
-//        case publishedAt
-        case updatedAt
     }
 }
 
-//// MARK: - AuthorChannelID
-//struct AuthorChannelID: Codable {
-//    let value: String
-//}
 
-//// MARK: - ItemSnippet
-struct ItemSnippet: Codable {
-//    let channelID, videoID: String
-    let topLevelComment: Comment
-//    let canReply: Bool
-//    let totalReplyCount: Int
-//    let isPublic: Bool
 
-//    enum CodingKeys: String, CodingKey {
-//        case channelID = "channelId"
-//        case videoID = "videoId"
-//        case topLevelComment
-//        case canReply, totalReplyCount, isPublic
-//    }
-}
 
 
 

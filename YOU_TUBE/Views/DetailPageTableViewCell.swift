@@ -18,18 +18,15 @@ class DetailPageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var comment: UILabel!
     
-    var imageData: String?
     
-    private var isTextExpanded = false
+    private var isTextExpanded = true
     
     @IBOutlet weak var toSeeMoreButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        guard let imageData = imageData else { return }
-        commentUserImage.layer.cornerRadius = commentUserImage.frame.height / 2
-        commentUserImage.clipsToBounds = true
-        loadImage(url: imageData)
+            
+     
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -38,30 +35,34 @@ class DetailPageTableViewCell: UITableViewCell {
 
     
     @IBAction func toSeeMoreButtonTapped(_ sender: UIButton) {
-        isTextExpanded.toggle()
         
-        if isTextExpanded {
-            comment.numberOfLines = 0
-            toSeeMoreButton.setTitle("접기", for: .normal)
-        } else {
-            comment.numberOfLines = 3
-            toSeeMoreButton.setTitle("...더보기", for: .normal)
-        }
         
+        let currentNumberOfLines = comment.numberOfLines
+
+            if isTextExpanded {
+                // 현재 상태가 확장된 상태일 때
+                if currentNumberOfLines > 2 {
+                    // 현재 라인 수가 2보다 크다면 줄이기
+                    comment.numberOfLines = 2
+                    toSeeMoreButton.setTitle("...더보기", for: .normal)
+                } else {
+                    // 현재 라인 수가 2 이하라면 텍스트 접기
+                    comment.numberOfLines = 0
+                    toSeeMoreButton.setTitle("접기", for: .normal)
+                }
+            } else {
+                // 현재 상태가 접혀있는 상태일 때
+                comment.numberOfLines += 1 // 라인 수 증가
+                if currentNumberOfLines == 1 {
+                    // 현재 라인 수가 1이면 (한 줄에서 더보기로 전환)
+                    toSeeMoreButton.setTitle("...더보기", for: .normal)
+                }
+            }
+
+            // 버튼 상태 토글
+            isTextExpanded.toggle()
     }
     
     
-    private func loadImage(url: String) {
-            guard let url = URL(string: url)  else { return }
-            
-            DispatchQueue.global().async {
-            
-                guard let data = try? Data(contentsOf: url) else { return }
-
-                DispatchQueue.main.async {
-                    self.commentUserImage.image = UIImage(data: data)
-                }
-            }
-        }
  
 }
