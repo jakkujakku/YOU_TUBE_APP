@@ -108,32 +108,36 @@ class DetailController: UIViewController {
     
     // API JSON 파일의 구조체 프로퍼티에 영향을 받아 값을 변경 저장, 값 불러오기
     @IBAction func upButtonTapped(_ sender: UIButton) {
-        if upButton.imageView?.image == UIImage(systemName: "hand.thumbsup") {
-            upCount += 1
-            // 영상 데이터에 upcount 넣어주기
-            
-            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
-        } else {
-            upCount -= 1
-            
-            // 영상 데이터에 upcount 넣어주기
-            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
-        }
+        guard let statistics = videoData?.statistics else { return }
+        upCount = Int(statistics.likeCount!)!
+        
+//        if sender.isSelected {
+//            upCount += 1
+//            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+//            statistics.likeCount = upCount
+//        } else {
+//            upCount -= 1
+//            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+//            statistics.likeCount = downCount
+//        }
+//        sender.isSelected = !sender.isSelected
         // 데이터 변화 - 유저디폴트 저장
     }
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
-        if upButton.imageView?.image == UIImage(systemName: "hand.thumbsdown") {
-            upCount -= 1
-            // 영상 데이터에 upcount 넣어주기
-            
-            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
-        } else {
-            upCount += 1
-            
-            // 영상 데이터에 upcount 넣어주기
-            upButton.setImage(UIImage(systemName: "hand.thumbsdown.fill"), for: .normal)
-        }
+        guard let statistics = videoData?.statistics else { return }
+        downCount = Int(statistics.dislikeCount!)!
+        
+//        if sender.isSelected {
+//            upCount += 1
+//            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+//            statistics.dislikeCount
+//        } else {
+//            upCount -= 1
+//            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+//            readCount.text = addCommas(to: Int(statistics.likeCount!)!)
+//        }
+//        sender.isSelected = !sender.isSelected
         // 데이터 변화 - 유저디폴트 저장
     }
     
