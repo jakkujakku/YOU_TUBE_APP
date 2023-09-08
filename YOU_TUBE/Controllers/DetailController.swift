@@ -98,6 +98,8 @@ class DetailController: UIViewController {
         readCount.text = addCommas(to: Int(statistics.viewCount!)!)
         publishedDate.text = convertDateString(snippet.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
 
+        upButton.setTitle(addCommas(to: Int(statistics.likeCount!)!), for: .normal)
+//        downButton.setTitle(addCommas(to: Int(statistics.dislikeCount!)!), for: .normal)
         
     }
     
@@ -111,34 +113,34 @@ class DetailController: UIViewController {
         guard let statistics = videoData?.statistics else { return }
         upCount = Int(statistics.likeCount!)!
         
-//        if sender.isSelected {
-//            upCount += 1
-//            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
-//            statistics.likeCount = upCount
-//        } else {
-//            upCount -= 1
-//            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
-//            statistics.likeCount = downCount
-//        }
-//        sender.isSelected = !sender.isSelected
-        // 데이터 변화 - 유저디폴트 저장
+        if sender.isSelected {
+            upCount += 1
+            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+            upButton.setTitle(addCommas(to: upCount), for: .normal)
+        } else {
+            upCount -= 0
+            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+            upButton.setTitle(addCommas(to: upCount), for: .normal)
+        }
+        sender.isSelected = !sender.isSelected
+//         데이터 변화 - 유저디폴트 저장
     }
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
         guard let statistics = videoData?.statistics else { return }
         downCount = Int(statistics.dislikeCount!)!
         
-//        if sender.isSelected {
-//            upCount += 1
-//            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
-//            statistics.dislikeCount
-//        } else {
-//            upCount -= 1
-//            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
-//            readCount.text = addCommas(to: Int(statistics.likeCount!)!)
-//        }
-//        sender.isSelected = !sender.isSelected
-        // 데이터 변화 - 유저디폴트 저장
+        if sender.isSelected {
+            downCount += 1
+            downButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+            downButton.setTitle(addCommas(to: downCount), for: .normal)
+        } else {
+            downCount -= 0
+            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+            downButton.setTitle(addCommas(to: downCount), for: .normal)
+        }
+        sender.isSelected = !sender.isSelected
+//         데이터 변화 - 유저디폴트 저장
     }
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
