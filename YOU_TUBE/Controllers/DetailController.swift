@@ -16,7 +16,7 @@ class DetailController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // Networking Data
-    // var videoData: ?
+    var videoData: Items?
     
     // 유저디폴트
     
@@ -54,10 +54,12 @@ class DetailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let videoData = videoData else { return }
         view.backgroundColor = .systemBackground
         configuration()
         configUI()
-        laodVideo(videoID: "")
+        dataConfigUI()
+        laodVideo(videoID: videoData.id ?? "")
     }
     
     private func configuration() {
@@ -85,12 +87,18 @@ class DetailController: UIViewController {
         shareButton.clipsToBounds = true
 //        tableView.rowHeight = 120
         commentTextField.placeholder = "댓글을 입력해 주세요."
+        videoTitle.numberOfLines = 0
+        videoTitle.lineBreakMode = .byWordWrapping
     }
     
     private func dataConfigUI() {
-//        videoTitle.text =
-//        readCount.text =
-//        publishedDate.text =
+        guard let snippet = videoData?.snippet else { return }
+        guard let statistics = videoData?.statistics else { return }
+        videoTitle.text = snippet.title
+        readCount.text = addCommas(to: Int(statistics.viewCount!)!)
+        publishedDate.text = convertDateString(snippet.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
+
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -130,8 +138,7 @@ class DetailController: UIViewController {
     }
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
-        // 변경예정
-        // share()
+         share()
     }
     
     @IBAction func contentsOrderTapped(_ sender: UIButton) {
@@ -205,14 +212,33 @@ class DetailController: UIViewController {
         }
     }
     
-    // 게시물 공유 함수 (index 변경 예정)
-    private func share(index: IndexPath) {
-        // 영상 url로 변경하기 추후에 네트워킹 데이터 받은 다음
-        let objectsToShare = commentArray[index.row]
-        let activityVC = UIActivityViewController(activityItems: [objectsToShare.comment], applicationActivities: nil)
+    // 게시물 공유 함수
+    private func share() {
+        guard let videoData = videoData else { return }
+        let objectsToShare = videoData.snippet?.descriptions
+        let activityVC = UIActivityViewController(activityItems: [objectsToShare as Any], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = view
         present(activityVC, animated: true)
     }
+    
+    private func addCommas(to number: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return numberFormatter.string(from: NSNumber(value: number)) ?? ""
+    }
+    
+    func convertDateString(_ inputDateString: String, from inputFormat: String, to outputFormat: String) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = inputFormat
+        
+        if let date = dateFormatter.date(from: inputDateString) {
+            dateFormatter.dateFormat = outputFormat
+            return dateFormatter.string(from: date)
+        }
+        
+        return nil
+    }
+    
 }
 
 // 유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라

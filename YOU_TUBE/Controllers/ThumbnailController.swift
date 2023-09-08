@@ -178,8 +178,10 @@ extension ThumbnailController: UICollectionViewDelegate {
         let item = thumbnailInfoList.thumbnailInfo?.items?[indexPath.row]
         print("### \(item?.snippet?.title)")
 //        let vc = DetailController()
-//        vc.navigationItem.title = item?.snippet.title
-//        navigationController?.pushViewController(vc, animated: true)
+        let storyboadrd = UIStoryboard(name: "Detail", bundle: nil)
+        guard let vc = storyboadrd.instantiateViewController(withIdentifier: "DetailController") as? DetailController else { return }
+        vc.videoData = item
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
