@@ -48,9 +48,6 @@ final class ThumbnailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Video List"
-        navigationController?.navigationBar.prefersLargeTitles = true
-
         setupUI()
         addSearchBar()
         topViewUp()
@@ -102,7 +99,6 @@ final class ThumbnailController: UIViewController {
 
     private func setupUI() {
         view.backgroundColor = .systemBackground
-        navigationItem.title = "Video List"
         navigationController?.navigationBar.prefersLargeTitles = true
 
         collectionView.dataSource = self

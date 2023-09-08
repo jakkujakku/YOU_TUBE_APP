@@ -38,6 +38,7 @@
 		4EED5B2B2AA5BD53006370E6 /* Thumbnail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5B292AA5BD53006370E6 /* Thumbnail.storyboard */; };
 		4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */; };
 		E70287982AA6B28200BC2E5B /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70287972AA6B28200BC2E5B /* ProfileEditViewController.swift */; };
+		E7C059B82AA9D3C200CCE685 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C059B72AA9D3C200CCE685 /* ProfileCell.swift */; };
 		FFEC440A2AA8103D00D76A00 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		4EED5B2A2AA5BD53006370E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YOU_TUBE/Views/Base.lproj/Thumbnail.storyboard; sourceTree = "<group>"; };
 		4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		E70287972AA6B28200BC2E5B /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		E7C059B72AA9D3C200CCE685 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 				4E35509D2AA8B3C900A9A5DE /* Profile.storyboard */,
 				4EED5AF32AA581B8006370E6 /* LaunchScreen.storyboard */,
 				4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */,
+				E7C059B72AA9D3C200CCE685 /* ProfileCell.swift */,
 				4E3550942AA89B5600A9A5DE /* DetailPageTableViewCell.swift */,
 			);
 			path = Views;
@@ -287,6 +290,7 @@
 				4EED5B0B2AA582A3006370E6 /* ProfileController.swift in Sources */,
 				4EED5B072AA5827D006370E6 /* ThumbnailController.swift in Sources */,
 				4EED5AEB2AA581B5006370E6 /* SceneDelegate.swift in Sources */,
+				E7C059B82AA9D3C200CCE685 /* ProfileCell.swift in Sources */,
 				4EED5B002AA58207006370E6 /* AuthService.swift in Sources */,
 				4E3550952AA89B5600A9A5DE /* DetailPageTableViewCell.swift in Sources */,
 			);
@@ -478,9 +482,11 @@
 				DEVELOPMENT_TEAM = 4MN45GZSDT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YOU_TUBE/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select a photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -508,9 +514,11 @@
 				DEVELOPMENT_TEAM = 4MN45GZSDT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YOU_TUBE/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = test;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow access to select a photo";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
