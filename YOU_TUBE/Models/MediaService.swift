@@ -105,7 +105,7 @@ struct Localized: Codable {
 struct Statistics: Codable {
     let viewCount: String?
     let likeCount: String?
-    let dislikeCount: String?
+
     let favoriteCount: String?
     let commentCount: String?
 }

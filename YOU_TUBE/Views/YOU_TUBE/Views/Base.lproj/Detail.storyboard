@@ -18,19 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zao-bn-x9G">
-                                <rect key="frame" x="5" y="743" width="383" height="70"/>
+                                <rect key="frame" x="5" y="753" width="383" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ffo-xz-c03">
-                                        <rect key="frame" x="0.0" y="5" width="44" height="60"/>
+                                        <rect key="frame" x="0.0" y="5" width="34" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLc-pL-MUQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="VLc-pL-MUQ" secondAttribute="height" multiplier="1:1" id="aYm-w8-9Nb"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baU-Bm-wGe">
-                                                <rect key="frame" x="0.0" y="46" width="44" height="14"/>
+                                                <rect key="frame" x="0.0" y="36" width="34" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="14" id="qPh-zz-Rcf"/>
                                                 </constraints>
@@ -40,16 +40,16 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="SWa-UJ-71n"/>
+                                            <constraint firstAttribute="height" constant="50" id="SWa-UJ-71n"/>
                                         </constraints>
                                     </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGy-Xi-ILG">
-                                        <rect key="frame" x="49" y="5" width="269" height="60"/>
+                                        <rect key="frame" x="39" y="5" width="289" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAj-rY-6hW">
-                                        <rect key="frame" x="323" y="5" width="60" height="60"/>
+                                        <rect key="frame" x="333" y="5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="GAj-rY-6hW" secondAttribute="height" multiplier="1:1" id="L4Z-L0-leK"/>
                                         </constraints>
@@ -194,7 +194,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Ar-v4-Gam">
-                                <rect key="frame" x="5" y="465" width="383" height="278"/>
+                                <rect key="frame" x="5" y="465" width="383" height="288"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="105" id="HsV-AQ-Lwd" customClass="DetailPageTableViewCell" customModule="YOU_TUBE" customModuleProvider="target">

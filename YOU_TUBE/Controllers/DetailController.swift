@@ -15,8 +15,18 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    // Networking Data
+    //싱글톤 네트워킹
+    var networking = CommentNetworking.shared
+    
+   
+    
+    // 썸네일 컨트롤러에서 받은 데이터
     var videoData: Items?
+    
+    
+    var commentService: CommentService2?
+    
+    let regionCode: [RegionCode] = [.kr, .us, .fr, .jp, .br, .hk]
     
     // 유저디폴트
     
@@ -42,24 +52,25 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var commentTextField: UITextField!
     
-    // 나중에 유튜브 좋아요 수로 변경
+   
     var upCount = 0
-    var downCount = 0
+    var downCount = 8962
     
     // 임시 데이터
-    var commentArray: [Comment] = [
-        Comment(userId: "test", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 0"),
-        Comment(userId: "test", userImage: (UIImage(systemName: "pencil") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 1")
+    var commentArray: [CommentStruct] = [
+        CommentStruct(userId: "test", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 0"),
+        CommentStruct(userId: "test", userImage: (UIImage(systemName: "pencil") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 1")
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let videoData = videoData else { return }
+        guard let videoData = videoData?.id else { return }
         view.backgroundColor = .systemBackground
         configuration()
         configUI()
         dataConfigUI()
-        laodVideo(videoID: videoData.id ?? "")
+        laodVideo(videoID: videoData)
+        getCommnetData(url: "https://youtube.googleapis.com/youtube/v3/commentThreads?part=id&part=replies&part=snippet&maxResults=100&textFormat=plainText&videoId=\(videoData)&key=AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo")
     }
     
     private func configuration() {
@@ -99,7 +110,7 @@ class DetailController: UIViewController {
         publishedDate.text = convertDateString(snippet.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
 
         upButton.setTitle(addCommas(to: Int(statistics.likeCount!)!), for: .normal)
-//        downButton.setTitle(addCommas(to: Int(statistics.dislikeCount!)!), for: .normal)
+        downButton.setTitle(addCommas(to: downCount), for: .normal)
         
     }
     
@@ -114,12 +125,12 @@ class DetailController: UIViewController {
         upCount = Int(statistics.likeCount!)!
         
         if sender.isSelected {
-            upCount += 1
-            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+            upCount -= 1
+            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
             upButton.setTitle(addCommas(to: upCount), for: .normal)
         } else {
-            upCount -= 0
-            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+            upCount += 1
+            upButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
             upButton.setTitle(addCommas(to: upCount), for: .normal)
         }
         sender.isSelected = !sender.isSelected
@@ -128,15 +139,14 @@ class DetailController: UIViewController {
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
         guard let statistics = videoData?.statistics else { return }
-        downCount = Int(statistics.dislikeCount!)!
-        
+    
         if sender.isSelected {
-            downCount += 1
-            downButton.setImage(UIImage(systemName: "hand.thumbsup.fill"), for: .normal)
+            downCount -= 1
+            downButton.setImage(UIImage(systemName: "hand.thumbsdown"), for: .normal)
             downButton.setTitle(addCommas(to: downCount), for: .normal)
         } else {
-            downCount -= 0
-            upButton.setImage(UIImage(systemName: "hand.thumbsup"), for: .normal)
+            downCount += 1
+            downButton.setImage(UIImage(systemName: "hand.thumbsdown.fill"), for: .normal)
             downButton.setTitle(addCommas(to: downCount), for: .normal)
         }
         sender.isSelected = !sender.isSelected
@@ -183,7 +193,7 @@ class DetailController: UIViewController {
     
     // 댓글 추가
     @IBAction func sendButtonTapped(_ sender: UIButton) {
-        let newData = Comment(userId: "test - \(Comment.postNumber)", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: commentTextField.text ?? "")
+        let newData = CommentStruct(userId: "test - \(CommentStruct.postNumber)", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: commentTextField.text ?? "")
         commentArray.append(newData)
         
         // 값 저장유저디폴트
@@ -222,17 +232,15 @@ class DetailController: UIViewController {
         }
     }
     
-    // 게시물 공유 함수
-    private func share() {
-        
-    }
     
+    //숫자에 ,
     private func addCommas(to number: Int) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         return numberFormatter.string(from: NSNumber(value: number)) ?? ""
     }
     
+    //날짜 변환
     func convertDateString(_ inputDateString: String, from inputFormat: String, to outputFormat: String) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = inputFormat
@@ -245,24 +253,46 @@ class DetailController: UIViewController {
         return nil
     }
     
+    
+//
+    
+    private func getCommnetData(url: String) {
+        networking.performRequest(with: url) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case let .success(result):
+                self.commentService = result
+            case let .failure(error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    
 }
 
 // 유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라
 extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return commentArray.count
+        guard let commentCount = commentService?.items.count else { return 0 }
+        return commentCount
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
-        let data = commentArray[indexPath.row]
-        cell.commentUserName.text = data.userId
-        cell.commentUserImage.image = data.userImage
-        cell.postedCommentDate.text = timeAgoString(from: data.date)
-        cell.comment.text = data.comment
+        guard let commentService = commentService?.items[indexPath.row].snippet.topLevelComment else { return cell}
+         let userData = commentService.snippet
+        
+        cell.commentUserName.text = userData.parentID
+        cell.imageData = userData.authorProfileImageURL
+        cell.postedCommentDate.text = timeAgoString(from: (userData.updatedAt))
+        cell.comment.text = userData.textOriginal
         
         return cell
     }
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

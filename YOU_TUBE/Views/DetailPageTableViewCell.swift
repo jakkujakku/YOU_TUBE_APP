@@ -18,14 +18,18 @@ class DetailPageTableViewCell: UITableViewCell {
     
     @IBOutlet weak var comment: UILabel!
     
+    var imageData: String?
+    
     private var isTextExpanded = false
     
     @IBOutlet weak var toSeeMoreButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        guard let imageData = imageData else { return }
         commentUserImage.layer.cornerRadius = commentUserImage.frame.height / 2
         commentUserImage.clipsToBounds = true
+        loadImage(url: imageData)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -46,5 +50,18 @@ class DetailPageTableViewCell: UITableViewCell {
         
     }
     
+    
+    private func loadImage(url: String) {
+            guard let url = URL(string: url)  else { return }
+            
+            DispatchQueue.global().async {
+            
+                guard let data = try? Data(contentsOf: url) else { return }
+
+                DispatchQueue.main.async {
+                    self.commentUserImage.image = UIImage(data: data)
+                }
+            }
+        }
  
 }
