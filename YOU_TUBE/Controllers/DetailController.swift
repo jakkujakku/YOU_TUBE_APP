@@ -157,7 +157,7 @@ class DetailController: UIViewController {
             sortedComments = commentService
         } else if latestOrderSelected {
   
-            commentService.sort { $0.snippet?.topLevelComment.snippet.likeCount ?? 0 > $1.snippet?.topLevelComment.snippet.likeCount ?? 0 }
+            commentService.sort { $0.snippet?.topLevelComment.snippet.publishedAt ?? "" > $1.snippet?.topLevelComment.snippet.publishedAt ?? "" }
             sortedComments = commentService
         }
 
@@ -298,12 +298,11 @@ extension DetailController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
-        guard let videoData = videoData?.snippet else { return cell}
         guard let commentService = sortedComments[indexPath.row].snippet?.topLevelComment else { return cell}
          let userData = commentService.snippet
         cell.commentUserName.text = userData.authorDisplayName
         loadImage(url: userData.authorProfileImageURL ?? "", cell: cell)
-        cell.postedCommentDate.text = convertDateString(videoData.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
+        cell.postedCommentDate.text = convertDateString(userData.publishedAt , from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
         cell.comment.text = userData.textOriginal
         return cell
     }

@@ -52,13 +52,14 @@ struct TopLevelCommentSnippet: Codable {
     let authorDisplayName: String
     let authorProfileImageURL: String?
     let likeCount: Int
-    
+    let publishedAt: String
    
     enum CodingKeys: String, CodingKey {
         case textOriginal
         case authorDisplayName
         case authorProfileImageURL = "authorProfileImageUrl"
         case likeCount
+        case publishedAt
     }
 }
 
