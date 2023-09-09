@@ -138,12 +138,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iKv-ZI-EQs" kind="relationship" relationship="rootViewController" id="jfA-1o-6a0"/>
+                        <segue destination="iKv-ZI-EQs" kind="relationship" relationship="rootViewController" id="BOv-pA-K22"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vd-7j-Nf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-1168"/>
+            <point key="canvasLocation" x="1767" y="-1168"/>
         </scene>
     </scenes>
     <resources>
