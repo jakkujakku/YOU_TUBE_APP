@@ -8,7 +8,6 @@
 import Foundation
 
 enum MediaServiceManager {
-    static let apiKey = "AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo"
     static let baseURL = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&part=statistics&chart=mostPopular&locale="
     static let conditionURL = "&maxResults=1000000&regionCode="
     static let keyURL = "&key="

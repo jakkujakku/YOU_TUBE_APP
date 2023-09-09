@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JIS-nH-KJx">
-                                <rect key="frame" x="20" y="103" width="353" height="656"/>
+                                <rect key="frame" x="20" y="0.0" width="353" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bVt-JO-WWB">
                                     <size key="itemSize" width="313" height="391"/>
@@ -112,7 +112,7 @@
                         <constraints>
                             <constraint firstItem="JIS-nH-KJx" firstAttribute="leading" secondItem="t0e-el-umR" secondAttribute="leading" constant="20" id="0c4-Yh-3hH"/>
                             <constraint firstItem="t0e-el-umR" firstAttribute="trailing" secondItem="JIS-nH-KJx" secondAttribute="trailing" constant="20" id="ARZ-qd-gzE"/>
-                            <constraint firstItem="t0e-el-umR" firstAttribute="top" secondItem="JIS-nH-KJx" secondAttribute="top" id="E2U-Zd-jvB"/>
+                            <constraint firstAttribute="top" secondItem="JIS-nH-KJx" secondAttribute="top" id="E2U-Zd-jvB"/>
                             <constraint firstItem="JIS-nH-KJx" firstAttribute="bottom" secondItem="t0e-el-umR" secondAttribute="bottom" constant="-10" id="rH8-Qi-VNl"/>
                         </constraints>
                     </view>
@@ -138,7 +138,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="iKv-ZI-EQs" kind="relationship" relationship="rootViewController" id="BOv-pA-K22"/>
+                        <segue destination="iKv-ZI-EQs" kind="relationship" relationship="rootViewController" id="az2-7y-uE0"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vd-7j-Nf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

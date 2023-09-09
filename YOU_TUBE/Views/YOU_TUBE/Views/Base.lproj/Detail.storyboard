@@ -12,7 +12,7 @@
         <!--Detail Controller-->
         <scene sceneID="aux-WQ-3RO">
             <objects>
-                <viewController storyboardIdentifier="DetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="80D-5I-a8I" customClass="DetailController" customModule="YOU_TUBE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="80D-5I-a8I" customClass="DetailController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X0L-ef-GzD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

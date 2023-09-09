@@ -56,21 +56,34 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Jr-yF-ifg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dPN-cl-dVk" firstAttribute="leading" secondItem="0Jr-yF-ifg" secondAttribute="leading" constant="10" id="29e-RD-7DS"/>
+                            <constraint firstItem="dPN-cl-dVk" firstAttribute="centerX" secondItem="0Jr-yF-ifg" secondAttribute="centerX" id="9LI-ub-cFi"/>
+                            <constraint firstItem="4Ka-on-y2A" firstAttribute="centerX" secondItem="0Jr-yF-ifg" secondAttribute="centerX" id="DfD-jS-TYU"/>
+                            <constraint firstItem="1jd-WF-XRX" firstAttribute="top" secondItem="dPN-cl-dVk" secondAttribute="bottom" constant="50" id="M0z-iq-9Kr"/>
+                            <constraint firstItem="1jd-WF-XRX" firstAttribute="leading" secondItem="0Jr-yF-ifg" secondAttribute="leading" constant="30" id="U6h-oI-RZZ"/>
+                            <constraint firstItem="4Ka-on-y2A" firstAttribute="top" secondItem="1jd-WF-XRX" secondAttribute="bottom" constant="40" id="aD6-SR-Vb5"/>
+                            <constraint firstItem="4Ka-on-y2A" firstAttribute="leading" secondItem="0Jr-yF-ifg" secondAttribute="leading" constant="30" id="dep-Hz-UOg"/>
+                            <constraint firstItem="1jd-WF-XRX" firstAttribute="centerX" secondItem="0Jr-yF-ifg" secondAttribute="centerX" id="g8O-fu-mbs"/>
+                            <constraint firstItem="dPN-cl-dVk" firstAttribute="top" secondItem="0Jr-yF-ifg" secondAttribute="top" constant="20" id="gsN-sS-VjB"/>
+                            <constraint firstItem="0Jr-yF-ifg" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Ka-on-y2A" secondAttribute="bottom" constant="40" id="wfk-Et-XmA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XVa-Cm-1Ki"/>
                     <connections>
-                        <outlet property="loginbutton" destination="Vjw-AN-DZQ" id="umP-GT-CZx"/>
-                        <outlet property="text1" destination="D94-pZ-hlg" id="Do2-aJ-wb8"/>
-                        <outlet property="text2" destination="Jin-aN-rRM" id="qAR-RU-K8c"/>
-                        <outlet property="youtubeLogo" destination="dPN-cl-dVk" id="RZc-7c-lsd"/>
+                        <outlet property="emailTextField" destination="D94-pZ-hlg" id="H9u-G5-CyK"/>
+                        <outlet property="loginButton" destination="Vjw-AN-DZQ" id="a8b-BG-nC8"/>
+                        <outlet property="mainLogoImageView" destination="dPN-cl-dVk" id="5g2-FS-yxm"/>
+                        <outlet property="passwordTextFiedl" destination="Jin-aN-rRM" id="38u-g5-NgL"/>
+                        <outlet property="signUpButton" destination="s5E-bK-Eqa" id="kfX-lm-1YD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k17-gc-JEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3008.3969465648852" y="-242.25352112676057"/>
         </scene>
-        <!--Title-->
-        <scene sceneID="FJh-DO-vIR">
+        <!--Navigation Controller-->
+        <scene sceneID="0zf-95-FUX">
             <objects>
                 <viewController storyboardIdentifier="RegisterController" wantsFullScreenLayout="YES" id="vQq-wm-gO0" customClass="RegisterController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="registerViewController" id="uMY-dM-s5c" customClass="registerViewController" customModule="YOU_TUBE" customModuleProvider="target">
@@ -124,13 +137,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="hcK-P3-LTp"/>
                     <connections>
-                        <outlet property="signUp" destination="ApH-AG-hir" id="6hk-XT-837"/>
-                        <outlet property="text1" destination="GVl-lc-x2e" id="nBw-YJ-QAc"/>
-                        <outlet property="text2" destination="cGe-zE-fTR" id="G9W-9F-LAv"/>
-                        <outlet property="text3" destination="FJs-MG-48m" id="wYV-gT-THR"/>
+                        <segue destination="bfU-WC-svN" kind="relationship" relationship="rootViewController" id="mDX-M8-hnV"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vkx-4t-qWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHs-zc-S6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3849.6183206106871" y="-242.25352112676057"/>
         </scene>
@@ -157,8 +167,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="_ed5cefc1-cba9-4ab2-99d2-ca74b082c7e3" width="1024" height="1024"/>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="apple.logo" catalog="system" width="105" height="128"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
