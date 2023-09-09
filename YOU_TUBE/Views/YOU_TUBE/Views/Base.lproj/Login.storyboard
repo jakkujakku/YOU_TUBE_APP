@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bfU-WC-svN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eWv-lL-k3I">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -35,7 +35,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="로그인"/>
                                 <connections>
-                                    <action selector="loginbutton:" destination="bfU-WC-svN" eventType="touchUpInside" id="Lig-M7-NfO"/>
+                                    <action selector="loginbuttonTapped:" destination="bfU-WC-svN" eventType="touchUpInside" id="C97-ZI-Lbj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx5-py-mRt">
@@ -46,7 +46,7 @@
                                     <fontDescription key="titleFontDescription" type="italicSystem" pointSize="13"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="vQq-wm-gO0" kind="show" id="XOy-CP-lz0"/>
+                                    <action selector="registerbuttonTapped:" destination="bfU-WC-svN" eventType="touchUpInside" id="0J9-0L-GHJ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="_ed5cefc1-cba9-4ab2-99d2-ca74b082c7e3" translatesAutoresizingMaskIntoConstraints="NO" id="dPN-cl-dVk">
@@ -67,14 +67,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k17-gc-JEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2081.679389312977" y="-242.25352112676057"/>
+            <point key="canvasLocation" x="3008.3969465648852" y="-242.25352112676057"/>
         </scene>
         <!--Title-->
         <scene sceneID="FJh-DO-vIR">
             <objects>
                 <viewController storyboardIdentifier="RegisterController" wantsFullScreenLayout="YES" id="vQq-wm-gO0" customClass="RegisterController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="registerViewController" id="uMY-dM-s5c" customClass="registerViewController" customModule="YOU_TUBE" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GVl-lc-x2e">
@@ -132,7 +132,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkx-4t-qWs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2922.9007633587785" y="-242.25352112676057"/>
+            <point key="canvasLocation" x="3849.6183206106871" y="-242.25352112676057"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0zf-95-FUX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eWv-lL-k3I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTT-z2-rBd">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Xb-Jz-EyE">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="bfU-WC-svN" kind="relationship" relationship="rootViewController" id="BjT-G1-ieX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHs-zc-S6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2081.679389312977" y="-242.25352112676057"/>
         </scene>
     </scenes>
     <resources>

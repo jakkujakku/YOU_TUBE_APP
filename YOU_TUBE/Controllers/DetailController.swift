@@ -15,13 +15,15 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    //싱글톤 네트워킹
+    // 싱글톤 네트워킹
     var networking = CommentNetworking.shared
     
     // 썸네일 컨트롤러에서 받은 데이터
     var videoData: Items?
     
     var commentService: CommentService2?
+    
+    // 유저디폴트
     
     @IBOutlet weak var videoTitle: UILabel!
     
@@ -100,7 +102,6 @@ class DetailController: UIViewController {
         publishedDate.text = convertDateString(snippet.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
         upButton.setTitle(addCommas(to: Int(statistics.likeCount!)!), for: .normal)
         downButton.setTitle(addCommas(to: downCount), for: .normal)
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -230,15 +231,14 @@ class DetailController: UIViewController {
         }
     }
     
-    
-    //숫자에 ,
+    // 숫자에 ,
     private func addCommas(to number: Int) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal
         return numberFormatter.string(from: NSNumber(value: number)) ?? ""
     }
     
-    //날짜 변환
+    // 날짜 변환
     func convertDateString(_ inputDateString: String, from inputFormat: String, to outputFormat: String) -> String? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = inputFormat
@@ -250,7 +250,6 @@ class DetailController: UIViewController {
         
         return nil
     }
-    
     
 //
     
