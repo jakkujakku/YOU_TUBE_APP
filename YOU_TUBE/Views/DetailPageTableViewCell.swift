@@ -35,8 +35,7 @@ class DetailPageTableViewCell: UITableViewCell {
 
     
     @IBAction func toSeeMoreButtonTapped(_ sender: UIButton) {
-        
-        
+    
         let currentNumberOfLines = comment.numberOfLines
 
             if isTextExpanded {
@@ -53,16 +52,17 @@ class DetailPageTableViewCell: UITableViewCell {
             } else {
                 // 현재 상태가 접혀있는 상태일 때
                 comment.numberOfLines += 1 // 라인 수 증가
-                if currentNumberOfLines == 1 {
-                    // 현재 라인 수가 1이면 (한 줄에서 더보기로 전환)
-                    toSeeMoreButton.setTitle("...더보기", for: .normal)
+                toSeeMoreButton.setTitle("...더보기", for: .normal)
                 }
+                
+        if currentNumberOfLines == 1 {
+            // 현재 라인 수가 1이면 (한 줄에서 더보기로 전환)
+            toSeeMoreButton.setTitle("접기", for: .normal)
+                
             }
 
             // 버튼 상태 토글
             isTextExpanded.toggle()
     }
-    
-    
- 
+
 }

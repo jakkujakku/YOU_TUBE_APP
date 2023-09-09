@@ -26,92 +26,6 @@ struct CommentStruct {
     
 }
 
-
-// MARK: - Welcome
-//struct CommentService2: Codable {
-//    let kind, etag, nextPageToken: String
-//
-//    let items: [Item]
-//}
-//
-//// MARK: - Item
-//struct Item: Codable {
-//    let kind: ItemKind
-//    let etag, id: String
-//    let snippet: ItemSnippet
-//    let replies: Replies?
-//}
-//
-//enum ItemKind: String, Codable {
-//    case youtubeCommentThread = "youtube#commentThread"
-//}
-//
-//// MARK: - Replies
-//struct Replies: Codable {
-//    let comments: [Comment]
-//}
-//
-//// MARK: - Comment
-//struct Comment: Codable {
-//    let kind: TopLevelCommentKind
-//    let etag, id: String
-//    let snippet: TopLevelCommentSnippet
-//}
-//
-//enum TopLevelCommentKind: String, Codable {
-//    case youtubeComment = "youtube#comment"
-//}
-//
-//// MARK: - TopLevelCommentSnippet
-//struct TopLevelCommentSnippet: Codable {
-//    let channelID: String
-//    let videoID: String
-//    let textDisplay, textOriginal: String
-//    let parentID: String?
-//    let authorDisplayName: String
-//    let authorProfileImageURL: String
-//    let authorChannelURL: String
-//    let authorChannelID: AuthorChannelID
-//    let canRate: Bool
-//    let likeCount: Int
-//    let publishedAt, updatedAt: Date
-//
-//    enum CodingKeys: String, CodingKey {
-//        case channelID = "channelId"
-//        case videoID = "videoId"
-//        case textDisplay, textOriginal
-//        case parentID = "parentId"
-//        case authorDisplayName
-//        case authorProfileImageURL = "authorProfileImageUrl"
-//        case authorChannelURL = "authorChannelUrl"
-//        case authorChannelID = "authorChannelId"
-//        case canRate, likeCount, publishedAt, updatedAt
-//    }
-//}
-//
-//// MARK: - AuthorChannelID
-//struct AuthorChannelID: Codable {
-//    let value: String
-//}
-//
-//
-//// MARK: - ItemSnippet
-//struct ItemSnippet: Codable {
-//    let channelID: String
-//    let videoID: String
-//    let topLevelComment: Comment
-//    let canReply: Bool
-//    let totalReplyCount: Int
-//    let isPublic: Bool
-//
-//    enum CodingKeys: String, CodingKey {
-//        case channelID = "channelId"
-//        case videoID = "videoId"
-//        case topLevelComment, canReply, totalReplyCount, isPublic
-//    }
-//}
-
-
 // MARK: - Welcome
 struct CommentService2: Codable {
     let items: [Item]
@@ -137,17 +51,16 @@ struct TopLevelCommentSnippet: Codable {
     let textOriginal: String?
     let authorDisplayName: String
     let authorProfileImageURL: String?
+    let likeCount: Int
+    
    
     enum CodingKeys: String, CodingKey {
         case textOriginal
         case authorDisplayName
         case authorProfileImageURL = "authorProfileImageUrl"
+        case likeCount
     }
 }
-
-
-
-
 
 
 // MARK: - 코멘트 네트워킹 싱글톤
@@ -184,10 +97,7 @@ final class CommentNetworking {
                 completion(.failure(.dataError))
                 return
             }
-            print(safeData.description)
-            let result = String(data: safeData, encoding: .utf8)
-            print(result)
-//                         데이터 분석하기
+
             if let commentData = self.parseJSON(safeData) {
                 print("Parse 실행")
                 completion(.success(commentData))
@@ -195,18 +105,6 @@ final class CommentNetworking {
                 print("Parse 실패")
                 completion(.failure(.parseError))
             }
-            
-//            do {
-//                // make sure this JSON is in the format we expect
-//                if let dictionary = try JSONSerialization.jsonObject(with: safeData, options: .fragmentsAllowed) as? [String: Any] {
-//                    let items = dictionary["items"] as? [Any]
-//
-//                }
-//            } catch let error as NSError {
-//                print("Failed to load: \(error.localizedDescription)")
-//            }
-//
-
         }
         task.resume()
     }

@@ -183,7 +183,7 @@
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="최신순"/>
+                                        <state key="normal" title="인기순"/>
                                         <connections>
                                             <action selector="latestOrderTapped:" destination="80D-5I-a8I" eventType="touchUpInside" id="mwr-5a-Qpr"/>
                                         </connections>

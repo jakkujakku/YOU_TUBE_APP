@@ -18,16 +18,10 @@ class DetailController: UIViewController {
     //싱글톤 네트워킹
     var networking = CommentNetworking.shared
     
-   
-    
     // 썸네일 컨트롤러에서 받은 데이터
     var videoData: Items?
     
-    
     var commentService: CommentService2?
-    
-    
-    // 유저디폴트
     
     @IBOutlet weak var videoTitle: UILabel!
     
@@ -51,15 +45,13 @@ class DetailController: UIViewController {
     
     @IBOutlet weak var commentTextField: UITextField!
     
-   
     var upCount = 0
     var downCount = 8962
     
-    // 임시 데이터
-    var commentArray: [CommentStruct] = [
-        CommentStruct(userId: "test", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 0"),
-        CommentStruct(userId: "test", userImage: (UIImage(systemName: "pencil") ?? UIImage(systemName: "heart"))!, comment: "테스트용 - 1")
-    ]
+    var contentOrderSelected = false
+    var latestOrderSelected = true
+    
+    var sortedComments: [Item] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +87,6 @@ class DetailController: UIViewController {
         latestOrder.clipsToBounds = true
         contentsOrder.clipsToBounds = true
         shareButton.clipsToBounds = true
-//        tableView.rowHeight = 120
         commentTextField.placeholder = "댓글을 입력해 주세요."
         videoTitle.numberOfLines = 0
         videoTitle.lineBreakMode = .byWordWrapping
@@ -107,7 +98,6 @@ class DetailController: UIViewController {
         videoTitle.text = snippet.title
         readCount.text = addCommas(to: Int(statistics.viewCount!)!)
         publishedDate.text = convertDateString(snippet.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
-
         upButton.setTitle(addCommas(to: Int(statistics.likeCount!)!), for: .normal)
         downButton.setTitle(addCommas(to: downCount), for: .normal)
         
@@ -138,8 +128,6 @@ class DetailController: UIViewController {
     }
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
-        guard let statistics = videoData?.statistics else { return }
-    
         if sender.isSelected {
             downCount -= 1
             downButton.setImage(UIImage(systemName: "hand.thumbsdown"), for: .normal)
@@ -150,7 +138,6 @@ class DetailController: UIViewController {
             downButton.setTitle(addCommas(to: downCount), for: .normal)
         }
         sender.isSelected = !sender.isSelected
-//         데이터 변화 - 유저디폴트 저장
     }
     
     @IBAction func shareButtonTapped(_ sender: UIButton) {
@@ -161,44 +148,55 @@ class DetailController: UIViewController {
         present(activityVC, animated: true)
     }
     
-    @IBAction func contentsOrderTapped(_ sender: UIButton) {
-        if contentsOrder.isSelected {
-            // 내용으로 순서 변경
-            commentArray.sort { $0.comment.count > $1.comment.count }
-            
-            contentsOrder.backgroundColor = .systemGray2
-            latestOrder.backgroundColor = .systemGray6
-            contentsOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-            latestOrder.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-            contentsOrder.isSelected = false
-            latestOrder.isSelected = true
-            tableView.reloadData()
+    private func sortComments() {
+        guard var commentService = commentService?.items else { return }
+
+        if contentOrderSelected {
+       
+             commentService.sort { $0.snippet?.topLevelComment.snippet.textOriginal ?? "" > ($1.snippet?.topLevelComment.snippet.textOriginal ?? "")! }
+            sortedComments = commentService
+        } else if latestOrderSelected {
+  
+            commentService.sort { $0.snippet?.topLevelComment.snippet.likeCount ?? 0 > $1.snippet?.topLevelComment.snippet.likeCount ?? 0 }
+            sortedComments = commentService
         }
+
+        tableView.reloadData()
+    }
+    
+    
+    @IBAction func contentsOrderTapped(_ sender: UIButton) {
+        guard let videoData = videoData?.id else { return }
+        contentOrderSelected = true
+        latestOrderSelected = false
+
+        getCommnetData(url: "https://youtube.googleapis.com/youtube/v3/commentThreads?part=id&part=replies&part=snippet&maxResults=100&textFormat=plainText&videoId=\(videoData)&key=AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo")
+        contentsOrder.backgroundColor = .systemGray2
+        latestOrder.backgroundColor = .systemGray6
+        contentsOrder.titleLabel?.textColor = .black
+        contentsOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
+        latestOrder.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+
+
     }
     
     @IBAction func latestOrderTapped(_ sender: UIButton) {
-        if latestOrder.isSelected {
-            // 최신순으로 순서 변경
-            commentArray.sort { $0.date > $1.date }
-            
-            contentsOrder.titleLabel?.font = UIFont.systemFont(ofSize: 17)
-            latestOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-            contentsOrder.backgroundColor = .systemGray6
-            latestOrder.backgroundColor = .systemGray2
-            contentsOrder.isSelected = true
-            latestOrder.isSelected = false
-            tableView.reloadData()
-        }
+        guard let videoData = videoData?.id else { return }
+        contentOrderSelected = false
+        latestOrderSelected = true
+
+        getCommnetData(url: "https://youtube.googleapis.com/youtube/v3/commentThreads?part=id&part=replies&part=snippet&maxResults=100&textFormat=plainText&videoId=\(videoData)&key=AIzaSyDiUN58pJ1SBYkxw3G67l250-ZEe_AfzLo")
+        contentsOrder.titleLabel?.textColor = .red
+        contentsOrder.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        latestOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
+        contentsOrder.backgroundColor = .systemGray6
+        latestOrder.backgroundColor = .systemGray2
+
     }
     
     // 댓글 추가
     @IBAction func sendButtonTapped(_ sender: UIButton) {
-        let newData = CommentStruct(userId: "test - \(CommentStruct.postNumber)", userImage: (UIImage(systemName: "person") ?? UIImage(systemName: "heart"))!, comment: commentTextField.text ?? "")
-        commentArray.append(newData)
-        
-        // 값 저장유저디폴트
-    
-        tableView.reloadData()
+      
     }
     
     // date format 함수
@@ -258,12 +256,17 @@ class DetailController: UIViewController {
     
     private func getCommnetData(url: String) {
         networking.performRequest(with: url) { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case let .success(result):
-                self.commentService = result
-            case let .failure(error):
-                print(error.localizedDescription)
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                switch result {
+                case let .success(result):
+                    self.commentService = result
+                    self.sortComments()
+                    self.tableView.reloadData()
+                case let .failure(error):
+                    print(error.localizedDescription)
+            }
+            
             }
         }
     }
@@ -289,26 +292,22 @@ class DetailController: UIViewController {
 // 유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라
 extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let commentCount = Int(((videoData?.statistics?.commentCount)!)) else { return 0 }
-        return commentCount
+        return sortedComments.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
         guard let videoData = videoData?.snippet else { return cell}
-        guard let commentService = commentService?.items[indexPath.row].snippet?.topLevelComment else { return cell}
+        guard let commentService = sortedComments[indexPath.row].snippet?.topLevelComment else { return cell}
          let userData = commentService.snippet
-
         cell.commentUserName.text = userData.authorDisplayName
         loadImage(url: userData.authorProfileImageURL ?? "", cell: cell)
-        cell.postedCommentDate.text = videoData.publishedAt
+        cell.postedCommentDate.text = convertDateString(videoData.publishedAt ?? "", from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
         cell.comment.text = userData.textOriginal
         return cell
     }
-    
-    
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
