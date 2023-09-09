@@ -43,6 +43,7 @@
 		4EED5B2E2AA5BD67006370E6 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EED5B2C2AA5BD67006370E6 /* Profile.storyboard */; };
 		4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */; };
 		E70287982AA6B28200BC2E5B /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70287972AA6B28200BC2E5B /* ProfileEditViewController.swift */; };
+		E7C059B82AA9D3C200CCE685 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C059B72AA9D3C200CCE685 /* ProfileCell.swift */; };
 		FFEC440A2AA8103D00D76A00 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */; };
 		4EED5B302AA5C18A006370E6 /* ThumbnailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +86,7 @@
 		4EED5B2D2AA5BD67006370E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YOU_TUBE/Views/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 		E70287972AA6B28200BC2E5B /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		E7C059B72AA9D3C200CCE685 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		FFEC44092AA8103D00D76A00 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		4EED5B2F2AA5C18A006370E6 /* ThumbnailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */

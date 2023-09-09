@@ -12,6 +12,8 @@ class ProfileEditViewController: UIViewController {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordEyeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var openPhotosButton: UIView!
     
@@ -93,11 +95,32 @@ class ProfileEditViewController: UIViewController {
         UserDefaults.standard.set(imageView.image?.pngData(), forKey: "Image")
         UserDefaults.standard.set(nameTextField.text, forKey: "Name")
         UserDefaults.standard.set(emailTextField.text, forKey: "Email")
-
+        UserDefaults.standard.set(passwordTextField.text, forKey: "Password")
         // NotificationCenter를 사용하여 데이터 전달
         NotificationCenter.default.post(name: NSNotification.Name("ProfileDataUpdated"), object: nil)
 
         navigationController?.popViewController(animated: true)
+    }
+
+    // 패스워드 보이기 버튼
+    @IBAction func eyeButton(_ sender: UIButton) {
+        // 보안 설정 반전
+        passwordTextField.isSecureTextEntry.toggle()
+        // 버튼 선택 상태 반전
+        passwordEyeButton.isSelected.toggle()
+        // 버튼 선택 상태에 따른 눈모양 이미지 변경
+        if traitCollection.userInterfaceStyle == .dark {
+            // 다크 모드일 때 이미지 변경
+            let eyeImage = passwordEyeButton.isSelected ? "password shown eye icon dark" : "password hidden eye icon dark"
+            passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
+              
+            // 버튼 선택된 경우 자동으로 들어가는 틴트 컬러를 투명으로 변경해줌
+            passwordEyeButton.tintColor = .clear
+        } else {
+            // 라이트 모드일 때 이미지 변경
+            let eyeImage = passwordEyeButton.isSelected ? "password shown eye icon" : "password hidden eye icon"
+            passwordEyeButton.setImage(UIImage(named: eyeImage), for: .normal)
+        }
     }
 }
 
