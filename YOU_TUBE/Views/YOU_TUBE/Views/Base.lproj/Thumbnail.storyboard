@@ -112,7 +112,7 @@
                         <constraints>
                             <constraint firstItem="JIS-nH-KJx" firstAttribute="leading" secondItem="t0e-el-umR" secondAttribute="leading" constant="20" id="0c4-Yh-3hH"/>
                             <constraint firstItem="t0e-el-umR" firstAttribute="trailing" secondItem="JIS-nH-KJx" secondAttribute="trailing" constant="20" id="ARZ-qd-gzE"/>
-                            <constraint firstItem="t0e-el-umR" firstAttribute="top" secondItem="JIS-nH-KJx" secondAttribute="top" id="E2U-Zd-jvB"/>
+                            <constraint firstAttribute="top" secondItem="JIS-nH-KJx" secondAttribute="top" id="E2U-Zd-jvB"/>
                             <constraint firstItem="JIS-nH-KJx" firstAttribute="bottom" secondItem="t0e-el-umR" secondAttribute="bottom" constant="-10" id="rH8-Qi-VNl"/>
                         </constraints>
                     </view>
