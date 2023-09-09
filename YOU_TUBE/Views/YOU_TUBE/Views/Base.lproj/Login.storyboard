@@ -32,8 +32,8 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-on-y2A">
-                                <rect key="frame" x="30" y="661" width="333" height="81.666666666666629"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-on-y2A">
+                                <rect key="frame" x="30" y="661" width="333" height="83.666666666666629"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vjw-AN-DZQ">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="34.333333333333336"/>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5E-bK-Eqa">
-                                        <rect key="frame" x="0.0" y="47.333333333333371" width="333" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="49.333333333333371" width="333" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="회원 가입"/>
                                         <connections>
@@ -73,7 +73,7 @@
                             <constraint firstItem="4Ka-on-y2A" firstAttribute="leading" secondItem="0Jr-yF-ifg" secondAttribute="leading" constant="30" id="dep-Hz-UOg"/>
                             <constraint firstItem="1jd-WF-XRX" firstAttribute="centerX" secondItem="0Jr-yF-ifg" secondAttribute="centerX" id="g8O-fu-mbs"/>
                             <constraint firstItem="dPN-cl-dVk" firstAttribute="top" secondItem="0Jr-yF-ifg" secondAttribute="top" constant="20" id="gsN-sS-VjB"/>
-                            <constraint firstItem="0Jr-yF-ifg" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Ka-on-y2A" secondAttribute="bottom" constant="40" id="wfk-Et-XmA"/>
+                            <constraint firstItem="0Jr-yF-ifg" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Ka-on-y2A" secondAttribute="bottom" constant="20" id="wfk-Et-XmA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XVa-Cm-1Ki"/>

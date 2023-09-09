@@ -42,7 +42,7 @@ final class ThumbnailController: UIViewController {
     private let regionCodeCount = RegionCode(rawValue: RegionCode.kr.rawValue)
 
     private var isEditMode: Bool {
-        let searchController = navigationItem.searchController
+        let searchController = tabBarController?.navigationItem.searchController
         let isActive = searchController?.isActive ?? false
         let isSearchBarHasText = searchController?.searchBar.text?.isEmpty == false
         return isActive && isSearchBarHasText
@@ -59,12 +59,11 @@ final class ThumbnailController: UIViewController {
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        navigationItem.searchController?.searchBar.resignFirstResponder()
+        tabBarController?.navigationItem.searchController?.searchBar.resignFirstResponder()
     }
 
     private func getYoutubeData(regionCode: String, apiKey: String) {
-//        let url = URL(string: MediaServiceManager.baseURL+regionCode+MediaServiceManager.conditionURL+regionCode+MediaServiceManager.keyURL+SecretKey.apiKey)
-        let url = Bundle.main.url(forResource: regionCode, withExtension: "json")
+        let url = URL(string: MediaServiceManager.baseURL+regionCode+MediaServiceManager.conditionURL+regionCode+MediaServiceManager.keyURL+SecretKey.apiKey)
 
         guard let url = url else { return }
 
@@ -74,10 +73,10 @@ final class ThumbnailController: UIViewController {
 
         let task = session.dataTask(with: url) { [weak self] data, response, error in
 
-//            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
-//                print("### \(response)")
-//                return
-//            }
+            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
+                print("### \(response)")
+                return
+            }
 
             guard let data = data else { return }
 
@@ -89,7 +88,7 @@ final class ThumbnailController: UIViewController {
                 DataManager.currentRegionCode = regionCode
 
                 DispatchQueue.main.async {
-                    self?.navigationItem.title = self?.setupNavigationTitle()
+                    self?.tabBarController?.navigationItem.title = self?.setupNavigationTitle()
                     self?.collectionView.reloadData()
                 }
             } catch let error as NSError {
@@ -101,7 +100,8 @@ final class ThumbnailController: UIViewController {
 
     private func setupUI() {
         view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.prefersLargeTitles = true
+        tabBarController?.navigationItem.largeTitleDisplayMode = .always
+        tabBarController?.navigationController?.navigationBar.prefersLargeTitles = true
 
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -140,7 +140,7 @@ final class ThumbnailController: UIViewController {
         searchController.navigationItem.hidesSearchBarWhenScrolling = false
         searchController.searchBar.delegate = self
         searchController.searchResultsUpdater = self
-        navigationItem.searchController = searchController
+        tabBarController?.navigationItem.searchController = searchController
     }
 
     private func topViewUp() {

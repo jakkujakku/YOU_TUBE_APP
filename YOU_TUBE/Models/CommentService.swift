@@ -8,14 +8,13 @@
 import UIKit
 
 struct CommentStruct {
-    
     static var postNumber = 0
     let postnumber: Int
     let userId: String
     let userImage: UIImage
     let date = Date()
     let comment: String
-    
+
     init(userId: String, userImage: UIImage, comment: String) {
         postnumber = CommentStruct.postNumber
         self.userId = userId
@@ -23,15 +22,16 @@ struct CommentStruct {
         self.comment = comment
         CommentStruct.postNumber += 1
     }
-    
 }
 
 // MARK: - Welcome
+
 struct CommentService2: Codable {
     let items: [Item]
 }
 
 // MARK: - Item
+
 struct Item: Codable {
     let snippet: ItemSnippet?
 }
@@ -42,18 +42,20 @@ struct ItemSnippet: Codable {
 }
 
 // MARK: - Comment
+
 struct Comment: Codable {
     let snippet: TopLevelCommentSnippet
 }
 
 // MARK: - TopLevelCommentSnippet
+
 struct TopLevelCommentSnippet: Codable {
     let textOriginal: String?
     let authorDisplayName: String
     let authorProfileImageURL: String?
     let likeCount: Int
     let publishedAt: String
-   
+
     enum CodingKeys: String, CodingKey {
         case textOriginal
         case authorDisplayName
@@ -62,7 +64,6 @@ struct TopLevelCommentSnippet: Codable {
         case publishedAt
     }
 }
-
 
 // MARK: - 코멘트 네트워킹 싱글톤
 
@@ -73,22 +74,21 @@ enum NetworkError: Error {
 }
 
 final class CommentNetworking {
-    
-    //싱글톤
+    // 싱글톤
     static let shared = CommentNetworking()
-    
+
     private init() {}
-    
-    //Result 타입
+
+    // Result 타입
     typealias NetworkCompletion = (Result<CommentService2, NetworkError>) -> Void
-    
+
     func performRequest(with urlString: String, completion: @escaping NetworkCompletion) {
         print(#function)
         guard let url = URL(string: urlString) else { return }
-        
+
         let session = URLSession(configuration: .default)
-        
-        let task = session.dataTask(with: url) { (data, response, error) in
+
+        let task = session.dataTask(with: url) { data, _, error in
             if error != nil {
                 print(error!)
                 completion(.failure(.networkingError))
@@ -109,6 +109,7 @@ final class CommentNetworking {
         }
         task.resume()
     }
+
     // 받아본 데이터 분석하는 함수 (동기적 실행)
     private func parseJSON(_ data: Data) -> CommentService2? {
         print(#function)
@@ -124,5 +125,4 @@ final class CommentNetworking {
             return nil
         }
     }
-    
 }

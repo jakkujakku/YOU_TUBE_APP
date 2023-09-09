@@ -125,7 +125,6 @@ class DetailController: UIViewController {
         }
         sender.isSelected = !sender.isSelected
         tableView.reloadData()
-
     }
     
     @IBAction func downButtonTapped(_ sender: UIButton) {
@@ -153,18 +152,15 @@ class DetailController: UIViewController {
         guard var commentService = commentService?.items else { return }
 
         if contentOrderSelected {
-       
-             commentService.sort { $0.snippet?.topLevelComment.snippet.textOriginal ?? "" > ($1.snippet?.topLevelComment.snippet.textOriginal ?? "")! }
+            commentService.sort { $0.snippet?.topLevelComment.snippet.textOriginal ?? "" > ($1.snippet?.topLevelComment.snippet.textOriginal ?? "")! }
             sortedComments = commentService
         } else if latestOrderSelected {
-  
             commentService.sort { $0.snippet?.topLevelComment.snippet.publishedAt ?? "" > $1.snippet?.topLevelComment.snippet.publishedAt ?? "" }
             sortedComments = commentService
         }
 
         tableView.reloadData()
     }
-    
     
     @IBAction func contentsOrderTapped(_ sender: UIButton) {
         guard let videoData = videoData?.id else { return }
@@ -177,8 +173,6 @@ class DetailController: UIViewController {
         contentsOrder.titleLabel?.textColor = .black
         contentsOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
         latestOrder.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-
-
     }
     
     @IBAction func latestOrderTapped(_ sender: UIButton) {
@@ -192,13 +186,10 @@ class DetailController: UIViewController {
         latestOrder.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
         contentsOrder.backgroundColor = .systemGray6
         latestOrder.backgroundColor = .systemGray2
-
     }
     
     // 댓글 추가
-    @IBAction func sendButtonTapped(_ sender: UIButton) {
-      
-    }
+    @IBAction func sendButtonTapped(_ sender: UIButton) {}
     
     // date format 함수
     private func timeAgoString(from date: Date) -> String {
@@ -264,44 +255,39 @@ class DetailController: UIViewController {
                     self.tableView.reloadData()
                 case let .failure(error):
                     print(error.localizedDescription)
-            }
-            
+                }
             }
         }
     }
     
     private func loadImage(url: String, cell: DetailPageTableViewCell) {
-            guard let url = URL(string: url)  else { return }
+        guard let url = URL(string: url) else { return }
             
-            DispatchQueue.global().async {
-            
-                guard let data = try? Data(contentsOf: url) else { return }
+        DispatchQueue.global().async {
+            guard let data = try? Data(contentsOf: url) else { return }
 
-                DispatchQueue.main.async {
-                    cell.commentUserImage.image = UIImage(data: data)
-                    cell.commentUserImage.layer.cornerRadius = cell.commentUserImage.frame.height / 2
-                    cell.commentUserImage.clipsToBounds = true
-                }
+            DispatchQueue.main.async {
+                cell.commentUserImage.image = UIImage(data: data)
+                cell.commentUserImage.layer.cornerRadius = cell.commentUserImage.frame.height / 2
+                cell.commentUserImage.clipsToBounds = true
             }
         }
-    
-    
+    }
 }
 
 // 유튜브 api를 받은 후에 변경 예정, 댓글 정보에 따라
 extension DetailController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sortedComments.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as? DetailPageTableViewCell else { return UITableViewCell() }
-        guard let commentService = sortedComments[indexPath.row].snippet?.topLevelComment else { return cell}
-         let userData = commentService.snippet
+        guard let commentService = sortedComments[indexPath.row].snippet?.topLevelComment else { return cell }
+        let userData = commentService.snippet
         cell.commentUserName.text = userData.authorDisplayName
         loadImage(url: userData.authorProfileImageURL ?? "", cell: cell)
-        cell.postedCommentDate.text = convertDateString(userData.publishedAt , from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
+        cell.postedCommentDate.text = convertDateString(userData.publishedAt, from: "yyyy-MM-dd'T'HH:mm:ss'Z'", to: "yyyy년 MM월 dd일 HH:mm")
         cell.comment.text = userData.textOriginal
         return cell
     }

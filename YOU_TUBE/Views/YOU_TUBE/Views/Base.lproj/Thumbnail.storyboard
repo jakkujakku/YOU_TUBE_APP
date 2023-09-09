@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RVY-VA-HzG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iKv-ZI-EQs">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Thumbnail Controller-->
+        <!--Main-->
         <scene sceneID="s4G-8e-Pme">
             <objects>
                 <viewController storyboardIdentifier="ThumbnailController" id="iKv-ZI-EQs" customClass="ThumbnailController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JIS-nH-KJx">
-                                <rect key="frame" x="20" y="0.0" width="353" height="759"/>
+                                <rect key="frame" x="20" y="59" width="353" height="700"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bVt-JO-WWB">
                                     <size key="itemSize" width="313" height="391"/>
@@ -112,10 +112,11 @@
                         <constraints>
                             <constraint firstItem="JIS-nH-KJx" firstAttribute="leading" secondItem="t0e-el-umR" secondAttribute="leading" constant="20" id="0c4-Yh-3hH"/>
                             <constraint firstItem="t0e-el-umR" firstAttribute="trailing" secondItem="JIS-nH-KJx" secondAttribute="trailing" constant="20" id="ARZ-qd-gzE"/>
-                            <constraint firstAttribute="top" secondItem="JIS-nH-KJx" secondAttribute="top" id="E2U-Zd-jvB"/>
+                            <constraint firstItem="t0e-el-umR" firstAttribute="top" secondItem="JIS-nH-KJx" secondAttribute="top" id="E2U-Zd-jvB"/>
                             <constraint firstItem="JIS-nH-KJx" firstAttribute="bottom" secondItem="t0e-el-umR" secondAttribute="bottom" constant="-10" id="rH8-Qi-VNl"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Main" image="house" catalog="system" id="isd-ha-Zj8"/>
                     <navigationItem key="navigationItem" id="7qm-U6-PwZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -125,25 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Oe-vd-nUP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2559.5419847328244" y="-1167.605633802817"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="rFs-8z-sfo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RVY-VA-HzG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main" image="house" catalog="system" id="qCO-DW-1jg"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IgF-Ve-sWi">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="iKv-ZI-EQs" kind="relationship" relationship="rootViewController" id="az2-7y-uE0"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3vd-7j-Nf7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1767" y="-1168"/>
         </scene>
     </scenes>
     <resources>
