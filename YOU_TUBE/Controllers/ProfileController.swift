@@ -18,11 +18,11 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         cell.profileLabel.text = profile[indexPath.row]
         cell.profileImageView.image = UIImage(named: profileImages[indexPath.row])
 
-        return cell
+        return cell // 셀 설정
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = .clear // 셀 투명하게 하기
+        cell.backgroundColor = .clear // 셀 투명도 설정
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
