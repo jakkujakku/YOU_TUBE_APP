@@ -12,13 +12,17 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return profile.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = profileTableView.dequeueReusableCell(withIdentifier: "myTableViewCell", for: indexPath) as! ProfileCell
         cell.profileLabel.text = profile[indexPath.row]
         cell.profileImageView.image = UIImage(named: profileImages[indexPath.row])
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = .clear // 셀 투명하게 하기
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -34,7 +38,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         headerView.backgroundColor = .clear
         return headerView // 섹션 헤더에 배경색을 없애기 위해 빈 UIView 반환
     }
-    
+
     let profile = ["내 채널", "Youtube 스튜디오", "내 Premium 혜택", "위치: 한국", "설정", "고객센터", "의견 보내기"]
     let profileImages = ["person", "studio", "premium", "world", "setup", "helpcenter", "comments"]
 
@@ -52,7 +56,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
         view.backgroundColor = .systemBackground
         // 데이터 전달 받기
         updateUIWithStoredData()
-        
+
         NotificationCenter.default.addObserver(self,
                                                selector:
                                                #selector(updateUIWithStoredData),
@@ -61,7 +65,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
                                                object:
                                                nil)
     }
-    
+
     @objc private func updateUIWithStoredData() {
         if let imageData = UserDefaults.standard.data(forKey:
             "Image")
@@ -72,28 +76,28 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
                 profileImageView.image = image
             }
         }
-        
+
         if let name =
             UserDefaults.standard.string(forKey: "Name")
         {
             nameLabel.text = name
         }
-        
+
         if let email =
             UserDefaults.standard.string(forKey: "Email")
         {
             emailLabel.text = email
         }
     }
-    
+
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
-    
+
     // 다크모드 텍스트필드 및 버튼 즉각 대응
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        
+
         if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
             if traitCollection.userInterfaceStyle == .dark {
                 nameLabel.textColor = UIColor.white
@@ -101,7 +105,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
                 logoutButton.setTitleColor(UIColor.white, for: .normal)
                 deletingUserButton.setTitleColor(UIColor.white, for: .normal)
                 editButton.setTitleColor(UIColor.white, for: .normal)
-                
+
             } else {
                 nameLabel.textColor = UIColor.black
                 emailLabel.textColor = UIColor.black
@@ -111,7 +115,7 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
             }
         }
     }
-    
+
     @objc private func handleProfileDataUpdated() {
         // 프로필 정보 업데이트 로직 (UserDefaults로부터 다시 불러옴)
         if let imageData = UserDefaults.standard.data(forKey: "Image") {
@@ -119,11 +123,11 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
                 profileImageView.image = image
             }
         }
-        
+
         if let name = UserDefaults.standard.string(forKey: "Name") {
             nameLabel.text = name
         }
-        
+
         if let email = UserDefaults.standard.string(forKey: "Email") {
             emailLabel.text = email
         }
