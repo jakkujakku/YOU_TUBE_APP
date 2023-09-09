@@ -30,6 +30,8 @@ private enum CollectionViewSize: Int {
     }
 }
 
+// MARK: - Main
+
 final class ThumbnailController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     private let refreshControll = UIRefreshControl()
@@ -48,9 +50,6 @@ final class ThumbnailController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Video List"
-        navigationController?.navigationBar.prefersLargeTitles = true
-
         setupUI()
         addSearchBar()
         topViewUp()
@@ -64,8 +63,8 @@ final class ThumbnailController: UIViewController {
     }
 
     private func getYoutubeData(regionCode: String, apiKey: String) {
-        let url = URL(string: MediaServiceManager.baseURL+regionCode+MediaServiceManager.conditionURL+regionCode+MediaServiceManager.keyURL+SecretKey.apiKey)
-//        let url = Bundle.main.url(forResource: regionCode, withExtension: "json")
+//        let url = URL(string: MediaServiceManager.baseURL+regionCode+MediaServiceManager.conditionURL+regionCode+MediaServiceManager.keyURL+SecretKey.apiKey)
+        let url = Bundle.main.url(forResource: regionCode, withExtension: "json")
 
         guard let url = url else { return }
 
@@ -75,10 +74,10 @@ final class ThumbnailController: UIViewController {
 
         let task = session.dataTask(with: url) { [weak self] data, response, error in
 
-            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
-                print("### \(response)")
-                return
-            }
+//            guard let httpResponse = response as? HTTPURLResponse, (200 ..< 300).contains(httpResponse.statusCode) else {
+//                print("### \(response)")
+//                return
+//            }
 
             guard let data = data else { return }
 
@@ -102,7 +101,6 @@ final class ThumbnailController: UIViewController {
 
     private func setupUI() {
         view.backgroundColor = .systemBackground
-        navigationItem.title = "Video List"
         navigationController?.navigationBar.prefersLargeTitles = true
 
         collectionView.dataSource = self
@@ -176,6 +174,8 @@ final class ThumbnailController: UIViewController {
     }
 }
 
+// MARK: - UICollectionViewDataSource
+
 extension ThumbnailController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if isEditMode == true {
@@ -209,6 +209,8 @@ extension ThumbnailController: UICollectionViewDataSource {
     }
 }
 
+// MARK: - UICollectionViewDelegate
+
 extension ThumbnailController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = thumbnailInfoList.thumbnailInfo?.items?[indexPath.row]
@@ -218,6 +220,8 @@ extension ThumbnailController: UICollectionViewDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension ThumbnailController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -237,6 +241,8 @@ extension ThumbnailController: UICollectionViewDelegateFlowLayout {
         return CollectionViewSize.minimumSpacingSection.doubleValue
     }
 }
+
+// MARK: - UISearchResultsUpdating
 
 extension ThumbnailController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {

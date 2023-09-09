@@ -8,50 +8,40 @@
 import UIKit
 
 class LoginController: UIViewController {
-    @IBOutlet weak var youtubeLogo: UIImageView!
-    
-    
-    @IBOutlet weak var text1: UITextField!
-    
-    
-    @IBOutlet weak var text2: UITextField!
-    
-    
-    @IBOutlet weak var loginbutton: UIButton!
-    
-    
-    @IBOutlet weak var loginbutton2: UIButton!
-    
-    
+    @IBOutlet weak var mainLogoImageView: UIImageView!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextFiedl: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .systemBackground
     }
-    
-    
-    @IBAction func loginbuttonTapped(_ sender: Any) {
-        
-        //text1.placeholder = "이메일을 적으시오"
-        // 회원가입 페이지 뷰 컨트롤러를 생성
-//        let registerViewController = RegisterViewController()
-        
-        // navigationController를 사용하여 회원가입 페이지로 이동
-//        navigationController?.pushViewController(registerViewController, animated: true)
-        
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "RegisterController") as? RegisterController else { return }
-        
-        nextVC.modalTransitionStyle = .coverVertical
-        nextVC.modalPresentationStyle = .fullScreen
-        
-        self.present(nextVC, animated: true, completion: nil)
-        
+
+    override func viewWillAppear(_ animated: Bool) {
+        loadData()
     }
-    
-    @IBAction func registerbuttonTapped(_ sender: Any) {
+
+    // 데이터 불러오기 -> 수정 필요
+    func loadData() {
+        if let item = AuthService.userDefaults.data(forKey: AuthService.userDafaultsKey) {
+            do {
+                AuthService.shared = try! JSONDecoder().decode([String: UserInfo].self, from: item)
+                print("### \(AuthService.shared)")
+            }
+        }
     }
-    
+
+    @IBAction func tappedGoToLoginPage(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    @IBAction func tappedGoToSignUpPage(_ sender: Any) {
+        let sb = UIStoryboard(name: "SignUp", bundle: nil)
+        guard let vc = sb.instantiateViewController(withIdentifier: "RegisterController") as? RegisterController else { return }
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
-
-
-

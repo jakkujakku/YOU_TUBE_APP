@@ -7,6 +7,24 @@
 
 import Foundation
 
-// 로그인 값 저장 , 값 빼   와서 Tabel View 사용
+class AuthService {
+    static var shared = [String: UserInfo]()
+    static let userDefaults = UserDefaults.standard
+    static let userDafaultsKey = "userDafaultsKey"
 
+    private init() {}
 
+    func saveData() {}
+
+    func loadData() {}
+
+    func updateData() {}
+
+    func deleteData() {}
+}
+
+struct UserInfo: Codable {
+    var name: String
+    var email: String
+    var password: String
+}

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yOc-sD-Oxx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t2a-sT-ksX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile Controller-->
+        <!--Profile-->
         <scene sceneID="r0S-Sw-hoC">
             <objects>
                 <viewController id="t2a-sT-ksX" customClass="ProfileController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="lAf-5M-AiE">
-                                <rect key="frame" x="21" y="113" width="80" height="80"/>
+                                <rect key="frame" x="21" y="69" width="80" height="80"/>
                                 <color key="backgroundColor" red="0.058823529409999999" green="0.05882352591" blue="0.05882352591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="DTX-bo-Rmj"/>
@@ -26,7 +26,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="485-WT-Jbf">
-                                <rect key="frame" x="331" y="108" width="52" height="30"/>
+                                <rect key="frame" x="331" y="64" width="52" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="로그아웃">
@@ -37,7 +37,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dt9-tj-dRW">
-                                <rect key="frame" x="0.0" y="203" width="393" height="566"/>
+                                <rect key="frame" x="0.0" y="159" width="393" height="610"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myTableViewCell" rowHeight="60" id="Xao-Dk-7Ln" customClass="ProfileCell" customModule="YOU_TUBE" customModuleProvider="target">
@@ -100,13 +100,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3l-0Y-mex">
-                                <rect key="frame" x="109" y="113" width="42" height="21"/>
+                                <rect key="frame" x="109" y="69" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsV-l8-I4P">
-                                <rect key="frame" x="109" y="144" width="42" height="21"/>
+                                <rect key="frame" x="109" y="100" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -134,9 +134,10 @@
                             <constraint firstItem="lAf-5M-AiE" firstAttribute="leading" secondItem="Ot0-Dp-37G" secondAttribute="leadingMargin" constant="5" id="y0u-Dc-vl0"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="hKv-FA-b3U"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="o2J-c0-pro"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="deletingUserButton" destination="gwL-gr-iUZ" id="HJb-9g-8Gl"/>
                         <outlet property="editButton" destination="xjD-JS-E8h" id="Hxv-Sm-Ab7"/>
@@ -156,18 +157,18 @@
             <objects>
                 <viewController id="HH5-3C-xCd" customClass="ProfileEditViewController" customModule="YOU_TUBE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9X9-WG-ffV">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-FI-MLB">
-                                <rect key="frame" x="96.666666666666686" y="143" width="200" height="200"/>
+                                <rect key="frame" x="96.666666666666686" y="40" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fdD-O1-21j"/>
                                     <constraint firstAttribute="width" constant="200" id="nkz-yj-Ugp"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4A-Wt-CcF">
-                                <rect key="frame" x="156.66666666666666" y="368" width="80" height="30"/>
+                                <rect key="frame" x="156.66666666666666" y="265" width="80" height="30"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -180,7 +181,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6xc-KC-5gf">
-                                <rect key="frame" x="83" y="423" width="300" height="34"/>
+                                <rect key="frame" x="83" y="320" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="fVQ-ic-Mj4"/>
                                 </constraints>
@@ -188,7 +189,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94D-V7-jhp">
-                                <rect key="frame" x="10" y="493" width="50" height="20.333333333333371"/>
+                                <rect key="frame" x="10" y="390" width="50" height="20.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="wqY-Vj-8Fz"/>
                                 </constraints>
@@ -196,7 +197,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BOA-DU-6z1">
-                                <rect key="frame" x="83" y="492" width="300" height="34"/>
+                                <rect key="frame" x="83" y="389" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1Ec-th-Zyn"/>
                                 </constraints>
@@ -204,7 +205,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ca-EU-x49">
-                                <rect key="frame" x="170" y="664" width="54" height="30"/>
+                                <rect key="frame" x="170" y="737" width="54" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="저장">
@@ -215,7 +216,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-Wl-MDj">
-                                <rect key="frame" x="10" y="425" width="30" height="21"/>
+                                <rect key="frame" x="10" y="322" width="30" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -256,25 +257,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2dr-mb-p7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-393.12977099236639" y="-445.07042253521126"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="Urs-yZ-lKS">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yOc-sD-Oxx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="k9M-fv-pk0"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IUq-me-87f">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="t2a-sT-ksX" kind="relationship" relationship="rootViewController" id="BUG-bZ-cNd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NJh-Bz-Zho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2074.0458015267177" y="-445.07042253521126"/>
         </scene>
     </scenes>
     <resources>
