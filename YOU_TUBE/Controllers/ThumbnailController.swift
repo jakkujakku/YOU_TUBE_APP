@@ -58,6 +58,10 @@ final class ThumbnailController: UIViewController {
         hideKeyboardWhenTappedAround()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.navigationController?.isNavigationBarHidden = false
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         tabBarController?.navigationItem.searchController?.searchBar.resignFirstResponder()
     }

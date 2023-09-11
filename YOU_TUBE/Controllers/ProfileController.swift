@@ -65,6 +65,10 @@ class ProfileController: UIViewController, UITableViewDelegate, UITableViewDataS
                                                nil)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tabBarController?.navigationController?.isNavigationBarHidden = true
+    }
+
     @objc private func updateUIWithStoredData() {
         if let imageData = UserDefaults.standard.data(forKey:
             "Image")
